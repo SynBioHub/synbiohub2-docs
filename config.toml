@@ -2,3 +2,63 @@ baseURL = "synbiohub.github.io"
 languageCode = "en-us"
 title = "SynBioHub-Documentation"
 theme = "ace-documentation"
+Copyright = "© Yuanyuan GE 2020"
+canonifyurls = true
+[params]
+
+
+hideHUGOSupport = false
+[[menu.main]]  # here are the buttons on the menu
+name = "Main Page" # Button will display as "Home"
+weight = 100 # the weight decides the position of the button (higher or lower)
+identifier = "_index.md"
+pre = "<br />"
+url = "/"
+[[menu.main]]
+name = "About SynBioHub"
+weight = 0
+identifier = "AboutSynBioHub" # this button will refer to a markdown file named "contact" in the content folder
+pre = "<br />"
+url = "/AboutSynBioHub"
+[[menu.main]]
+name = "API Documentation"
+identifier = "APIDocumentation" # this page will refer to a markdown file named "blog" in the content folder
+pre = "<br />"
+url = "/APIDocumentation"
+weight = 40
+[[menu.main]]
+name = "Further References"
+weight = 0
+identifier = "FurtherReferences" # this button will refer to a markdown file named "contact" in the content folder
+pre = "<br />"
+url = "/FurtherReferences"
+[[menu.main]]
+name = "Installation"
+weight = 0
+identifier = "Installation" # this button will refer to a markdown file named "contact" in the content folder
+pre = "<br />"
+url = "/Installation"
+[[menu.main]]
+name = "Plugins"
+weight = 0
+identifier = "Plugins" # this button will refer to a markdown file named "contact" in the content folder
+pre = "<br />"
+url = "/Plugins"
+[[menu.main]]
+name = "Troubleshooting"
+weight = 0
+identifier = "T&R" # this button will refer to a markdown file named "contact" in the content folder
+pre = "<br />"
+url = "/T&R"
+[[menu.main]]
+name = "User Documentation"
+weight = 100
+identifier = "UserDocumentation" # this button will refer to a markdown file named "contact" in the content folder
+pre = "<br />"
+url = "/UserDocumentation"
+
+
+[sitemap]
+ChangeFreq = ""
+Filename = "sitemap.xml"
+Priority = "-1"
