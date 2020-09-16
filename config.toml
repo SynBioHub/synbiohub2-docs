@@ -1,8 +1,8 @@
-baseURL = "synbiohub.github.io"
+baseURL = "htttps://synbiohub.github.io"
 languageCode = "en-us"
 title = "SynBioHub-Documentation"
 theme = "ace-documentation"
-Copyright = "© Yuanyuan GE 2020"
+Copyright = "© SynBioHub 2020"
 canonifyurls = true
 [params]
 
@@ -62,3 +62,5 @@ url = "/UserDocumentation"
 ChangeFreq = ""
 Filename = "sitemap.xml"
 Priority = "-1"
+
+
