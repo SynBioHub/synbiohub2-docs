@@ -13,12 +13,6 @@ The [SynBioHub repository](https://synbiohub.org) is an open-source software pro
 
 Also, SynBioHub can be used to publish a library of synthetic parts and designs as a service, to share designs with collaborators, and to store designs of biological systems locally. Data in SynBioHub can be accessed via the HTTP API, Java API, or Python API where it can then be integrated into CAD tools for building genetic designs. SynBioHub contains an interface for users to upload new biological data to the database, to visualize DNA parts, to perform queries to access desired parts, and to download SBOL, GenBank, FASTA, etc.
 
-### Publications
-
-* *McLaughlin, James Alastair, et al. ["SynBioHub: a standards-enabled design repository for synthetic biology."]((https://pubs.acs.org/doi/abs/10.1021/acssynbio.7b00403)) ACS synthetic biology 7.2 (2018): 682-688.*
-* *Mante, Jeanet, Zach Zundel, and Chris J. Myers. ["Extending SynBioHub's Functionality with Plugins."]((https://pubs.acs.org/doi/abs/10.1021/acssynbio.0c00056)) ACS Synthetic Biology (2020).*
-* *Zhang, Michael, Zach Zundel, and Chris J. Myers. ["SBOLExplorer: Data Infrastructure and Data Mining for Genetic Design Repositories."]((https://pubs.acs.org/doi/abs/10.1021/acssynbio.9b00089)) ACS synthetic biology 8.10 (2019): 2287-2294.*
-
 ### Contributors
 
 * [Dr. James Alastair McLaughlin](http://homepages.cs.ncl.ac.uk/j.a.mclaughlin) (Newcastle University)
