@@ -4,10 +4,37 @@ date: 2020-09-04T20:30:59+05:30
 draft: true
 ---
 ## From Prebuilt Image
+
 ### Install Docker
 
+Install [Docker](https://docs.docker.com/get-docker/) and [Docker-Compose](https://docs.docker.com/compose/install/) on your System.
 
-## General
+### For Mac OS:
+
+The following instructions are to be followed for installaing SynBioHub locally onto you system:-
+
+a) Download git onto your Mac using ``` brew install git ``` and then configure you name and email using the following commands: 
+
+`git config --global user.name "<your name>"`  and `git config --global user.name "<your email>" ` respectively.
+
+b) Download Docker for Mac OS from [here](https://docs.docker.com/docker-for-mac/install/).
+
+c) Start Docker-desktop.
+
+d) Open your terminal and enter ` cd ` just to make sure that you're in your home directory at that instant.
+
+e) Clone the synbiohub-docker repo using the following command `git clone https://github.com/synbiohub/synbiohub-docker`.
+
+f) Start a synbiohub instance with `docker-compose --file ./synbiohub-docker/docker-compose.yml up` or you may follow the alternate method, i.e using SBOL explorer. For installing SynBioHub through SBOL explorer use the following commands:-
+
+`sysctl -w vm.max_map_count=262144`
+
+`docker-compose --file ./synbiohub-docker/docker-compose.yml --file ./synbiohub-docker/docker-compose.explorer.yml up`.
+
+g) In your browser search for localhost:7777 and it'll take you to a setup page when you'll run it for the very first time.
+
+
+### General
 The docker-compose files in this repository represent various configurations for deploying SynBioHub.
 The files can be layered with Docker Compose's [multiple file](https://docs.docker.com/compose/reference/overview/#specifying-multiple-compose-file) capabilities. 
 
