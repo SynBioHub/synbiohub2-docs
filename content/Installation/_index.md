@@ -51,19 +51,7 @@ This is a sortable table with plugin information. Click on the header to sort by
 
 ## From Source
 
-Follow the instructions on the [GitHub README](https://github.com/synbiohub/synbiohub) to install SynBioHub locally on your system. If you would like SynBioHub to run as a service, you can enable Virtuoso using systemd or open a virtual terminal using tmux or GNU screen and run 
-
-``` sudo /usr/local/bin/virtuoso-t +configfile $YOUR_CONFIG_FILE ```
-
- You should also run SynBioHub as a system service or using a virtual terminal and the command
-
-``` npm start ```
-
-If you are doing development work, you can start SynBioHub with the command 
-
-``` npm run-script dev ```
-
-which will restart the application with any change to the JavaScript source. 
+Follow the instructions on the following [GitHub README](https://github.com/synbiohub/synbiohub) to install SynBioHub locally onto your system. 
 
 ## NGINX configuration
 
