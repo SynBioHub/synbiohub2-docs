@@ -15,21 +15,21 @@ Also, SynBioHub can be used to publish a library of synthetic parts and designs 
 
 ### Contributors
 
-* [Dr. James Alastair McLaughlin](http://homepages.cs.ncl.ac.uk/j.a.mclaughlin) (Newcastle University)
-* [Prof. Chris J. Myers](http://www.async.ece.utah.edu/Myers) (University of Utah)
-* [Dr. Goksel Misirli](http://homepages.cs.ncl.ac.uk/goksel.misirli) (Newcastle University)
-* [Prof. Anil Wipat](http://homepages.cs.ncl.ac.uk/anil.wipat/) (Newcastle University)
-* [Zach Zundel](http://www.async.ece.utah.edu/people/students/zach-zundel/) (University of Utah)
+* [Dr. James Alastair McLaughlin](https://www.ebi.ac.uk/about/people/james-mclaughlin) (European Bioinformatics Institute)
+* [Prof. Chris J. Myers](https://www.colorado.edu/ecee/chris-myers) (University Of Colorado Boulder)
+* [Dr. Goksel Misirli](https://www.keele.ac.uk/scm/staff/gokselmisirli/) (Keele University)
+* [Prof. Anil Wipat](https://www.ncl.ac.uk/computing/people/profile/anilwipat.html#background) (Newcastle University)
+* [Zach Zundel](http://www.async.ece.utah.edu/people/students/zach-zundel/) (FaceBook)
 * [James Scholz](https://www.async.ece.utah.edu/~scholz/) (University of Utah)
 
 An earlier version of SynBioHub known as SBOL Stack was developed by the following people:
 
-* [Dr. Curtis Madsen](http://sites.bu.edu/ckmadsen/) (Boston University)
-* [Dr. James Alastair McLaughlin](http://homepages.cs.ncl.ac.uk/j.a.mclaughlin) (Newcastle University) 
-* [Dr. Goksel Misirli](http://homepages.cs.ncl.ac.uk/goksel.misirli/) (Newcastle University)
-* [Dr. Matthew Pocock](http://intbio.ncl.ac.uk/?people=matthew-pocock) (Turing Ate My Hamster Ltd.)
+* [Dr. Curtis Madsen](https://sites.bu.edu/ckmadsen/) (Boston University)
+* [Dr. James Alastair McLaughlin](https://www.ebi.ac.uk/about/people/james-mclaughlin) (European Bioinformatics Institute) 
+* [Dr. Goksel Misirli](https://www.keele.ac.uk/scm/staff/gokselmisirli) (Keele University)
+*  Dr. Matthew Pocock
 * [Dr. Keith Flanagan](http://intbio.ncl.ac.uk/?people=dr-keith-flanagan) (Newcastle University) 
 * [Dr. Jennifer Hallinan](https://research.science.mq.edu.au/synthetic-biology/people/) (Macquarie University)
-* [Prof. Anil Wipat](http://homepages.cs.ncl.ac.uk/anil.wipat/) (Newcastle University) 
+* [Prof. Anil Wipat](https://www.ncl.ac.uk/computing/people/profile/anilwipat.html#background) (Newcastle University) 
 
 
