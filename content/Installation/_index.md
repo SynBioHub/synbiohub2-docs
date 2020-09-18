@@ -23,7 +23,9 @@ c) Start Docker-desktop.
 
 d) Open your terminal and enter ` cd ` just to make sure that you're in your home directory at that instant.
 
-e) Clone the synbiohub-docker repo using the following command `git clone https://github.com/synbiohub/synbiohub-docker`.
+e) Clone the synbiohub-docker repo using the following command :
+
+ `git clone https://github.com/synbiohub/synbiohub-docker`.
 
 f) Start a synbiohub instance with `docker-compose --file ./synbiohub-docker/docker-compose.yml up` or you may follow the alternate method, i.e using SBOL explorer. For installing SynBioHub through SBOL explorer use the following commands:-
 
