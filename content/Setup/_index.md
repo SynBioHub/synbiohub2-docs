@@ -4,7 +4,7 @@ date: 2020-09-04T20:30:59+05:30
 draft: true
 ---
 
-# Web-Of-Registries in SynBioHub
+### Web-Of-Registries in SynBioHub
 
 SynBioHub also supports the Web of Registries concept i.e, the idea of multiple separate repositories linked together by shared common semantics. In the case of SynBioHub, SBOL is used to support the common exchange of data, thus positioning SynBioHub to support the development of synthetic biology workflows by acting as a source and a storage facility for designs.
 
