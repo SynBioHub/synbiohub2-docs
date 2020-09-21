@@ -63,21 +63,10 @@ The `docker-compose.version.yml` can be added to another configuration, and simp
 This version does not even contain the Virtuoso image, so it should only be used by someone who knows what they are doing. 
 
 ## Plugins
-This is a sortable table with plugin information. Click on the header to sort by that column.
 
-  
+The table has been moved to the plugins section.
+ 
 
-|Name|Type|Port|Language|Test|Description|Multi-Endpoint|Repository|File|
-|--- |--- |--- |--- |--- |--- |--- |--- |--- |
-|DownloadSnapgene|Download|8083|Python|No|||Plugin-Download-Snapgene|docker-compose.pluginDownloadSnapgene.yml|
-|SubmitSnapgene|Submit|8084|Python|No|||Plugin-Submit-Snapgene|docker-compose.pluginSubmitSnapgene.yml|
-|SubmitTest|Submit|8087|Python|Yes|Simply indicates that submit plugins are working and provides a framework to play with for plugin developers|No|Plugin-Submit-Test|docker-compose.pluginSubmitTest.yml|
-|VisualComponentUse|Visual|8080|Python|No|Containing a co-use component sankey diagram, and the most used components bar graph endpoints|Yes|Plugin-Visual-Component-Use|docker-compose.pluginVisualComponentUse.yml|
-|VisualIgem|Visual|3000|TypeScript|No|Containing endpoints for iGEM Main Page, iGEM Design Page, and iGEM Experience Page|Yes|Plugin-Visual-Igem|docker-compose.pluginVisualIgem.yml|
-|VisualSeqviz|Visual|8085|Javascript|No|Shows the plasmid view and sequence view of components|No|sequence-view-plugin|docker-compose.pluginVisualSeqviz.yml|
-|VisualServelet|Visual|8086|Javascript|Yes|Allows testing of file serving and provides a framework to play with for plugin developers|No|Plugin-Visual-Serve-Test-js|docker-compose.pluginVisualServelet.yml|
-|VisualTest|Visual|8081|Python|Yes|Smply indicates that visualisation plugins are working and provides a framework to play with for plugin developers|No|Plugin-Visual-Test|docker-compose.pluginVisualTest.yml|
-|VisualTestJS|Visual|8082|Javascript|Yes|Aimply indicates that submit plugins are working and provides a framework to play with for plugin developers|No|Plugin-Visual-Test-js|docker-compose.pluginVisualTestJS.yml|
 
 ## From Source
 
