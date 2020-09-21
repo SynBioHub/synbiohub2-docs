@@ -16,7 +16,7 @@ pre = "<br />"
 url = "/"
 [[menu.main]]
 name = "About SynBioHub"
-weight = 0
+weight = 100
 identifier = "AboutSynBioHub" # this button will refer to a markdown file named "contact" in the content folder
 pre = "<br />"
 url = "/AboutSynBioHub"
@@ -25,28 +25,28 @@ name = "API Documentation"
 identifier = "APIDocumentation" # this page will refer to a markdown file named "blog" in the content folder
 pre = "<br />"
 url = "/APIDocumentation"
-weight = 40
+weight = 70
 [[menu.main]]
-name = "Further References"
-weight = 0
-identifier = "FurtherReferences" # this button will refer to a markdown file named "contact" in the content folder
+name = "References"
+weight = 40
+identifier = "References" # this button will refer to a markdown file named "contact" in the content folder
 pre = "<br />"
-url = "/FurtherReferences"
+url = "/References"
 [[menu.main]]
 name = "Installation"
-weight = 0
+weight = 90
 identifier = "Installation" # this button will refer to a markdown file named "contact" in the content folder
 pre = "<br />"
 url = "/Installation"
 [[menu.main]]
 name = "Plugins"
-weight = 0
+weight = 60
 identifier = "Plugins" # this button will refer to a markdown file named "contact" in the content folder
 pre = "<br />"
 url = "/Plugins"
 [[menu.main]]
 name = "Troubleshooting"
-weight = 0
+weight = 50
 identifier = "T&R" # this button will refer to a markdown file named "contact" in the content folder
 pre = "<br />"
 url = "/T&R"
@@ -56,6 +56,12 @@ weight = 100
 identifier = "UserDocumentation" # this button will refer to a markdown file named "contact" in the content folder
 pre = "<br />"
 url = "/UserDocumentation"
+[[menu.main]]
+name = "Setup"
+weight = 80
+identifier = "Setup" # this button will refer to a markdown file named "contact" in the content folder
+pre = "<br />"
+url = "/Setup"
 
 
 [sitemap]
