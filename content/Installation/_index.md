@@ -39,7 +39,7 @@ g) In your browser search for localhost:7777 and it'll take you to a setup page 
 
 ### For Linux-Ubuntu 20.04:
 
-The following instructions are to be followed for installaing SynBioHub locally onto you system:-
+The following instructions are to be followed for installing SynBioHub locally onto you system:-
 
 a) Download git onto your PC and then configure your name and email using the following commands: 
 
