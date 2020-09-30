@@ -2,7 +2,7 @@
 title: "Setup"
 date: 2020-09-04T20:30:59+05:30
 draft: true
-weight: 70
+weight: 15
 ---
 
 ### Web-Of-Registries in SynBioHub
@@ -19,4 +19,30 @@ When a new SynBioHub instance wishes to join the Web of Registries, it sends its
 
 SynBioHub demonstrates the application of this harmonized data exchange through existing repositories, hence envisaging a wider, integrated ecosystem of biological part information shared across a plethora of different repositories with different capabilities.
 
+
+### Setting up Sendgrid 
+
+The following steps need to be executed, in order to setup Sendgrid:-
+
+1. Visit [this](www.sendgrid.com) website.
+
+2. Select the *Sign up* option, in case you're using it for the first time.
+
+3. Enter you Email Address and password as well as select the captcha for verification. 
+
+4. Fill up all the details about yourself on the "Tell Us About Yourself" page.
+
+5. Then, after filling up all the details correctly it'll re-direct you to your dashboard and send a confirmational Email.
+
+6. Click on the *Settings* options on left hand side of the page.
+
+7. Then select the *Create an API key option".
+
+8. It'll prompt you to give your API key a name. Also, you can customize the API key permissions.
+
+9. After completing these steps, click on Create and View. 
+
+10. The API key is shown only for once due to security reasons, so try to save it at a safe place.
+
+11. Your API key has been created, and hence ready to use!!
 
