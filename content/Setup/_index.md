@@ -22,7 +22,7 @@ SynBioHub demonstrates the application of this harmonized data exchange through 
 
 ### Setting up Sendgrid 
 
-The following steps need to be executed, in order to setup Sendgrid:-
+In order to enable SynBioHub to send account-related emails, you need a SendGrid account and API key. The following steps need to be executed, in order to setup Sendgrid:-
 
 1. Visit [this](www.sendgrid.com) website.
 
