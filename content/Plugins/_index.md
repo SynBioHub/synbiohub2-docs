@@ -170,8 +170,8 @@ Docker Image Name: synbiohub/plugin-visual-component-use:snapshot (Note that the
 
 ## Basic App
 In this section *what the server receives* and the *format of its response* is defined. Below is a section about writing a server/plugin by simply copying and editing the example type.
-###Visual
-** Content Yet to be added**
+
+### Visual
 
 ### Status
 
