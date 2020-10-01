@@ -5,4 +5,4 @@ draft: true
 weight: 30
 ---
 
-The API documentation has already been published and can be found [here](https://synbiohub.github.io/api-docs/#user-endpoints)
+The API documentation has been published and can be found [here](https://synbiohub.github.io/api-docs/#user-endpoints). The API documentation basically contains information about various endpoints.
