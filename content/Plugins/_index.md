@@ -86,18 +86,17 @@ Plugins can also be run without using docker. How this is done depends on the pr
 2. Clone the repository for the plugin (For example:-  `git clone https://github.com/SynBioHub/Plugin-Submit-Excel-Library.git`)
 3. Change directory into the repository folder using the command ` cd <repo-name>`(For repo-name enter your local repository name).
 Now, open the anaconda prompt and carry out the rest of the commands in the anaconda prompt.
-4. Enter the following commmand: conda install --file requirements.txt
+4. Enter the following commmand: `conda install --file requirements.txt`.
 5. Then, enter the following command: `set FLASK_APP=app.py`
 6. **OPTIONAL command**:  `set FLASK_ENV=development`
-7. flask run --port 5000 (the -- port 5000 is optional instead of 5000 there any port numbercan be entered)
-8. The server should then be accessible at http://localhost:5000/status. Hence, open your browser an the enter`http://localhost:5000/status'.
+7. Finally, enter `flask run --port 5000` (the -- port 5000 is optional instead of 5000 there any port numbercan be entered)
+8. The server should then be accessible at http://localhost:5000/status. Hence, open your browser an the enter`http://localhost:5000/status`.
 
 ##### 2.2.3.1.2 For Python
 
 ###### 2.2.3.1.2.1 Mac OS/Linux
 1. Open the terminal.
-2. Clone the repository using the command `git clone <Repo-Link>`(For Example:`git clone https://github.com/SynBioHub/Plugin-Submit-Excel
-Library.git`)
+2. Clone the repository using the command `git clone <Repo-Link>`(For Example:`git clone https://github.com/SynBioHub/Plugin-Submit-ExcelLibrary.git`)
 3. Change directory into the repository folder using the command ` cd <repo-name>`(For repo-name enter your local repository name).
 4. Enter the following command: `pip install -r requirements.txt`
 5. Then, enter the following command: `export FLASK_APP=app`
@@ -109,7 +108,7 @@ Library.git`)
 2. Clone the repository using `git clone <Repo-link>` (For Example `git clone https://github.com/SynBioHub/Plugin-Submit-Excel-Library.git`)
 3. Change directory into the repository folder using the command ` cd <repo-name>`(For repo-name enter your local repository name).
 4. Enter the following command: `pip install -r requirements.txt`
-5. In the **Powershell**, enter the follwing command: $env:FLASK_APP = "hello", Command: set FLASK_APP=hello
+5. In the **Powershell**, enter the follwing command: `$env:FLASK_APP = "hello", Command: set FLASK_APP=hello`
 6. Finally to run flask, enter the following commmand: `flask run`
 7. The server should then be accessible at http://localhost:5000/status. Hence open your browser and enter `http://localhost:5000/status`.
 
@@ -124,7 +123,7 @@ The following steps should be followed:-
 2. Clone the repository using `git clone <Repo-Link>`(For example `git clone https://github.com/SynBioHub/ Plugin-Submit-Test-js.git`)
 3. Change directory into the repository folder using the command ` cd <repo-name>`(For repo-name enter your local repository name).
 4. Enter `npm install` (This installs all the requirements that requires npm to be installed onto your system: https://nodejs.org/en/download/).
-5. Enter node app.js
+5. Enter `node app.js`
 The server should then be accessible at http://localhost:5000/status. Hence open your browser and enter `http://localhost:5000/status`.
 
 ## 3. Writing Plugins
@@ -134,7 +133,7 @@ The following section explains everything you need to know about the syntax of w
 ### 3.1 Naming convention
 For github repositories, the naming convention for plugin repositories is: 
 
-Plugin-"Type"-"Description"-"Test"-"language"
+Plugin-<<Type>>-<<Description>>-<<Test>>-<<language>>
 
 **Note**: The words are separated by a dash (-) and every word but the program language is Proper case (Initial letter is capitalized and the further letters aren't).
 
@@ -153,13 +152,18 @@ Examples:
 * Plugin-Download-Test-js
 * Plugin-Visual-Component-Use
 The same name is then used for both the docker-compose and the docker image name:
-Example.:
+
+Example:
 Repository: Plugin-Visual-Component-Use
-Docker Compose File: docker-compose.pluginVisualComponentUse.yml (Note that the plugin is lowercase and then the rest of the words are capitalized but there aren't any spaces or dashes).
+
+Docker Compose File: docker-compose.pluginVisualComponentUse.yml 
+
+
+(Note that the plugin is lowercase and then the rest of the words are capitalized but there aren't any spaces or dashes).
 
 Docker Image Name: synbiohub/plugin-visual-component-use:snapshot (Note that there are no capitals in the docker image name).
 
-## 3.2 Basic App
+## 3.2 Basic structure
 In this section *what the server receives* and the *format of its response* is defined. Below is a section about writing a server/plugin by simply copying and editing the example type.
 
 ### 3.2.1 Visual
@@ -474,8 +478,8 @@ A full example of a download plugin can be found [here](https://github.com/SynBi
 7. Create a new requirements.txt or packages.json to match what you now have (packages.json should happen mostly automatically). For requirements.txt there are several methods:
 
 
-# 4. With Virtual Environment
-## 4.1 For Anaconda:
+# 4. Using a Virtual Environment
+### 4.1 For Anaconda:
 
 The following steps should be followed:-
 1. pip3 install virtualenv
@@ -483,30 +487,30 @@ The following steps should be followed:-
 3. conda list -e > requirements.txt
 
 
-# 5. Without Virtual Environment
+## 5. Without a Virtual Environment
 Try the **pipreqs** package (used from anaconda prompt if using anaconda)
 
-#6. Stackoverflow link
+ **Stackoverflow link**
 [This](https://stackoverflow.com/questions/31684375/automatically-create-requirements-txt) provides further suggestions and ideas.
 
-## 6.1 Best practices
+## 6. Best practices
 1. Always write files to temporary files or directories (prevents overwriting if you have multiple calls to the same plugin concurrently)
 2. Never use “file” as a variable name in python (it causes deeper issues)
 3. Make code modular and comment well
 4. Adhere to standards and best practices of the language you write in
-## 6.2 Advanced possibilities
+## 7. Advanced possibilities
 1. It is possible to use the url to pass parameters to the plugin see (https://github.com/SynBioHub/Plugin-Visual-Component-Use)
 2. It is possible to have files served from the plugin (https://github.com/SynBioHub/Plugin-Visual-Serve-Test and https://github.com/SynBioHub/Plugin-Visual-Serve-Test-js)
-## 6.3 Dockerising
-### 6.3.1 Simple overview of docker
+## 8. Dockerising
+### 8.1 Simple overview of docker
 * Source code is used in docker file which is used to build an image which can be pushed to docker hub (LIKE GITHUB). Image (can have been pulled from dockerhub) can be run on its own or with others like autoheal in a docker compose file.
 * When an image/docker compose file is run it creates a container.
 * Caddy (or other webserver like engineX, httpd, apache) listens to https port (443) and converts https to http and routes it to port on which the container is listening which it container thinks is port 80 (http port - generally the default over https, you could map out from a different port depending on what the webserver inside the container thinks it is listening too e.g. synbiohub thinks it listens to port 7777). Container maps its port to host and caddy forwards from 443 to the host port that the container is listening on.
-### 6.3.2 Idea of architecture:
+### 8.2  Idea of architecture:
 * caddy is a webserver which reroutes requests to containers containers may or may not contain images which are also webservers (dockercompse files describe a set of containers which also may or may not contain webservers)
 * High ports are over 1024 and 'non-reserved' ports. ssh is to 22 (generally).
 * Key points understand that docker has: images, containers, volumes, and networks (especially important to understand what sticks around and what doesn’t when you try and refresh the containers a very useful command is prune: https://takacsmark.com/docker-prune/
-### 6.3.3 Steps for dockerising a plugin
+### 8.3 Steps for dockerising a plugin
 * After having installed docker desktop and making sure it is up and running using an administrator account. Note that the docker website has a tutorial with mor information.
 
 **How to dockerise plugin code** (things in <> signs should be replaced with your specific variable names)
@@ -519,7 +523,7 @@ Try the **pipreqs** package (used from anaconda prompt if using anaconda)
 7. Build your docker image (docker build --tag synbiohub/<descriptive name>:snapshot .) Note the full stop at the end of the command!
 8. Run the docker image (docker run --publish <port number>:5000 --detach --name <short name> synbiohub/<descriptive name>:snapshot)
 9. check the run was sucessful (docker ps), if not shown there check (docker ps -all) and then check the logs (docker logs <short name>)
-10. based on error logs fix the errors, then remove the current container (docker rm <short name>) and repeat steps 7 and 8
+10. Based on error logs fix the errors, then remove the current container (docker rm <short name>) and repeat steps 7 and 8
 11. If docker ps shows your plugin running then navigate to localhost:/status. Can also test the run end point using a program like postman to submit a query and look at the response.
 12. If all is well stop the docker container ( docker stop <short name> ) and remove it ( docker rm <short name> )
 13. Upload the newly added files (Dockerfile and .dockerignore) to the github repo
@@ -527,7 +531,7 @@ Try the **pipreqs** package (used from anaconda prompt if using anaconda)
 15. under setting>secrets add secrets containing the username and password
 16. update the readme and wait for the new image to push to docker hub (you will see a green check next to commit when this has happened)
 17. check the uploaded image works by downloading and running it ( docker run --publish 8080:5000 --detach --name <short name> synbiohub/<descriptive name>:snapshot ) and repeating steps 9-12.
-### 6.4.4 Useful commands for docker debug
+## 8.4 Useful commands for docker debug
 * docker system prune -a --volumes
 * docker system prune -a
 * docker images purge
@@ -538,7 +542,7 @@ Try the **pipreqs** package (used from anaconda prompt if using anaconda)
     ** for synbiohub testing look at plugin.js or view.js in home directory
 * docker volume ls
 * docker volume prune
-### 7. Genetic Logic Lab Synbiohub plugins
+### 9. Genetic Logic Lab Synbiohub plugins
  To get access to genetic logic lab SynBioHub plugins, follow the following steps:
 1. ssh editors@sbolstandard.org
 2. Password can be found in lab documentation
@@ -584,6 +588,6 @@ If you want To **Update an Existing Plugin**, the following steps need to be fol
 7. sudo systemctl restart synbiohub
 8. can check the plugin is okay using: curl localhost:<port>/status
 
-## 8. Plugins-Table
+### 10. Plugins-Table
 
 The sortable table has already been implemented and can be found [here](https://synbiohub.github.io/synbiohub-docker/#plugins).
