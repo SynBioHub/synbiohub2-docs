@@ -37,7 +37,10 @@ To run the base configuration:
 
 3. Navigate to the directory where you want to install SynBioHub.
 
-	
+   For Mac/Linux/Windows OS use the following command to navigate: 
+   
+   	`cd directory_name`
+   
 
 4. Subsequently, enter the following command into your terminal:
 
@@ -61,24 +64,28 @@ To run the base configuration:
 
    * For Windows OS:
    
+   Enter the following command into the command prompt:-
+   
+   	`docker-compose --file ./synbiohub-docker/docker-compose.yml --file ./synbiohub-docker/docker-compose.explorer.yml up`
+   
 6. In your browser search for localhost:7777 and it'll take you to a setup page when you'll run it for the very first time.
 
-   In case of Linux OS, if you face any permission errors, then simple insert **sudo** before every statement.
+   [In case of Linux OS, if you face any permission errors, then simple insert **sudo** before every statement]
   	
 
 ### With SBOLExplorer
 To add [SBOLExplorer](https://github.com/michael13162/SBOLExplorer), add the `docker-compose.explorer.yml` to the main docker-compose, i.e. for step 3 run the following command:
  
-`docker-compose --f ./synbiohub-docker/docker-compose.yml -f ./synbiohub-docker/docker-compose.explorer.yml up`
+	`docker-compose --f ./synbiohub-docker/docker-compose.yml -f ./synbiohub-docker/docker-compose.explorer.yml up`
 
 ### With Plugins
 To add plugins to the configuration, change the command mentioned in step 3 to: 
 
-`docker-compose --f ./synbiohub-docker/docker-compose.yml -f ./synbiohub-docker/docker-compose.explorer.yml -f ./synbiohub-docker/docker-compose.<Plugin 1 File Name>.yml -f ./synbiohub-docker/docker-compose.<Plugin 2 File Name>.yml up`
+	`docker-compose --f ./synbiohub-docker/docker-compose.yml -f ./synbiohub-docker/docker-compose.explorer.yml -f ./synbiohub-docker/docker-compose.<Plugin 1 File Name>.yml -f ./synbiohub-docker/docker-compose.<Plugin 2 File Name>.yml up`
 
 Note that all plugins are added before the `up` and each is preceeded by `-f `. For example, to run the configuration with the VisualIgem plugins and the VisualSeqviz plugin run:
 
-`docker-compose --f ./synbiohub-docker/docker-compose.yml -f ./synbiohub-docker/docker-compose.explorer.yml -f ./synbiohub-docker/docker-compose.pluginVisualIgem.yml -f ./synbiohub-docker/docker-compose.pluginVisualSeqviz.yml up`
+	`docker-compose --f ./synbiohub-docker/docker-compose.yml -f ./synbiohub-docker/docker-compose.explorer.yml -f ./synbiohub-docker/docker-compose.pluginVisualIgem.yml -f ./synbiohub-docker/docker-compose.pluginVisualSeqviz.yml up`
 
 
 ## Plugins
