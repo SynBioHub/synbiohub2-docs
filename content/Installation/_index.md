@@ -37,11 +37,13 @@ To run the base configuration:
 
 3. Navigate to the directory where you want to install SynBioHub.
 
-3. Subsequently, enter the following command into your terminal:
+	
+
+4. Subsequently, enter the following command into your terminal:
 
 	`git clone https://github.com/synbiohub/synbiohub-docker`
 
-4. Then, enter the follwoing commands to start the local instance of SynBioHub:
+5. Then, enter the follwoing commands to start the local instance of SynBioHub:
 
   * For Mac/Linux/Unix: There are 2 ways of running the local instance of SynBioHub for these Operating Systems. They're stated as follows:
 
@@ -59,7 +61,7 @@ To run the base configuration:
 
    * For Windows OS:
    
-5. In your browser search for localhost:7777 and it'll take you to a setup page when you'll run it for the very first time.
+6. In your browser search for localhost:7777 and it'll take you to a setup page when you'll run it for the very first time.
 
    In case of Linux OS, if you face any permission errors, then simple insert **sudo** before every statement.
   	
