@@ -66,7 +66,7 @@ To run the base configuration:
    
    Enter the following command into the command prompt:-
    
-   	`docker-compose --file ./synbiohub-docker/docker-compose.yml --file ./synbiohub-docker/docker-compose.explorer.yml up`
+ `docker-compose --file ./synbiohub-docker/docker-compose.yml --file ./synbiohub-docker/docker-compose.explorer.yml up`
    
 6. In your browser search for localhost:7777 and it'll take you to a setup page when you'll run it for the very first time.
 

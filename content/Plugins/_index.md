@@ -16,6 +16,8 @@ Currently there are three types of plugins available:
 
 3. Download: Download plugins are available on all ‘endpoint’ pages, for example pages for components, sequences, activities, etc. Download plugins return some kind of file which is downloaded by the user.
 
+![Overview of Plugins](/Image.png)
+
 ## 2. How do they work?
 
 ### 2.1 Overview
