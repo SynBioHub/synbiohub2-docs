@@ -51,11 +51,11 @@ To run the base configuration:
   * For Mac/Linux/Unix: There are 2 ways of running the local instance of SynBioHub for these Operating Systems. They're stated as follows:
 
       
-     1st Method:-
+     1st Method:
         
 	`docker-compose --f ./synbiohub-docker/docker-compose.yml up`
 	
-     2nd Method:-
+     2nd Method:
           
        `sysctl -w vm.max_map_count=262144`
 
@@ -64,7 +64,7 @@ To run the base configuration:
 
    * For Windows OS:
    
-   Enter the following command into the command prompt:-
+   Enter the following command into the command prompt:
    
  `docker-compose --file ./synbiohub-docker/docker-compose.yml --file ./synbiohub-docker/docker-compose.explorer.yml up`
    
