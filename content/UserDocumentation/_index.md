@@ -35,5 +35,35 @@ If you ever need to update your Account, the following steps need to be followed
 
 ## 2. Searching for Information
 
+### 2.1 Searching with the help of Keywords
+
+To Search amongst various Designs and Collections, follow these steps:
+
+1. Go to SynBioHub's [Home Page](https://synbiohub.org/).
+
+2. In the Search box, enter the Keywords for the design you want to search for and click on the search button.
+
+3. Subsequently, a list of results matching the keywords that you've entered shall appear on your screen.
+
+4. Select the desired Collection/Design from the list.
+
+### 2.2 Sequence Search
+
+To Search using a Sequence, follow these steps:
+1. Click on the *Sequence Search* option that is available right below the Search Box, after you search for a keyword.
+
+2. Enter the Sequence in the box given at the top or upload a *FASTA/FASTQ* file, by clicking the choose file option just below the box.
+
+3. Then, choose the type of *Search method* from **Global** or **Exact**.
+
+4. Subsequently, customise the *Number of Results*, *Minimum length of the Sequence* & the *Maximum length of the Sequence*.
+
+5. Then, set the value for *Number of failed hits* before stopping. To understand its significance, hover the pointer over the info button to its immidiate right.
+
+6. Fill up the *percentage match*, by entering a value between 0 & 1.
+
+7. Finally, select the *Pairwise Identity definition*. To understand its significance, hover the pointer over the info button to its immidiate right.
+
+### 2.3 Advanced Search
 
 
