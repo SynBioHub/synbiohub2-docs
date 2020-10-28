@@ -50,7 +50,7 @@ To Search amongst various Designs and Collections, follow these steps:
 ### 2.2 Sequence Search
 
 To Search using a Sequence, follow these steps:
-1. Click on the *Sequence Search* option that is available right below the Search Box, after you search for a keyword.
+1. Click on the *Sequence Search* option, available right below the Search Box, which appears after you search for a keyword.
 
 2. Enter the Sequence in the box given at the top or upload a *FASTA/FASTQ* file, by clicking the choose file option just below the box.
 
@@ -65,5 +65,51 @@ To Search using a Sequence, follow these steps:
 7. Finally, select the *Pairwise Identity definition*. To understand its significance, hover the pointer over the info button to its immidiate right.
 
 ### 2.3 Advanced Search
+
+To perform an Advanced Search, follow these steps:
+1. Click on *Advanced Search* option, available right below the Search Box, which appears after you search for a keyword.
+
+2. Now, select the *Object Type* & *Creator* for the design you want to search for.
+
+3. Then, fill up the *Created After* & the *Created Before* options.
+
+4. Also, fill up the *Modified After* & the *Modified Before* options.
+
+5. Fill up an ID/Name/Description for the design you want to search for.
+
+6. Select it's *type* as well as the *role* from the dropdown.
+
+7. Also, try to select some *collections*, that you think that design might be a part of.
+
+8. You may apply customized filters for the design you want to search for. For that purpose, a few blank filtering columns have been provided.
+
+
+## 3. Viewing & Downloading the Information
+
+### 3.1 Viewing the Information
+
+1. Go to [SynBioHub's home page](https://synbiohub.org/).
+
+2. Search for the design or click on *browse the collections*.
+
+3. In case of collections, you can search and view the various designs under each respective collection. Also, several other details such as references, attachements, & various other properties can be viewed.
+
+4. In the case of designs, select the design for which you want to view the Information. Similar to collections, you can view the various details such as references, functional components, interactions, the collection to which this design belongs to, attachements and various other properties. 
+
+### 3.2 Downloading the Information
+
+1. Go to [SynBioHub's home page](https://synbiohub.org/).
+
+2. Scroll down and Click on *browse the collections* option.
+
+3. On this page you'll see several public as well as private(optional) collections.
+
+4. Select the collection which you want to view/download. 
+
+5. On the left hand side of the page you'll see the **Download** option.
+
+6. Based on your requirement, you can download the whole collection or just a specific design.
+
+7. To download a specific design, click on the design which you want to download and follow the steps 3 & 4.
 
 
