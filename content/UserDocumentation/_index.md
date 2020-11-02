@@ -58,7 +58,7 @@ To Search using a Sequence, follow these steps:
 
 4. Subsequently, customise the *Number of Results*, *Minimum length of the Sequence* & the *Maximum length of the Sequence*.
 
-5. Then, set the value for *Number of failed hits* before stopping. To understand its significance, hover the pointer over the info button to its immidiate right.
+5. Then, set the value for *Number of failed hits* before stopping. To understand its significance, hover the pointer over the info button to its immediate right.
 
 6. Fill up the *percentage match*, by entering a value between 0 & 1.
 
@@ -92,9 +92,9 @@ To perform an Advanced Search, follow these steps:
 
 2. Search for the design or click on *browse the collections*.
 
-3. In case of collections, you can search and view the various designs under each respective collection. Also, several other details such as references, attachements, & various other properties can be viewed.
+3. In case of collections, you can search and view the various designs under each respective collection. Also, several other details such as references, attachments, & various other properties can be viewed.
 
-4. In the case of designs, select the design for which you want to view the Information. Similar to collections, you can view the various details such as references, functional components, interactions, the collection to which this design belongs to, attachements and various other properties. 
+4. In the case of designs, select the design for which you want to view the Information. Similar to collections, you can view the various details such as references, functional components, interactions, the collection to which this design belongs to, attachments and various other properties. 
 
 ### 3.2 Downloading the Information
 
