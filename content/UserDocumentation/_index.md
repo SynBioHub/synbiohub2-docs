@@ -162,35 +162,21 @@ For submitting your designs to SynBioHub, following steps need to be followed:
 
 1. Go to SynBioHub's [home page](https://synbiohub.org/).
 
-2. Click on **Submit** and it'll direct you to the Submit page.
+2. Click on **Submit** and it'll direct you to the Submit page. 
 
-3. You van either submit your designs to an existing collection or create a new one.
+3. You can either submit your designs to an existing collection or create a new one. On the submit page, select the *Create a new collection* option.
 
-#### 4.1.1 Creating a new Collection
+4. Then, give your collection a name and a description.
 
-1. On the submit page, select the *Create a new collection* option.
+5. Subsequently, provide a collection ID, version as well as the Citations(if any).
 
-2. Then, give your collection a name and a description.
+6. Then upload your file in the form of SBOL/GENBANK/GFF3/FASTA/ZIP file and select the handler.
 
-3. Subsequently, provide a collection ID, version as well as the Citations(if any).
+7. Finally, you may choose to Overwrite the existing objects by checking the box given in the end.
 
-4. Then upload your file in the form of SBOL/GENBANK/GFF3/FASTA/ZIP file and select the handler.
+8. Click on Submit.
 
-5. Finally, you may choose to Overwrite the existing objects by checking the box given in the end.
 
-6. Click on Submit.
-
-#### 4.1.2 Submitting to an existing collection
-
-1. On the submit page, click on *Submit to an existing collection* option.
-
-2. Then, select to the collection you want to submit your design to.
-
-3. Select the design that you want to submit.
-
-4. You may choose to overwrite the existing objects in a collection.
-
-5. Then, click on submit.
 
 ### 4.2 Managing
 
@@ -206,30 +192,39 @@ For submitting your designs to SynBioHub, following steps need to be followed:
 
 ### 4.3 Updating
 
+1. On the submit page, click on *Submit to an existing collection* option.
 
-#### 4.3.1 Updating Collections
+2. Then, select to the collection you want to submit your design to.
 
-1. To update your collections, click on the collection that you want to update.
+3. Select the design that you want to submit.
 
-2. You can delete a specific design, by selecting the delete, just besides the name of that design.
+4. You may choose to *overwrite the existing objects* in a collection.
 
-3. If you want to edit, the collection's name or its description, you can do so by clicking on the edit sign just beside them.
+5. Then, click on submit.
 
-4. You can also add description, notes, sources or references to the collection by clicking on the the *Details* sub-section just by scrolling down.
 
-5. Also, you may upload attachments to the collection by clicking on the *Attachments* sub-section, then uploading the files that you want to attach and then selecting the *Attach* option.
 
-6. You may add an owner to your collection, who can see as well edit your collection.
-
-#### 4.3.2 Updating Designs
-
-1. Navigate to the page of that collection, whose design you want to update.
-
-2. Then, select the design that you want to update.
-
-3. Follow the steps 3-6 as given in section 4.3.1 to update your design.
 
 ## 5. Editing you Submissions
+
+To edit your submissions, following steps need to be followed:
+
+1. Go to the [Submissions](http://synbiohub.org/manage) page.
+
+2. Select the collection that you want to edit.
+
+3. You can edit the Name & description of the collection as well as add a source.
+
+4. If you want to add a detailed description, source, reference or notes for the collection, just Scroll down to find those options under the **Details** section.
+
+5. Subsequently, scroll down to find the Members of the collection. You may click on the *delete* sign just next to the description of the design, if you want to delete it or click on the member's name if you want to view its details.
+
+6. Steps 3 & 4 can be followed, if you want to edit any of the member's details.
+
+
+## 6. Data Sharing Mechanisms
+
+
 
 
 
