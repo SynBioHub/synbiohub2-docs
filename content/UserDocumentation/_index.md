@@ -232,15 +232,15 @@ The list consists of the name, identifier, type as well as description of respec
 
 2. Then, you can search for a specific collection or select **browse the collections** option. It'll direct you to a set of collections based on what you've searched for.
 
-3. Select the collection which you want to view. Then it'll direct you to the collection's home page. You can select the engineered region, which you want to view. 
+3. Select the collection which you want to view. Then it'll direct you to the collection's home page. You can select the resource, which you want to view. 
 
-4. On the engineered region's page, you'll be able to view to view the following parameters in this order:
+4. On the resource's page, you'll be able to view to view the following parameters in this order:
 
-* Name: Represents the name of that particular engineered region.
+* Name: Represents the name of that particular resource.
 
-* ID and version: The next line represents the ID and the version of that engineered region. Every engineered region has a specific ID associated with it and a version which represents the number of time; it has been modified.
+* ID and version: The next line represents the ID and the version of that resource. Every engineered region has a specific ID associated with it and a version which represents the number of time; it has been modified.
 
-* Generated from: Represents the source from where that engineered design had been generated from.
+* Generated from: Represents the source from where that resource had been generated from.
 
 * Then, we've got five clickable options, that are:
 1. **Download**
@@ -253,7 +253,7 @@ The list consists of the name, identifier, type as well as description of respec
 
 5. **Add to a collection** 
 
- The download option consists of the ways in which you can download the collection. They're as follows:
+ The download option consists of the ways in which you can download the resource. They're as follows:
 
  |  Type             | Description  |
     |-------------------|--------------|
@@ -276,16 +276,16 @@ Then is the **search** option. There are three ways you can use the search optio
 
 3. Find Similar: This returns other components that have similar sequences.
 
-The third option is that of **sharing** your engineered region. There are 2 ways by which you can share your engineered region. They're as follows:
+The third option is that of **sharing** your resource. There are 2 ways by which you can share your resource. They're as follows:
 
-1.  Send to Benchling: For using Benchling to share your engineered region, you need to configure a Benchling remote. The Benchling Life Sciences R&D Cloud is an informatics platform to accelerate, measure, and forecast R&D from discovery through bioprocessing. To know more about Benchling and how you can configure a benching remote, click [here](https://www.benchling.com/).
+1.  Send to Benchling: For using Benchling to share your resource, you need to configure a Benchling remote. The Benchling Life Sciences R&D Cloud is an informatics platform to accelerate, measure, and forecast R&D from discovery through bioprocessing. To know more about Benchling and how you can configure a benching remote, click [here](https://www.benchling.com/).
 
 2. Send to ICE: ICE is a registry platform that provides robust data storage for DNA components, integrated tools for part characterization, as well as mechanisms for secure access and information sharing with other users and software tools. 
 ICE is built upon the idea of a Web of Registries, and thus provides strong support for distributed, interconnected use. It includes several useful graphical applications for sequence annotation, manipulation and analysis. To know more about ICE, click [here](https://public-registry.jbei.org/login).
 
-Fourth is the **back** option. This option navigates back to the main page of the collection, which this engineered region is a part of.
+Fourth is the **back** option. This option navigates back to the main page of the collection, which that particular resource is a part of.
 
-Finally, we have the **Add to collection** option. This option adds your engineered region to a specific collection. Clicking on this option, would take you to a page that shall display the collections, that you would've created. Select the collection, to which you want to add this engineered region to and then click on add to collection. This shall add your engineered region to the selected collection.
+Finally, we have the **Add to collection** option. This option adds your resource to a specific collection. Clicking on this option, would take you to a page that shall display the collections, that you would've created. Select the collection, to which you want to add this engineered region to and then click on add to collection. This shall add your resource to the selected collection.
 
 * Next we have is the VisBOL Navigator, with zooming capabilities. This, graphically represents the structure of the engineered region. By hovering your pointer over this structure, you can view the following attributes of that particular engineered region: type of resource, identifier, name and role of the engineered region. 
 
@@ -309,38 +309,62 @@ Finally, we have the **Add to collection** option. This option adds your enginee
 
 4. SynBioHub#TopLevel
 
-* Subsequently, we have the section titled as, **Member of these collections**. This section contains the list of collection's to which that particular engineered design belongs to.
+* Subsequently, we have the section titled as, **Member of these collections**. This section contains the list of collection's to which that particular resource belongs to.
 
-* Then, we have the **attachments** page. In this section, you can view the various attachments, of an engineered region.
+* Then, we have the **attachments** page. In this section, you can view the various attachments, of a resource.
 
 * The next 3 sections are igem main page, Igem design page and the experience page.
 
-* Then is the section that contains, **Sequence Visualisation** of the engineered region.
+* Then is the section that contains, **Sequence Visualisation** of that particular resource.
 
 * Finally, we have the component Sankey and component bar.   
 
 
-
-
-
-
-
-
 ### 3.2 Downloading the Information
 
-1. Go to [SynBioHub's home page](https://synbiohub.org/).
+#### 3.2.1 Downloading a collection
 
-2. Scroll down and Click on *browse the collections* option.
+1. Navigate to SynBioHub's home page.
 
-3. On this page you'll see several public as well as private(optional) collections.
+2. Then, you can search for a specific collection or select **browse the collections** option. It'll direct you to a set of collections based on what you've searched for.
 
-4. Select the collection which you want to view/download. 
+3. Select the collection which you want to download. Then it'll direct you to the collection's home page. 
 
-5. On the left hand side of the page you'll see the **Download** option.
+4. On the left there would be an option to download the collection, in drop down format. Following are the types in which you can download the collection:
 
-6. Based on your requirement, you can download the whole collection or just a specific design.
+|  Type             | Description  |
+    |-------------------|--------------|
+    |  SBOL             | The Synthetic Biology Open Language (SBOL) has been developed as a standard to support the         specification and exchange of biological design information in synthetic biology. To know more about SBOl, visit [this page](https://sbolstandard.org/datamodel-about/)           |
+    |  Combine Archive  | A COMBINE archive is a single file containing the various documents (and in the future, references to documents), necessary for the description of a model and all associated data and procedures. This includes for instance, but not limited to, simulation experiment descriptions, all models needed to run the simulations and associated data files. The archive is encoded using the Open Modeling EXchange format (OMEX). To know more about Combine archive, visit [this page](http://co.mbine.org/documents/archive).            |
+    |  Annotated Genbank| GenBank format (GenBank Flat File Format) consists of an annotation section and a sequence section. The start of the annotation section is marked by a line beginning with the word "LOCUS". The start of sequence section is marked by a line beginning with the word "ORIGIN" and the end of the section is marked by a line with only "//" To know more about Annotated genbank format, visit [this page](http://quma.cdb.riken.jp/help/gbHelp.html), |                   
+    |  Annotated Plasmid Map        |  Plasmid maps are graphical representation of plasmids, that show the locations of major identifiable landmarks on DNA like restriction enzyme sites, gene of interest, plasmid name and length etc. To know more about plasmid map, visit [this page](https://en.wikipedia.org/wiki/Plasmid)              |
+    | Plasmid map | Plasmid maps are graphical representation of plasmids, that show the locations of major identifiable landmarks on DNA like restriction enzyme sites, gene of interest, plasmid name and length etc. To know more about plasmid map, visit [this page](https://www.snapgene.com/resources/plasmid-files/). |
+    | Annotated zip | ZIP is an archive file format that supports lossless data compression. A ZIP file may contain one or more files or directories that may have been compressed. To know more about zip, visit [this page](https://en.wikipedia.org/wiki/Zip_(file_format))|
+----------------------------------------------------------------------------------------
 
-7. To download a design, hover over the download option and a dropdown containing various options for downloading the design will be there. Select your preferred option and the download will begin automatically.
+#### 3.2.2 Downloading a Module/ Engineered Region/ Promoter/ Activator
+
+1. Navigate to SynBioHub's home page.
+
+2. Then, you can search for a specific collection or select **browse the collections** option. It'll direct you to a set of collections based on what you've searched for.
+
+3. Select the collection which you want to download. Then it'll direct you to the collection's home page. From the collection's home page select resource which you want to download and click on that. This will direct you to the resource's home page.
+
+4. Then, on the left there would be an option to download that resource, in drop down format. Following are the types in which you can download the collection:
+
+ |  Type             | Description  |
+    |-------------------|--------------|
+    |  SBOL             | The Synthetic Biology Open Language (SBOL) has been developed as a standard to support the         specification and exchange of biological design information in synthetic biology. To know more about SBOl, visit [this page](https://sbolstandard.org/datamodel-about/)           |
+    |  Combine Archive  | A COMBINE archive is a single file containing the various documents (and in the future, references to documents), necessary for the description of a model and all associated data and procedures. This includes for instance, but not limited to, simulation experiment descriptions, all models needed to run the simulations and associated data files. The archive is encoded using the Open Modeling EXchange format (OMEX). To know more about Combine archive, visit [this page](http://co.mbine.org/documents/archive).            |
+    |  Annotated Genbank| GenBank format (GenBank Flat File Format) consists of an annotation section and a sequence section. The start of the annotation section is marked by a line beginning with the word "LOCUS". The start of sequence section is marked by a line beginning with the word "ORIGIN" and the end of the section is marked by a line with only "//" To know more about Annotated genbank format, visit [this page](http://quma.cdb.riken.jp/help/gbHelp.html), |                   
+    |  Annotated Plasmid Map        |  Plasmid maps are graphical representation of plasmids, that show the locations of major identifiable landmarks on DNA like restriction enzyme sites, gene of interest, plasmid name and length etc. To know more about plasmid map, visit [this page](https://en.wikipedia.org/wiki/Plasmid)              |
+    | Plasmid map | Plasmid maps are graphical representation of plasmids, that show the locations of major identifiable landmarks on DNA like restriction enzyme sites, gene of interest, plasmid name and length etc. To know more about plasmid map, visit [this page](https://www.snapgene.com/resources/plasmid-files/). |
+    | Annotated zip | ZIP is an archive file format that supports lossless data compression. A ZIP file may contain one or more files or directories that may have been compressed. To know more about zip, visit [this page](https://en.wikipedia.org/wiki/Zip_(file_format))|
+    | GFF3       | The GFF (General Feature Format) format consists of one line per feature, each containing 9 columns of data, plus optional track definition lines. To know more about GFF3, click [here](http://asia.ensembl.org/info/website/upload/gff3.html).|
+    | FASTA       | In bioinformatics and biochemistry, the FASTA format is a text-based format for representing either nucleotide sequences or amino acid (protein) sequences, in which nucleotides or amino acids are represented using single-letter codes. The format also allows for sequence names and comments to precede the sequences. The format originates from the FASTA software package, but has now become a near universal standard in the field of bioinformatics. To know more about FATSA file format, click [here](https://en.wikipedia.org/wiki/FASTA_format)|
+    | Image     | An image is an artifact that depicts visual perception, such as a photograph or other two-dimensional picture, that resembles a subject—usually a physical object—and thus provides a depiction of it. In the context of signal processing, an image is a distributed amplitude of color(s). A pictorial script is a writing system that employs images as symbols for various semantic entities, rather than the abstract signs used by alphabets|
+----------------------------------------------------------------------------------------
+
 
 
 ## 4. Submitting, Managing & Updating Submissions
