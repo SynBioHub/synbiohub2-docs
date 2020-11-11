@@ -46,7 +46,7 @@ To run the base configuration:
 
 	`git clone https://github.com/synbiohub/synbiohub-docker`
 
-5. Then, enter the follwoing commands to start the local instance of SynBioHub:
+5. Then, enter the following commands to start the local instance of SynBioHub:
 
   * For Mac/Linux/Unix: There are 2 ways of running the local instance of SynBioHub for these Operating Systems. They're stated as follows:
 
@@ -57,11 +57,7 @@ To run the base configuration:
 	
      2nd Method:
           
-       `sysctl -w vm.max_map_count=262144`
-
-	`docker-compose --file ./synbiohub-docker/docker-compose.yml --file ./synbiohub-docker/docker-compose.explorer.yml up`.
-
-
+       This has been explained [here](https://synbiohub.github.io/installation/#with-sbolexplorer). 
    * For Windows OS:
    
    Enter the following command into the command prompt:
@@ -75,8 +71,11 @@ To run the base configuration:
 
 ### With SBOLExplorer
 To add [SBOLExplorer](https://github.com/michael13162/SBOLExplorer), add the `docker-compose.explorer.yml` to the main docker-compose, i.e. for step 3 run the following command:
+
+    `sysctl -w vm.max_map_count=262144`
+
  
-`docker-compose --f ./synbiohub-docker/docker-compose.yml -f ./synbiohub-docker/docker-compose.explorer.yml up`
+    `docker-compose --f ./synbiohub-docker/docker-compose.yml -f ./synbiohub-docker/docker-compose.explorer.yml up`
 
 ### With Plugins
 To add plugins to the configuration, change the command mentioned in step 3 to: 
