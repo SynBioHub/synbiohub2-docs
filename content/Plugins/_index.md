@@ -501,18 +501,23 @@ Try the **pipreqs** package (used from anaconda prompt if using anaconda)
 2. Never use “file” as a variable name in python (it causes deeper issues)
 3. Make code modular and comment well
 4. Adhere to standards and best practices of the language you write in
+
 ## 7. Advanced possibilities
 1. It is possible to use the url to pass parameters to the plugin see (https://github.com/SynBioHub/Plugin-Visual-Component-Use)
 2. It is possible to have files served from the plugin (https://github.com/SynBioHub/Plugin-Visual-Serve-Test and https://github.com/SynBioHub/Plugin-Visual-Serve-Test-js)
+
 ## 8. Dockerising
+
 ### 8.1 Simple overview of docker
 * Source code is used in docker file which is used to build an image which can be pushed to docker hub (LIKE GITHUB). Image (can have been pulled from dockerhub) can be run on its own or with others like autoheal in a docker compose file.
 * When an image/docker compose file is run it creates a container.
 * Caddy (or other webserver like engineX, httpd, apache) listens to https port (443) and converts https to http and routes it to port on which the container is listening which it container thinks is port 80 (http port - generally the default over https, you could map out from a different port depending on what the webserver inside the container thinks it is listening too e.g. synbiohub thinks it listens to port 7777). Container maps its port to host and caddy forwards from 443 to the host port that the container is listening on.
+
 ### 8.2  Idea of architecture:
 * caddy is a webserver which reroutes requests to containers containers may or may not contain images which are also webservers (dockercompse files describe a set of containers which also may or may not contain webservers)
 * High ports are over 1024 and 'non-reserved' ports. ssh is to 22 (generally).
 * Key points understand that docker has: images, containers, volumes, and networks (especially important to understand what sticks around and what doesn’t when you try and refresh the containers a very useful command is prune: https://takacsmark.com/docker-prune/
+
 ### 8.3 Steps for dockerising a plugin
 * After having installed docker desktop and making sure it is up and running using an administrator account. Note that the docker website has a tutorial with mor information.
 
@@ -534,6 +539,7 @@ Try the **pipreqs** package (used from anaconda prompt if using anaconda)
 15. under setting>secrets add secrets containing the username and password
 16. update the readme and wait for the new image to push to docker hub (you will see a green check next to commit when this has happened)
 17. check the uploaded image works by downloading and running it ( docker run --publish 8080:5000 --detach --name <short name> synbiohub/<descriptive name>:snapshot ) and repeating steps 9-12.
+
 ### 8.4 Useful commands for docker debug
 * docker system prune -a --volumes
 * docker system prune -a
@@ -541,8 +547,11 @@ Try the **pipreqs** package (used from anaconda prompt if using anaconda)
 * docker network inspect synbiohub-docker_default
 * copy docker files to local location to debug: docker cp <name of container>:<path in container> <path on host>
 * Enter into a docker file to edit it: docker exec -it synbiohub-docker_pluginVisualSeqviz_1 /bin/bash 
-    ** exit by simply typing: exit
-    ** for synbiohub testing look at plugin.js or view.js in home directory
+
+    * exit by simply typing: exit
+
+    * for synbiohub testing look at plugin.js or view.js in home directory
+
 * docker volume ls
 * docker volume prune
 ## 9. Genetic Logic Lab Synbiohub plugins
