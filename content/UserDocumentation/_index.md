@@ -467,13 +467,11 @@ Now, there are 2 ways you make your submissions i.e, creating a new collection a
 5. Then, click on submit.
 
 
-
-
 ## 5. Editing a Submission
 
 To edit your submissions, following steps need to be followed:
 
-1. Go to the ubmissions page.
+1. Go to the submissions page.
 
 2. Select the collection that you want to edit.
 
