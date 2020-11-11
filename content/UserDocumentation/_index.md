@@ -496,18 +496,18 @@ There are a couple of ways to share data in SynBioHub. They're mentioned as foll
 
 2. Click the **Share** option. A link will appear.
 
-3. Now, copy that link & you can share the link, thus sharing the collection/design.
+3. Now, copy that link & you can share the link, thus sharing the resource.
 
 ### 6.2 Adding an owner
 
-You can also share your design by giving any number of persons access by adding them as an owner for your design. This will give them full administrative access to your collections/designs.
+You can also share your design by giving any number of persons access by adding them as an owner for your design. This will give them full administrative access to your resources.
 The steps to do so are as follows:
 
 1. Select the collection/design that you want to share.
 
 2. Click on the **Add an owner** option.
 
-3. Select the Username of the person, with whom you want to share your collection/design.
+3. Select the Username of the person, with whom you want to share your resources.
 
 4. Click on **Grant Ownership**.
 
