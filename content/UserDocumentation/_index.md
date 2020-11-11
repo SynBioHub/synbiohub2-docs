@@ -469,21 +469,21 @@ Now, there are 2 ways you make your submissions i.e, creating a new collection a
 
 
 
-## 5. Editing you Submissions
+## 5. Editing a Submission
 
 To edit your submissions, following steps need to be followed:
 
-1. Go to the [Submissions](http://synbiohub.org/manage) page.
+1. Go to the ubmissions page.
 
 2. Select the collection that you want to edit.
 
-3. You can edit the Name & description of the collection as well as add a source.
+3. You can edit the name & description of the resource as well as add a source.
 
-4. If you want to add a detailed description, source, reference or notes for the collection, just Scroll down to find those options under the **Details** section.
+4. If you want to add a detailed description, source, reference or notes for that very resource, just Scroll down to find those options under the **details** section.
 
-5. Subsequently, scroll down to find the Members of the collection. You may click on the *delete* sign just next to the description of the design, if you want to delete it or click on the member's name if you want to view its details.
+5. Subsequently, scroll down to find the members of the collection. You may click on the *delete* sign just next to the description of the design, if you want to delete it or click on the member's name if you want to view its details.
 
-6. Steps 3 & 4 can be followed, if you want to edit any of the member's details.
+6. Steps 3 & 4 can be followed, if you want to edit any of the any details of the member's of that particular.
 
 
 ## 6. Data Sharing Mechanisms
@@ -494,9 +494,9 @@ There are a couple of ways to share data in SynBioHub. They're mentioned as foll
 
 1. Select the collection/design that you want to share.
 
-2. Click the **Share** option. A link will appear.
+2. Click the **share** option. Once you click on the share option, a link shall appear.
 
-3. Now, copy that link & you can share the link, thus sharing the resource.
+3. Now, copy that link & you can share the link, thereby sharing the resource.
 
 ### 6.2 Adding an owner
 
@@ -505,11 +505,11 @@ The steps to do so are as follows:
 
 1. Select the collection/design that you want to share.
 
-2. Click on the **Add an owner** option.
+2. Click on the **add an owner** option.
 
 3. Select the Username of the person, with whom you want to share your resources.
 
-4. Click on **Grant Ownership**.
+4. Click on **grant ownership**.
 
 
 ## 7. Administration
