@@ -150,14 +150,9 @@ This returns other components that have similar sequences.
 There are various types of records on SynBioHub. They've been divided into the following sub-categories:
 
 #### 2.1.1 Viewing a collection
+Once you've navigated successfully to the collections home page, the following steps need to be followed:
 
-1. Navigate to SynBioHub's home page.
-
-2. Then, you can search for a specific collection or select **browse the collections** option. It'll direct you to a set of collections based on what you've searched for.
-
-3. Select the collection which you want to view.
-
-4. On the collection's home page, you'll be able to view to view the following parameters in this order:
+1. On the collection's home page, you'll be able to view to view the following parameters in this order:
 
 * Name: Represents the name of the collection, which you want to view.
 
@@ -202,32 +197,15 @@ Once you've successfully navigated to the record's home page, you'll be able to 
 
 3. **[Share](https://synbiohub.github.io/userdocumentation/#6-data-sharing-mechanisms)**
 
-4. **Back** 
+4. **Back**: This option navigates back to the main page of the collection, which that particular record is a part of.
+
 
 5. **[Add to a collection](https://synbiohub.github.io/userdocumentation/#43-updating)** 
 
- The download option consists of the ways in which you can download the resource. They're as follows:
-
- |  Type             | Description  |
-    |-------------------|--------------|
-    |  SBOL             | The Synthetic Biology Open Language (SBOL) has been developed as a standard to support the         specification and exchange of biological design information in synthetic biology. To know more about SBOl, visit [this page](https://sbolstandard.org/datamodel-about/)           |
-    |  Combine Archive  | A COMBINE archive is a single file containing the various documents (and in the future, references to documents), necessary for the description of a model and all associated data and procedures. This includes for instance, but not limited to, simulation experiment descriptions, all models needed to run the simulations and associated data files. The archive is encoded using the Open Modeling EXchange format (OMEX). To know more about Combine archive, visit [this page](http://co.mbine.org/documents/archive).            |
-    |  Annotated Genbank| GenBank format (GenBank Flat File Format) consists of an annotation section and a sequence section. The start of the annotation section is marked by a line beginning with the word "LOCUS". The start of sequence section is marked by a line beginning with the word "ORIGIN" and the end of the section is marked by a line with only "//" To know more about Annotated genbank format, visit [this page](http://quma.cdb.riken.jp/help/gbHelp.html), |                   
-    |  Annotated Plasmid Map        |  Plasmid maps are graphical representation of plasmids, that show the locations of major identifiable landmarks on DNA like restriction enzyme sites, gene of interest, plasmid name and length etc. To know more about plasmid map, visit [this page](https://en.wikipedia.org/wiki/Plasmid)              |
-    | Plasmid map | Plasmid maps are graphical representation of plasmids, that show the locations of major identifiable landmarks on DNA like restriction enzyme sites, gene of interest, plasmid name and length etc. To know more about plasmid map, visit [this page](https://www.snapgene.com/resources/plasmid-files/). |
-    | Annotated zip | ZIP is an archive file format that supports lossless data compression. A ZIP file may contain one or more files or directories that may have been compressed. To know more about zip, visit [this page](https://en.wikipedia.org/wiki/Zip_(file_format))|
-    | GFF3       | The GFF (General Feature Format) format consists of one line per feature, each containing 9 columns of data, plus optional track definition lines. To know more about GFF3, click [here](http://asia.ensembl.org/info/website/upload/gff3.html).|
-    | FASTA       | In bioinformatics and biochemistry, the FASTA format is a text-based format for representing either nucleotide sequences or amino acid (protein) sequences, in which nucleotides or amino acids are represented using single-letter codes. The format also allows for sequence names and comments to precede the sequences. The format originates from the FASTA software package, but has now become a near universal standard in the field of bioinformatics. To know more about FATSA file format, click [here](https://en.wikipedia.org/wiki/FASTA_format)|
-    | Image     | An image is an artifact that depicts visual perception, such as a photograph or other two-dimensional picture, that resembles a subject—usually a physical object—and thus provides a depiction of it. In the context of signal processing, an image is a distributed amplitude of color(s). A pictorial script is a writing system that employs images as symbols for various semantic entities, rather than the abstract signs used by alphabets|
-----------------------------------------------------------------------------------------
  
-We have the **back** option. This option navigates back to the main page of the collection, which that particular resource is a part of.
-
-Finally, we have the **Add to collection** option. This option adds your resource to a specific collection. Clicking on this option, would take you to a page that shall display the collections, that you would've created. Select the collection, to which you want to add this engineered region to and then click on add to collection. This shall add your resource to the selected collection.
-
 * Next we have is the VisBOL Navigator, with zooming capabilities. This, graphically represents the structure of the engineered region. By hovering your pointer over this structure, you can view the following attributes of that particular engineered region: type of resource, identifier, name and role of the engineered region. 
 
-* Then we have the details of that engineered region. This consists of the following:
+*  Then we have the details of that engineered region. This consists of the following:
 
 1. **[Type](https://dissys.github.io/sbol-owl/sbol-owl.html#type)**: This specifies the category of biochemical or physical entity. For example DNA, protein, or small molecule that a ComponentDefinition object abstracts for the purpose of engineering design. 
 
@@ -250,8 +228,25 @@ Finally, we have the **Add to collection** option. This option adds your resourc
 
 * Then, we have the **attachments** page. In this section, you can view the various attachments, of a resource.
 
-* There may be additional clickable sections after the attachments menu. They're as follows:
-1.  **iGEM main page**, **iGEM design page** and the **iGEM experience page**. Then is the section that contains, **Sequence Visualisation** of that particular resource. Finally, we have the **component sankey** and the **component bar**. The iGEM parts are plugins, hence they are not part of every instance and the Sequence Visualization, Sankey, and Component bar are additional plugins, hence they've been explained in detail in the [plugins section](https://synbiohub.github.io/plugins/).
+* Then, we have the clickable option of **[interactions](https://dissys.github.io/sbol-owl/sbol-owl.html#Interaction)**. Interactions Provide more detailed description of how the FunctionalComponent objects of a ModuleDefinition are intended to work together. This section is further divided into 3 sections, which are as follows:
+  * **[Interaction](https://dissys.github.io/sbol-owl/sbol-owl.html#Interaction)/[Participation](https://dissys.github.io/sbol-owl/sbol-owl.html#Participation)**: *Interaction* basically provides more detailed description of how the FunctionalComponent objects of a ModuleDefinition are intended to work together whereas each *participation* represents how a particular FunctionalComponent behaves in its parent Interaction.
+  
+  * **[Participant Definition](https://dissys.github.io/sbol-owl/sbol-owl.html#definition)**:The definition property is a REQUIRED URI that refers to the ComponentDefinition of the ComponentInstance. As described in the previous section, this ComponentDefinition effectively provides information about the types and roles of the ComponentInstance.
+
+  * **[Type](https://dissys.github.io/sbol-owl/sbol-owl.html#type)/[Role](https://dissys.github.io/sbol-owl/sbol-owl.html#role)**: Type specifies the category of biochemical or physical entity. For example DNA, protein, or small molecule that a ComponentDefinition object abstracts for the purpose of engineering design. For DNA or RNA entities, additional types fields are used to describe nucleic acid topology (circular / linear) and strandedness (double- or single-stranded). 
+       Role basically clarifies the potential function of an entity in a biochemical or physical context. When it is used for ComponentDefinitions, it MUST identify terms from ontologies that are consistent with the types property of the ComponentDefinition. For example, the roles property of a DNA or RNA ComponentDefinition could contain URIs identifying terms from the Sequence Ontology (SO).
+
+* There may be additional clickable sections after the attachments menu. These have been added via, **[visualisation plugins](https://github.com/SynBioHub/Plugin-Visual-Seqviz)** and they're as follows:
+
+1. **iGEM main page**, 
+
+2. **iGEM design page** and
+
+3. **iGEM experience page**. 
+
+4. Then, we have a section, titled **Member of these collection**, which displays the collection, of which that particular record is a part of.   
+
+6. Then is the section that contains, **Sequence Visualisation** of that particular resource. Finally, we have the **component sankey** and the **component bar**. The iGEM parts are plugins, hence they are not part of every instance and the Sequence Visualization, Sankey, and Component bar are additional plugins, hence they've been explained in detail [here](https://github.com/SynBioHub/Plugin-Visual-Seqviz).
 
 
 ### 2.2 Downloading the Information
@@ -268,7 +263,15 @@ Following are the types in which you can download the collection:
   | Image     | An image is an artifact that depicts visual perception, such as a photograph or other two-dimensional picture, that resembles a subject—usually a physical object—and thus provides a depiction of it. In the context of signal processing, an image is a distributed amplitude of color(s). A pictorial script is a writing system that employs images as symbols for various semantic entities, rather than the abstract signs used by alphabets|
 ----------------------------------------------------------------------------------------
 
-Additional download options can be through the use of download plugins.
+Additional download options can be through the use of plugins, which are as follows:
+
+1. **[Visual Plugins](https://synbiohub.github.io/plugins/#32-basic-structure)**
+
+2. **[Submit Plugins](https://synbiohub.github.io/plugins/#33-submit)**
+
+3. **[Download Plugins](https://synbiohub.github.io/plugins/#34-download)**
+
+To view some example plugins visit the example section of each of these sections.
 
 
 
@@ -343,11 +346,10 @@ Now, there are 2 ways you make your submissions i.e, creating a new collection a
 
  |  Type             | Description  |
     |-------------------|--------------|
-        |  SBOL             | The Synthetic Biology Open Language (SBOL) has been developed as a standard to support the         specification and exchange of biological design information in synthetic biology. To know more about SBOl, visit [this page](https://sbolstandard.org/datamodel-about/)           |
-        | Annotated zip | ZIP is an archive file format that supports lossless data compression. A ZIP file may contain one or more files or directories that may have been compressed. To know more about zip, visit [this page](https://en.wikipedia.org/wiki/Zip_(file_format))|
-    | GFF3       | The GFF (General Feature Format) format consists of one line per feature, each containing 9 columns of data, plus optional track definition lines. To know more about GFF3, click [here](http://asia.ensembl.org/info/website/upload/gff3.html).|
-    | FASTA       | In bioinformatics and biochemistry, the FASTA format is a text-based format for representing either nucleotide sequences or amino acid (protein) sequences, in which nucleotides or amino acids are represented using single-letter codes. The format also allows for sequence names and comments to precede the sequences. The format originates from the FASTA software package, but has now become a near universal standard in the field of bioinformatics. To know more about FATSA file format, click [here](https://en.wikipedia.org/wiki/FASTA_format)|
-| Zip | ZIP is an archive file format that supports lossless data compression. A ZIP file may contain one or more files or directories that may have been compressed. To know more about zip, visit [this page](https://en.wikipedia.org/wiki/Zip_(file_format))|
+        |  **[SBOL](https://sbolstandard.org/datamodel-about/)**             | The Synthetic Biology Open Language (SBOL) has been developed as a standard to support the         specification and exchange of biological design information in synthetic biology.           |
+    | **[GFF3](http://asia.ensembl.org/info/website/upload/gff3.html)**       | The GFF (General Feature Format) format consists of one line per feature, each containing 9 columns of data, plus optional track definition lines.|
+    | **[FASTA](https://en.wikipedia.org/wiki/FASTA_format)**      | In bioinformatics and biochemistry, the FASTA format is a text-based format for representing either nucleotide sequences or amino acid (protein) sequences, in which nucleotides or amino acids are represented using single-letter codes. The format also allows for sequence names and comments to precede the sequences. The format originates from the FASTA software package, but has now become a near universal standard in the field of bioinformatics. |
+| **[zip](https://en.wikipedia.org/wiki/Zip_(file_format))** | ZIP is an archive file format that supports lossless data compression. A ZIP file may contain one or more files or directories that may have been compressed. |
 ----------------------------------------------------------------------------------------------------------------
 
 * **Handler**: You also need to select a handler. Following options are available:
@@ -421,13 +423,33 @@ To edit your submissions, following steps need to be followed:
 
 2. Select the collection that you want to edit.
 
-3. You can edit the name & description of the resource as well as add a source.
+3. First of all, you can edit the **name** and **description** of the record.
 
-4. If you want to add a detailed description, source, reference or notes for that very resource, just Scroll down to find those options under the **details** section.
+4. Then, you can add a **source** for your record.
 
-5. Subsequently, scroll down to find the members of the collection. You may click on the *delete* sign just next to the description of the design, if you want to delete it or click on the member's name if you want to view its details.
+5. Subsequently, you may add a brief description for your record.This may contain details that can be described in brief about that particular record.
 
-6. Steps 3 & 4 can be followed, if you want to edit any of the any details of the member's of that particular.
+6. As you scroll down, you'll find a clickable menu, titled **details**. Under this section, you can find the following options which you can edit. They're as follows:
+
+* **Add Description**: Here, you can provide a detailed description for your record. 
+
+* **Add notes**: In this section, you can provide additional notes for explaining your record. 
+
+	Here you can use the basic text formatting options, such as **bold**, *italic* and underlining. Also, you may include an image as well links with the use of html tags.
+
+
+* **Source**: Here, you can enter various links from referring, to the place from where your record has been generated from.
+
+* **Citations**: You just need to add pubmedID's separated by commas, using which you can cite several research papers.
+
+7. Then, we have the section titled, **other properties**. Under this section, you can add/edit various properties, other than Synbiohub#owner and Synbiohub#Toplevel. 
+
+8. Finally, we have the attachments sections. Herein, you can upload as well as lookup for an attachment.The process for both the options, is described in detail, as follows:
+
+1. **Upload attachments**: For uploading an attachment, you just need to click, **select file(s)** option and a popup shall appear. Now you need to select the attachments from your machine based on your convenience. 
+
+2. **Lookup attachment**: Under this option, you can search for attachments. For this, you need to provide a URL for the attachment as well as its name. Then you need to select the type of attachment, for which you want to search for. The types are as follows: .nib, 2bit, A2M, ABI, etc...
+
 
 
 ## 6. Data Sharing Mechanisms
@@ -542,7 +564,7 @@ In order to enable SynBioHub to send account-related emails, you need a sendgrid
 
 #### 7.5 Plugins
 
-On this page, you can configure the plugins which you want to use. Plugins are modular stand-alone additions to SynBioHub. They function in a way that is similar to browser extensions. They can be installed separately from the browser/SynBioHub and provide additional ‘custom’ functionality to the browser/SynBioHub experience despite having a completely separate code base from the browser/SynBioHub. Though, they seem integrated to the user.
+On this page, you can configure the **[plugins ](https://synbiohub.github.io/plugins/)** which you want to use. Plugins are modular stand-alone additions to SynBioHub. They function in a way that is similar to browser extensions. They can be installed separately from the browser/SynBioHub and provide additional ‘custom’ functionality to the browser/SynBioHub experience despite having a completely separate code base from the browser/SynBioHub. Though, they seem integrated to the user.
 
 They're broadly classified into 3 types, which are as follows:
 
@@ -552,7 +574,7 @@ They're broadly classified into 3 types, which are as follows:
 
 3. Download: Download plugins are available on all ‘endpoint’ pages, for example pages for components, sequences, activities, etc. Download plugins return some kind of file which is downloaded by the user.
 
-To know more about plugins in detail, visit the [plugins section](https://synbiohub.github.io/plugins/).
+
 
 As mentioned above, the plugins are divided into 3 categories all having the same attributes. The attributes, which need to be filled up are as follows:
 
@@ -625,7 +647,7 @@ Once you are through with all the attributes, click on submit.
 
 3. Once you've clicked on submit, you'll be able to see a fully configured remote on the left. You can also delete and edit your remote. To delete any of your configured remotes, click on delete. To edit any of the information, click on edit. Once you've edited the information, click on submit.   
 
-##### 7.1.2 Configuring an ICE remote
+##### 7.7.2 Configuring an ICE remote
 
 1. When you'll click on the type box, a dropdown menu shall appear containing 2 options, ice and benchling. For configuring an ICE remote, select **ICE** and then click on **add remote**.
 
@@ -662,14 +684,36 @@ Once you are through with all the attributes, click on submit.
 
 SBOLExplorer is a service that simplifies the process of analysing and searching for parts within genetic design repositories.
 
-Here, you can enter and save your SBOLExplorer endpoint for your local instance. You need to Check the "Searching Using SBOLExplorer" to enable the SBOLExplorer. Also, make sure that any of the endpoints you enter are enabled and end with **\\**.
+Once you click on the **SBOLExplorer** option, you can view the following options:
+1. The first option is that of **SBOLExplorer** endpoint. Here, you can enter and save your SBOLExplorer endpoint for your local instance. Also, make sure that any of the endpoints you enter end with **\\**.
+2. Then on the right, you shall see the **searching using SBOL explorer***. You need to Check the this option to enable the SBOLExplorer. 
+3. Then, you'll be able to see the option of selecting between, **[Usearch](https://academic.oup.com/bioinformatics/article/26/19/2460/230188)** and **[Vsearch](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5075697/)**. They're explained in detail as follows:
 
+* Usearch: UBLAST and USEARCH are new algorithms enabling sensitive local and global search of large sequence databases at exceptionally high speeds. They are often orders of magnitude faster than BLAST in practical applications, though sensitivity to distant protein relationships is lower. UCLUST is a new clustering method that exploits USEARCH to assign sequences to clusters. UCLUST offers several advantages over the widely used program CD-HIT, including higher speed, lower memory use, improved sensitivity, clustering at lower identities and classification of much larger datasets.
+
+* Vsearch: VSEARCH is an open source and free of charge multithreaded 64-bit tool for processing and preparing metagenomics, genomics and population genomics nucleotide sequence data. It is designed as an alternative to the widely used USEARCH tool for which the source code is not publicly available, algorithm details are only rudimentarily described, and only a memory-confined 32-bit version is freely available for academic use.
+
+4. Next, you can view the start and the end of the last index update. 
+
+5. Subsequently, you can choose whether you want to allow the automatic updating of index or not. If you check this option, the you'll also have the option of choosing the frequency of index update.'
+
+6. Then, you have the option of, whether you want to allow the option of a distributed search or not. 
+
+7. Subsequently, you can select the  value of **[page rank tolerance](https://neo4j.com/docs/graph-algorithms/current/algorithms/page-rank/)**. PageRank basically is an algorithm that measures the transitive influence or connectivity of nodes. It can be computed by either iteratively distributing one node’s rank (originally based on degree) over its neighbours or by randomly traversing the graph and counting the frequency of hitting each node during these walks.
+
+8. There is also an option of choosing a value of **[UClust clustering identity](https://en.wikipedia.org/wiki/UCLUST)**. UCLUST is an algorithm designed to cluster nucleotide or amino-acid sequences into clusters based on sequence similarity. The algorithm was published in 2010 and implemented in a program also named UCLUST. The algorithm is described by the author as following two simple clustering criteria, in regard to the requested similarity threshold T. The first criterion states that any given cluster's centroid sequence will have a similarity smaller than T to any other clusters' centroid sequence. The second criterion states that each member sequence in a given cluster will have similarity to the cluster's centroid sequence that is equal or greater than T.
+
+9. Then you can also input a value for the **[elasticsearch endpoints](https://www.elastic.co/guide/en/cloud-enterprise/1.1/ece-administering-endpoints.html)**. For applications without SSL or HTTPS protocol support, you can use a local endpoint with the HTTP protocol, which in turn connects to your Elastic Cloud Enterprise cluster or to Kibana either using the HTTP or the HTTPS protocol.
+
+10. Finally, you have to input a value for the **[SPARQL/Virtuoso endpoints](https://medium.com/virtuoso-blog/what-is-a-virtuoso-sparql-endpoint-and-why-is-it-important-5244df738a3e)**. A Virtuoso SPARQL Endpoint is a feature of every Virtuoso RDBMS instance that offers an HTTP-based Query Service that operates on Entity Relationship Types (Relations) represented as RDF sentence collections using the SPARQL Query Language. These operations may be read- and/or write-oriented and distributed without compromising security, performance, or scalability.
+
+11. Then, click on the **save** button to save all the details for the SBOLExplorer.
 
 ####  7.9 SPARQL 
 
-To perform a SPARQL Search, the following steps should be followed:
+To perform a **[SPARQL](https://www.w3.org/TR/sparql11-query/)** Search, the following steps should be followed:
 
-1. Navigate to SynBioHub's [SPARQL Search Page](https://synbiohub.org/sparql).
+1. Navigate to SynBioHub's SPARQL Search Page. 
 
 2. Since, SPARQL is a query language, hence it'll query Synbiohub's databases for the designs that you're looking for.
 
@@ -688,11 +732,7 @@ To perform a SPARQL Search, the following steps should be followed:
 	
         ?role # displays the role of the design    
 
-```
-4. Next, you need to provide a **Where** statement, which shall contain all the specific details with respect to the **SELECT** statement. The Syntax is as follows:
-
-``` 
-WHERE { 
+  WHERE { 
   	 ?s sbol:component ?comp # Searching for **sbol** components
 
   	 ?comp sbol:definition ?def # provides the link to that component
@@ -701,14 +741,14 @@ WHERE {
 
 	 OPTIONAL {?def sbol:role ?role} # Defines the role
 
-	 OPTIONAL {?def sbol:displayId ?displayId} # gives the ID of the design
+	 OPTIONAL {?def sbol:displayId ?displayId} # gives the ID of that particular record
 
 	 OPTIONAL {?def dcterms:title ?title} 
   }
 ```
-*The query selects all sbol components that have an SO role type. It returns the part title, part role, part display id, part uri, and the total number of parts returned by the query. If you want to search for other types of designs, just replace SBOL with your prefered type.* 
+*The query selects all sbol components that have an SO role type. It returns the part title, part role, part display id, part uri, and the total number of parts returned by the query. If you want to search for other types of designs, just replace SBOL with your preferred type.* 
 
-To learn more about SPARQL, visit [this page](https://www.w3.org/TR/sparql11-query/).
+---------------------------------------------------------------------
 
 #### 7.10 Theme 
 
