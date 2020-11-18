@@ -23,7 +23,7 @@ Currently there are three types of plugins available:
 ### 2.1 Overview
 * All plugins in actual sense are servers (i.e, a piece of software in a network that is used to provide services such as access to files or the routing of an e-mail to other pieces of software or hardware (clients) in the network). 
 
-* All plugins have at least 3 endpoints: *Status*, *Evaluate*, and *Run*. SynBioHub sends a status request to the status endpoint, if the response is that the plugin is up and running, SynBioHub then sends an evaluate request. The evaluate request tests whether the plugin can handle the data that SynBioHub wishes to send. If the plugin responds positively, SynBioHub then sends data to the run endpoint and uses the final results in the appropriate manner for the plugin type. 
+* All plugins have at least 3 endpoints: *status*, *evaluate*, and *run*. SynBioHub sends a status request to the status endpoint, if the response is that the plugin is up and running, SynBioHub then sends an evaluate request. The evaluate request tests whether the plugin can handle the data that SynBioHub wishes to send. If the plugin responds positively, SynBioHub then sends data to the run endpoint and uses the final results in the appropriate manner for the plugin type. 
 
 * Note that plugins are asynchronous meaning that the full SynBioHub page can load without having to wait for the plugin to have returned the  results. Subsequently, when the results are returned SynBioHub substitutes the received information for the placeholder it had used when loading the page initially.
 
@@ -32,15 +32,15 @@ As the plugins are standalone servers & they don't have to be used in conjunctio
 
 #### 2.2.1 Using SynBioHub
  
-A detailed explaination on how to install SynBioHub on various Operating Systems is written [here](https://synbiohub.github.io/installation/)
+A detailed explaination on how to install SynBioHub on various operating systems is written [here](https://synbiohub.github.io/installation/)
 A full list of plugin file names and their descriptions can be found [here](https://synbiohub.github.io/synbiohub-docker/#plugins).
 
 ##### 2.2.1.1 Common problems
 
 The most common problems that you may face while executing the commands mentioned above are as follows:-
 
-1. The plugins might try to use ports that are already in use. If upon running the above commands and then using `docker ps` not all of the ‘images’ that you expect are present then try the following command: `docker ps –a`. 
-If you now see the image(s) you were missing with the status ‘created’ it suggests that they have a port clash. If this is the case you can go in the docker-compose file for the appropriate plugin and change the port number (the first four digit number under “ports”). Then try running step 4 of the above commands again.
+1. The plugins might try to use ports that are already in use. If upon running the above commands and then using `docker ps` not all of the   ‘images’ that you expect are present then try the following command: `docker ps –a`. 
+  If you now see the image(s) you were missing with the status ‘created’ it suggests that they have a port clash. If this is the case you can go in the docker-compose file for the appropriate plugin and change the port number (the first four digit number under “ports”). Then try running step 4 of the above commands again.
 
 
 2. If you've locally installed SynBioHub using the above commands it might cause issues in some plugins, that will receive urls that look like: ``http://localhost:7777/xxxxxxx``. Localhost in docker containers refers to the container itself. The problem is explained further [here](https://medium.com/it-dead-inside/docker-containers-and-localhost-cannot-assign-requested-address-6ac7bc0d042b). On Linux this problem is solvable and the solution cab be found on [stack overflow](https://stackoverflow.com/questions/31324981/how-to-access-host-port-from-docker-container) and on [docker](https://docs.docker.com/network/host/).
@@ -96,7 +96,7 @@ Now, open the anaconda prompt and carry out the rest of the commands in the anac
 
 ###### 2.2.3.1.2 For Python
 
-####### 2.2.3.1.2.1 Mac OS/Linux
+###### 2.2.3.1.2.1 Mac OS/Linux
 1. Open the terminal.
 2. Clone the repository using the command `git clone <Repo-Link>`(For Example:`git clone https://github.com/SynBioHub/Plugin-Submit-ExcelLibrary.git`)
 3. Change directory into the repository folder using the command ` cd <repo-name>`(For repo-name enter your local repository name).
@@ -105,7 +105,7 @@ Now, open the anaconda prompt and carry out the rest of the commands in the anac
 6. Finally to start flask, enter the following command: `flask run`
 7. The server should then be accessible at http://localhost:5000/status. Hence open your browser and enter `http://localhost:5000/status`
 
-####### 2.2.3.1.2.2 Windows OS
+###### 2.2.3.1.2.2 Windows OS
 1. Open the terminal
 2. Clone the repository using `git clone <Repo-link>` (For Example `git clone https://github.com/SynBioHub/Plugin-Submit-Excel-Library.git`)
 3. Change directory into the repository folder using the command ` cd <repo-name>`(For repo-name enter your local repository name).
@@ -195,7 +195,7 @@ Common RDF types are:
 ###### Returns
 Return a status of 200 if the type is acceptable and a 4xx status if it isn’t.
 
-##### 3.1.2.3 Run
+##### 3.2.1.3 Run
 
 ###### Recieves
 1. complete_sbol: The single-use URL for the complete object to operate on
@@ -231,7 +231,9 @@ Common RDF types are:
 ###### Returns
 The plugin should respond with an HTML page to be rendered *in-frame* on the corresponding SynBioHub page.
 
-##### 3.1.2.4 Examples
+##### 3.2.1.4 Examples
+
+Sequence View Plugin is a visualisation plugin engine for SynBioHub to enhance the functional annotations of DNA sequence which are coordinated with the SBOL Visual standard. The instructions to install these plugins can be found **[here](https://github.com/SynBioHub/Plugin-Visual-Seqviz)**.
 
 ###### Python
 
@@ -405,6 +407,9 @@ A zip file which contains the generated SBOL files and a file called manifest.js
 **NOTE**: list of sources could contain more than one file (if any of the files in the evaluate endpoint were flagged as 1 they might be added to the sources for one of the other file conversions)
 #### 3.3.4 Examples
 
+We've created a plugin, which accepts a spreadsheet as input and converts it into SBOL which can be processed by SynBioHub. This could simplify the process of data curation for publication by bridging the gap between those that perform the experiments and those that write about them from the very beginning. The instructions to install these plugins can be found **[here](https://github.com/SynBioHub/Plugin-Submit-Excel-Library)**.
+
+
 ##### Python
 A full example of a submit plugin can be found at: https://github.com/SynBioHub/Plugin-Submit-Test
 
@@ -460,12 +465,13 @@ Common RDF types are:
 
 
 * Example 2:
-{'complete_sbol': 'https:// synbiohub.org/public/igem/BBa_E0240/1/sbol', 'shallow_sbol': 'https:// synbiohub.org/public/igem/BBa_E0240/1/sbolnr', 'genbank': 'https:// synbiohub.org/public/igem/BBa_E0240/1/gb', 'top_level': 'https://synbiohub.org/public/igem/BBa_E0240/1', 'size': 39, 'type': 'Component', 'instanceUrl': 'https:// synbiohub.org/'}
+{'complete_sbol': 'https:// synbiohub.org/public/igem/BBa_E0240/1/sbol', 'shallow_sbol': 'https:// synbiohub.org/public/igem/BBa_E0240/1/sbolnr', 'genbank': 'https:// synbiohub.org/public/igem/BBa_E0240/1/gb', 'top_level': 'https://synbiohub.org/public/igem/BBa_E0240/1', 'size': 39, 'type': 'Component', 'instanceUrl': 'https:// synbiohub.org/' }
 
 
 #####  Returns
 The plugin should respond with an HTTP request and file attachment which represents the object.
-#### 3.3.4 Examples
+#### 3.4.4 Examples
+To view certain examples regarding download plugins, click **[here](https://github.com/SynBioHub/Plugin-Download-Snapgene)**
 ##### Python
 A full example of a download plugin can be found [here](https://github.com/SynBioHub/Plugin-Download-Test).
 ##### Javascript
@@ -554,52 +560,7 @@ Try the **pipreqs** package (used from anaconda prompt if using anaconda)
 
 * docker volume ls
 * docker volume prune
-## 9. Genetic Logic Lab Synbiohub plugins
- To get access to genetic logic lab SynBioHub plugins, follow the following steps:
-1. ssh editors@sbolstandard.org
-2. Password can be found in lab documentation
-3. cd /opt/synbiohub-docker
-4. git status check (see it is master)
-5. sudo git pull (making sure compose files are the latest)
-6. cd /etc/systemd/system
-7. sudo emacs synbiohub.service
-8. add -f docker compose into file 
-9. save: ctrl x ctrl s
-10. exit: ctrl x ctrl c
-11. sudo systemctl daemon-reload
-12. sudo systemctl restart synbiohub
-13. sudo docker ps (check the container is now listed)
-14. can check the plugin is okay using: curl localhost:<port>/status
-15. to give real ip address: 
-   * cd /etc/caddy
-   * sudo emacs Caddyfile
-   * copy and paste the igem one and change the name and port number
-   * save
-   * exit
-   * sudo systemctl restart caddy
-   * in browser go to azure.microsoft.com: sign in using the credentials from lab documentation
-   * go to portal, dns zones
-   * go to synbiohub.org
-   * set up a new domain: record set, name = seqviz, ip adress: 13.82.19.198, TTL 1 hour, type A, alias record set no.
-   * give it a minute to go through then
-   * command line: sudo systemctl restart caddy
-   * sudo systemctl status caddy
-   * q
-16. In admin panel on synbiohub:
-   * Adding to dev.synbiohub: http://localhost:8095/sankey
-   * adding to synbiohub.org: http://synbiohub-docker_pluginSubmitExcelLibrary_1:5000/
 
-
-If you want To **Update an Existing Plugin**, the following steps need to be followed:
-1. ssh editors@sbolstandard.org
-2. Password from lab documentation
-3. docker ps
-4. docker stop relevant_container
-5. docker system prune –a (removes all stopped containers)
-6. sudo systemctl daemon-reload
-7. sudo systemctl restart synbiohub
-8. can check the plugin is okay using: curl localhost:<port>/status
-
-## 10. Plugins-Table
+## 9. Plugins-Table
 
 The sortable table has already been implemented and can be found [here](https://synbiohub.github.io/synbiohub-docker/#plugins).
