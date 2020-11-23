@@ -39,6 +39,12 @@ identifier = "Installation" # this button will refer to a markdown file named "c
 pre = "<br />"
 url = "/Installation"
 [[menu.main]]
+name = "Reporting Errors"
+weight = 80
+identifier = "ReprotingErrors" # this button will refer to a markdown file named "contact" in the content folder
+pre = "<br />"
+url = "/ReportingErrors"
+[[menu.main]]
 name = "Plugins"
 weight = 60
 identifier = "Plugins" # this button will refer to a markdown file named "contact" in the content folder
