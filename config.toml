@@ -40,7 +40,7 @@ pre = "<br />"
 url = "/Installation"
 [[menu.main]]
 name = "Reporting Errors"
-weight = 80
+weight = 85
 identifier = "ReportingErrors" # this button will refer to a markdown file named "contact" in the content folder
 pre = "<br />"
 url = "/ReportingErrors"
