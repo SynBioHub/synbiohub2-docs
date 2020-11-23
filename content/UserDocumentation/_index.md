@@ -9,7 +9,7 @@ This section contains instructions on how you can implement various operations r
 
 ## 1. Searching for Information
 
-There are a variety of ways to search for information in SynBioHub, such as using keywords, sequences as well as SPARQL queries. They're explained in detail as follows:
+There are a variety of ways to search for information in SynBioHub, such as using keywords, sequences, advanced searches and  SPARQL queries. They're explained in detail as follows:
 
 ### 1.1 Keyword Search
 
@@ -19,137 +19,145 @@ To search amongst various records, follow these steps:
 
 2. In the search box, enter the keywords for the record you want to search for and click on the search button.
 
-3. Subsequently, a list of records matching the keywords that you've entered shall appear on your screen.
+3. Subsequently, you shall be directed to a list of records matching the keywords that you've entered. For each record, the first thing that is displayed is the name. Just below the name, the ID, version and type of the record shall be displayed. Just below, you'll be able to see a brief description about the record provided by the owner of that particular record. On the right hand side, there is an indicator displaying whether it is a **public**, **private** or a **remote** record. Being private means that the record is available on a private repository i.e, to a specific user only and if it is labeled as public means it is available to all the users of SynBioHub. If the record is available to all the users but on another instance of SynBioHub, then it shall be labeled as remote
 
-4. Select the desired record from the list.
+4. If you see the record you want, you can select it else, you can select next or any of the other page numbers to navigate to the other pages to look for the record you desire amongst other records.
+
+5. On this page, you're also able to see other search options, such as sequence, advanced or SPARQL search, which are described in detail in the upcoming sections.
 
 ### 1.2 Sequence Search
 
-To search using a sequence, follow these steps:
+On the search results page, there is button labeled as **sequence search**. Clicking on that button will direct you to a page containing a list of sequence search options. To search using a sequence, you can provide the values for the options, as described in the table below:
 
-1. Navigate to SynBioHub's home page. 
 
-2. Click on the *search* option. It'll direct you to a page containing a list of records. 
+| Option Name         |              Description     |
+|---------------------|------------------------------|
+| Enter Sequence      | Enter the sequence or upload a **[FASTA](https://en.wikipedia.org/wiki/FASTA)/[FASTQ](https://en.wikipedia.org/wiki/FASTQ_format)** file, by clicking the choose file option just below the box. This shall search only for exact matches of the sequence. Your entry must be the first key/value pair   |
+| Search Method       | You can choose the perspective of your search. You can perform a **global** search or an **exact** search. The exact search shall display, those records which are an exact match to the sequences that you've entered and the global search search will display those results which have even the smallest of the similarities to the sequence that you've entered.  |
+|  Number of Results                   | You may customise the number of results, the value for which must not exceed 10,000. This translates into the maximum number of hits to accept before stopping the search. Kindly note that, higher the value, the longer the runtime.  |
+| Minimum Sequence Length |You need to enter the minimum sequence length. This value basically specifies the minimum length of the sequence, which you want to search for. Values for this parameter should not exceed 100,000. |
+| Maximum Sequence Length|You need to enter the maximum sequence length. This value basically specifies the maximum length of the sequence, which you want to search for. Values for this parameter should not exceed 100,000. |
+| # of failed hits before stopping|Then, you need to enter the maximum number of non-matching target sequences, that are to be considered before the search is halted. This option works in pair with the flag above. The search process sorts the target sequences by decreasing number of k-mers they have in common with the query sequence, using that information as a proxy for sequence similarity. After pairwise alignments, if none of the first x examined target sequences pass the acceptation criteria, the search process stops for that query (no hit). If this flag is set to a higher value, more target sequences are considered. If the flag above and this flag are both set to 0, the complete database is searched. |
+| Percent Match | Then, we have is the *percentage match*, which has a value between 0 and 1. This is the value of pairwise identity that must match with the sequence, otherwise the sequence is rejected. |
+| Pairwise Identity Definition | You may select the value for this attribute from the following options: 1) **Default**: Edits distance excluding the terminal gaps,   2) **CD-HIT definition**: Considers the following ratio: (matching columns) / (shortest sequence length),   3) **Marine Biological Lab definition**: counts each gap opening (internal or terminal) as a single mismatch, whether or not the gap was extended: 1.0 - [(mismatches + gap openings)/(longest sequence length)],   4) **BLAST Definition**: equivalent to edit distance for global pairwise alignments    |
+-------------------------------------------------------------------------------
+After filling up the desired options, press the **search** button to get the search results.
 
-3. Located just below the search box are the various means through which you can search for the desired records. In this case, click on *sequence search*.
 
-4. Enter the sequence or upload a **[FASTA](https://en.wikipedia.org/wiki/FASTA)/[FASTQ](https://en.wikipedia.org/wiki/FASTQ_format)** file, by clicking the choose file option just below the box. This shall search only for exact matches of the sequence. Your entry must be the first key/value pair.
 
-5. Then, you can choose the perspective of your search. You can perform a **global** search or an **exact** search. The exact search shall display, those records which are an exact match to the sequences that you've entered and the global search search will display those results which have even the smallest of the similarities to the sequence that you've entered. 
-
-6. Subsequently, you may customise the number of results, the value for which must not exceed 10,000. This translates into the maximum number of hits to accept before stopping the search. Kindly note that, higher the value, the longer the runtime.
-
-7. Then you need to enter the minimum and the maximum length of the sequence for which you want to search for. Values for both of these parameters should not exceed 100,000. 
-
-8. Then, you need to enter the maximum number of non-matching target sequences, that are to be considered before the search is halted. This option works in pair with the flag above. The search process sorts the target sequences by decreasing number of k-mers they have in common with the query sequence, using that information as a proxy for sequence similarity. After pairwise alignments, if none of the first x examined target sequences pass the acceptation criteria, the search process stops for that query (no hit). If this flag is set to a higher value, more target sequences are considered. If the flag above and this flag are both set to 0, the complete database is searched.
-
-8. Fill up the *percentage match*, by entering a value between 0 and 1. This is the value of pairwise identity that must match with the sequence, otherwise the sequence is rejected. 
-
-9. Finally, select the *pairwise identity definition*. You may select the value for this attribute from the following options:
- 
-| Value           |   Description                     |
-|-----------------|-----------------------------------|
-| Default       | Edits distance excluding the terminal gaps|
-| CD-HIT definition| Considers the following ratio: (matching columns) / (shortest sequence length)|
-|Marine Biological Lab definition               |counts each gap opening (internal or terminal) as a single mismatch, whether or not the gap was extended: 1.0 - [(mismatches + gap openings)/(longest sequence length)]|
-| BLAST Definition                |  equivalent to edit distance for global pairwise alignments|
-
+                                                                                               
 
 
 ### 1.3 Advanced Search
 
-On this search page, you can select from a variety of search criteria, which are as follows: 
+On the search results page, there is button labeled as **advanced search**. Clicking on that button will direct you to a page containing a list of advanced search options. To search using advanced parameters, you can provide the values for the option as described in the table below. The records that'll be displayed will match all of the criteria, that you'll fill in. Kindly note that you **don't** need to fill in all of the options. The options are as follows:
 
-1. Navigate to SynBioHub's home page. 
 
-2. Click on the *search* option. It'll direct you to a page containing a list of records. 
+| Option Name   | Description   |
+|---------------|---------------|
+|  Object Type |  The type of the record you want to search for i.e, a collection, design, activity, etc... |
+|  Creator | The username of the record's creator  |
+|  Created After and Created Before  | the timeframe between which the record was created. Make sure to enter the dates in the **YYYY-MM-DD** format  |
+| Modified After Modified Before  | The timeframe between the record may had been modified. Make sure to enter the dates in the **YYYY-MM-DD** format|
+| ID/Name/Description | Enter the ID or the name or the description of the record, which you want to search for|
+| Type | Select the *type* of the record, from the following available options in the dropdown menu, for an example: No filter, biopax:Complex, biopax:DnaRegion, biopax:Protein, so:circular, etc...|
+| Role | select the **role** of the record from this dropdown menu. It contains various sub-categories of **[igem](https://igem.org/Main_Page)** or **[SO](http://www.sequenceontology.org/miso/current_release/term/SO:0000316)**.|
+| Collections| You may select any number of collections, based on your convenience. To select a collection, click on the value attribute of collection and select it from the drop down menu|
+| Customisable Filters | You may apply customised filters for the design you want to search for. For that purpose, a few blank filtering columns have been provided. As soon as you'll click on an empty filter on the left hand side, a drop down menu shall appear having various parameters for filtering. These parameters are basically, the properties for filtering the records. Select the property that you want your record to be filtered by, and then click on filter. This shall reload the page and then select the value of the filter, from the drop down on the right hand side. You may provide as many as 5 customised filters which'er optional|
+-----------------------------------------------------------------------------
 
-3. Located just below the search box are the various means through which you can search for the desired records. In this case, click on *advanced search*.
 
-4. Now, select the type of the record you want to search for i.e, a collection, design, activity, etc...
+After selecting the desired options for performing a search using advanced parameters, click **search**. This will return the records after comprehending all the details that you've entered.
 
-5. Then, select the username of the record's creator.
+* Just below, there is an option to create a **new collection** as well. If you wish to create a collection from your search results, you need to fill in the following items:
 
-6. Enter the timeframe between which the record was created, by entering the *created after* and *created before* attributes. Make sure to enter the dates in the **YYYY-MM-DD** format.
+|Option Name |   Description |
+|------------|---------------|
+| Collection Name| This is the name string that’ll be assigned to the submission.|
+| Collection Description| This is the description string that briefly explains your submission.|
+| Collection ID | This is a user-defined alphanumeric string identifier for the submission and it should contain alphanumeric and underscores characters only.|
+| Collection Version| This is the alphanumeric string which is associated with the submission.|
+--------------------------------------------------------------------------------------------
 
-7. If the record has been modified, make sure to enter the *modified after* and *modified before* attributes as well. Make sure to enter the dates in the **YYYY-MM-DD** format.
+After you've filled in all the available options, click on **create collection**. This will return the search results to you, in the form a private collection.
 
-8. Enter the ID or the name or the description of the record, which you want to search for.
 
-9. Select the *type* of the record, from the following available options in the dropdown menu, for an example: No filter, biopax:Complex, biopax:DnaRegion, biopax:Protein, so:circular, etc...
 
-	Subsequently, select the **role** of the record from this dropdown menu. It contains various sub-categories of **[igem](https://igem.org/Main_Page)** or **[SO](http://www.sequenceontology.org/miso/current_release/term/SO:0000316)**.
 
-10. You may select any number of collections, based on your convenience. To select a collection, click on the value attribute of collection and select it from the drop down menu.
 
-11. You may apply customised filters for the design you want to search for. For that purpose, a few blank filtering columns have been provided. 
-As soon as you'll click on an empty filter on the left hand side, a drop down menu shall appear having various parameters for filtering. These parameters are basically, the properties for filtering the records. Select the property that you want your record to be filtered by, and then click on filter. 
-This shall reload the page and then select the value of the filter, from the drop down on the right hand side. You may provide as many as 5 customised filters which'er optional.
 
 
 ### 1.4 SPARQL Search
 
-To perform a **[SPARQL](https://www.w3.org/TR/sparql11-query/)** Search, the following steps should be followed:
+On the search results page, there is button labeled as **[SPARQL](https://www.w3.org/TR/sparql11-query/)**. Clicking on that button will direct you to the SPARQL page. Since, SPARQL is a query language, hence it'll query Synbiohub's databases for the designs that you're looking for. On the SPARQL page, you can select the graph that is from **private** or **public**. Here, **public** means searching amongst the public submissions, that can be viewed by and **private** means, the ones that are your personal collections.
 
-1. Navigate to SynBioHub's SPARQL Search Page. 
-
-2. Since, SPARQL is a query language, hence it'll query Synbiohub's databases for the designs that you're looking for.
-
-3. Following is an example how a sample SPARQL query is written:
+In the box provided just below graphs dropdown, enter the SPARQL query. Following is an example that selects all sbol components that have an SO role type. It returns the part title, part role, part display id, part uri, and the total number of parts returned by the query. If you want to search for other types of designs, just replace SBOL with your preferred type:
 
 ```
-  SELECT  # makes up the headers of the table
-	
-        ?def # directs you to the design for which you're looking for 
-	
-        ?displayId # This statement displays the Id the design
-	
-        ?title # displays the title of the design
-	
-        (count(?def) as ?count) # displays the count parameter for the design
-	
-        ?role # displays the role of the design    
 
-  WHERE { 
-  	 ?s sbol:component ?comp # Searching for **sbol** components
-
-  	 ?comp sbol:definition ?def # provides the link to that component
-
-         filter (regex(?role, 'http://identifiers.org/so/SO:')) 
-
-	 OPTIONAL {?def sbol:role ?role} # Defines the role
-
-	 OPTIONAL {?def sbol:displayId ?displayId} # gives the ID of that particular record
-
-	 OPTIONAL {?def dcterms:title ?title} 
+# Some common prefix's are also provided below, which you can use in your SPARQL queries.
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX dc: <http://purl.org/dc/elements/1.1/>
+PREFIX sbh: <http://wiki.synbiohub.org/wiki/Terms/synbiohub#>
+PREFIX prov: <http://www.w3.org/ns/prov#>
+PREFIX sbol: <http://sbols.org/v2#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX purl: <http://purl.obolibrary.org/obo/>
+SELECT  # makes up the headers of the table
+?def # directs you to the design for which you're looking for 
+?displayId # This statement displays the Id the design
+?title # displays the title of the design
+(count(?def) as ?count) # displays the count parameter for the design
+?role # displays the role of the design    
+WHERE { 
+?s sbol:component ?comp # Searching for **sbol** components
+?comp sbol:definition ?def # provides the link to that component
+filter (regex(?role, 'http://identifiers.org/so/SO:')) 
+OPTIONAL {?def sbol:role ?role} # Defines the role
+OPTIONAL {?def sbol:displayId ?displayId} # gives the ID of that particular record
+OPTIONAL {?def dcterms:title ?title} 
   }
+
 ```
-*The query selects all sbol components that have an SO role type. It returns the part title, part role, part display id, part uri, and the total number of parts returned by the query. If you want to search for other types of designs, just replace SBOL with your preferred type.* 
 
----------------------------------------------------------------------
-
-### 1.5 Searching on a record page
-
-On a record page, under the search button, you can find the following options:-
-
-#### 1.5.1 Searching for the uses
-This returns any other object that refers to this object that the user has given as an input, for example, if this is an engineered region, then it will return all other components that use this as a sub-component.
-
-#### 1.5.2 Searching for the twins
-This returns other components, if and only if they have the same sequence as the input by the user.
-
-#### 1.5.3 Searching for the similar ones
-This returns other components that have similar sequences.
+After writing your SPARQL query, just click **submit query**. After you click on **submit query**, a list of records matching with SPARQL query shall be displayed.
 
 
+
+
+
+### 1.5 Searching on a Record Page
+
+On a record page, under the search button, you may find the following options:-
+
+#### 1.5.1 Searching for Uses
+
+This returns other records that refers to this particular record which you're currently viewing. For example, if this is an engineered region, then it will return all other components that use this as a sub-component.
+
+#### 1.5.2 Search for Twin Components
+
+If the record being viewed is a component, then you'll also have the option to search for **twin** components. A twin is another component that has the same sequence as the object being viewed. So, selecting this option will return all the records having the same sequence as the object that you'd be currently viewing.
+
+
+#### 1.5.3 Search for Similar Components
+
+If the record being viewed is a component and SBOLExplorer is being run on that particular SynBioHub instance, then you'll also have the option to search for **similar** components. A component is similar, when the sequences are close enough, that SBOlExplorer has clustered those 2 components together into the same cluster.
 
 ## 2. Viewing & Downloading the Information
+
+
 
 ### 2.1 Viewing the Information
 
 There are various types of records on SynBioHub. They've been divided into the following sub-categories:
 
-#### 2.1.1 Viewing a collection
+#### 2.1.1. Viewing a Record
+
+This page consists of a general description of 
+
+#### 2.1.2 Viewing a collection
 Once you've navigated successfully to the collections home page, the following steps need to be followed:
 
 1. On the collection's home page, you'll be able to view to view the following parameters in this order:
@@ -179,7 +187,7 @@ The list consists of the name, identifier, type as well as description of respec
 
 * Finally, you can also view the various attachments that are there in that particular collection.
 
-#### 2.1.2 Viewing a component
+#### 2.1.3 Viewing a component
 
 Once you've successfully navigated to the record's home page, you'll be able to view the parameters in this order:
 
@@ -191,38 +199,38 @@ Once you've successfully navigated to the record's home page, you'll be able to 
 
 * Then, we've got five clickable options, that are:
 
-1. **[Download](https://synbiohub.github.io/userdocumentation/#32-downloading-the-information)**
+   * **[Download](https://synbiohub.github.io/userdocumentation/#32-downloading-the-information)**
  
-2. **[Search](https://synbiohub.github.io/userdocumentation/#1-searching-for-information)**
+   * **[Search](https://synbiohub.github.io/userdocumentation/#1-searching-for-information)**
 
-3. **[Share](https://synbiohub.github.io/userdocumentation/#6-data-sharing-mechanisms)**
+   * **[Share](https://synbiohub.github.io/userdocumentation/#6-data-sharing-mechanisms)**
 
-4. **Back**: This option navigates back to the main page of the collection, which that particular record is a part of.
+   * **Back**: This option navigates back to the main page of the collection, which that particular record is a part of.
 
 
-5. **[Add to a collection](https://synbiohub.github.io/userdocumentation/#43-updating)** 
+   * **[Add to a collection](https://synbiohub.github.io/userdocumentation/#43-updating)** 
 
  
 * Next we have is the VisBOL Navigator, with zooming capabilities. This, graphically represents the structure of the engineered region. By hovering your pointer over this structure, you can view the following attributes of that particular engineered region: type of resource, identifier, name and role of the engineered region. 
 
 *  Then we have the details of that engineered region. This consists of the following:
 
-1. **[Type](https://dissys.github.io/sbol-owl/sbol-owl.html#type)**: This specifies the category of biochemical or physical entity. For example DNA, protein, or small molecule that a ComponentDefinition object abstracts for the purpose of engineering design. 
+	* **[Type](https://dissys.github.io/sbol-owl/sbol-owl.html#type)**: This specifies the category of biochemical or physical entity. For example DNA, protein, or small molecule that a ComponentDefinition object abstracts for the purpose of engineering design. 
 
-2. **[Role](https://dissys.github.io/sbol-owl/sbol-owl.html#role)**: Clarifies the potential function of an entity in a biochemical or physical context. When it is used for ComponentDefinitions, it MUST identify terms from ontologies that are consistent with the types property of the ComponentDefinition.
+	* **[Role](https://dissys.github.io/sbol-owl/sbol-owl.html#role)**: Clarifies the potential function of an entity in a biochemical or physical context. When it is used for ComponentDefinitions, it MUST identify terms from ontologies that are consistent with the types property of the ComponentDefinition.
 
-3. **[Sequence](https://dissys.github.io/sbol-owl/sbol-owl.html#Sequence)**: The purpose of the Sequence class is to represent the primary structure of a ComponentDefinition object and the manner in which it is encoded. This representation is accomplished by means of the elements property and encoding property. 
+	* **[Sequence](https://dissys.github.io/sbol-owl/sbol-owl.html#Sequence)**: The purpose of the Sequence class is to represent the primary structure of a ComponentDefinition object and the manner in which it is encoded. This representation is accomplished by means of the elements property and encoding property. 
 
-4. Also, you can view reference as well as citations.
+	* Also, you can view reference as well as citations.
 
 * Then, we have the section named, **other properties**. This consists of the following attributes:
 
-1. **[Ontology for Biomedical Investigations(OBI)](www.ontobee.org/ontology/OBI?iri=http://purl.obolibrary.org/obo/OBI_0002110)**: A centrally registered identifier symbol used to uniquely identify objects given by International DOI Foundation. The DOI system is particularly used for electronic documents such as journal articles. 
+	* **[Ontology for Biomedical Investigations(OBI)](www.ontobee.org/ontology/OBI?iri=http://purl.obolibrary.org/obo/OBI_0002110)**: A centrally registered identifier symbol used to uniquely identify objects given by International DOI Foundation. The DOI system is particularly used for electronic documents such as journal articles. 
 
 
-2. SynBioHub#Owned_by: Username of the design owner.
+	* SynBioHub#Owned_by: Username of the design owner.
 
-3. SynBioHub#TopLevel
+	* SynBioHub#TopLevel
 
 * Subsequently, we have the section titled as, **Member of these collections**. This section contains the list of collection's to which that particular resource belongs to.
 
@@ -238,21 +246,23 @@ Once you've successfully navigated to the record's home page, you'll be able to 
 
 * There may be additional clickable sections after the attachments menu. These have been added via, **[visualisation plugins](https://github.com/SynBioHub/Plugin-Visual-Seqviz)** and they're as follows:
 
-1. **iGEM main page**, 
+	* **iGEM main page**, 
 
-2. **iGEM design page** and
+	* **iGEM design page** and
 
-3. **iGEM experience page**. 
+	* **iGEM experience page**. 
 
-4. Then, we have a section, titled **Member of these collection**, which displays the collection, of which that particular record is a part of.   
+	* Then, we have a section, titled **Member of these collection**, which displays the collection, of which that particular record is a part of.   
 
-6. Then is the section that contains, **Sequence Visualisation** of that particular resource. Finally, we have the **component sankey** and the **component bar**. The iGEM parts are plugins, hence they are not part of every instance and the Sequence Visualization, Sankey, and Component bar are additional plugins, hence they've been explained in detail [here](https://github.com/SynBioHub/Plugin-Visual-Seqviz).
+	* Then is the section that contains, **Sequence Visualisation** of that particular resource. Finally, we have the **component sankey** and the **component bar**. The iGEM parts are plugins, hence they are not part of every instance and the Sequence Visualization, Sankey, and Component bar are additional plugins, hence they've been explained in detail [here](https://github.com/SynBioHub/Plugin-Visual-Seqviz).
 
 
 ### 2.2 Downloading the Information
 Once you would've navigated successfully to the records's home page, there would be a download option on the left, in a dropdown format.
  
-Following are the types in which you can download the collection:
+Following are the types of formats that you may be able to download a record:
+
+**Note: Not all the record types may be downloaded in all formats.**
 
  |  Type             | Description  |
     |-------------------|--------------|
@@ -263,23 +273,15 @@ Following are the types in which you can download the collection:
   | Image     | An image is an artifact that depicts visual perception, such as a photograph or other two-dimensional picture, that resembles a subject—usually a physical object—and thus provides a depiction of it. In the context of signal processing, an image is a distributed amplitude of color(s). A pictorial script is a writing system that employs images as symbols for various semantic entities, rather than the abstract signs used by alphabets|
 ----------------------------------------------------------------------------------------
 
-Additional download options can be through the use of plugins, which are as follows:
-
-1. **[Visual Plugins](https://synbiohub.github.io/plugins/#32-basic-structure)**
-
-2. **[Submit Plugins](https://synbiohub.github.io/plugins/#33-submit)**
-
-3. **[Download Plugins](https://synbiohub.github.io/plugins/#34-download)**
-
-To view some example plugins visit the example section of each of these sections.
+Additional download options can be through the use of **[download plugins](https://synbiohub.github.io/plugins/#34-download)**.
 
 
 
 
 
-## 3. Registering & Updating an account
+## 3. Registering & Updating an Account
 
-### 3.1 Registering an account
+### 3.1 Registering an Account
 
 Following Steps need to be followed for registering onto SynBioHub:
 
@@ -289,16 +291,14 @@ Following Steps need to be followed for registering onto SynBioHub:
 
 3. Enter the following details to complete your registration process: 
 
-* Full Name, 
-
-* Affiliation(Optional), 
-
-* Email Address, 
-
-* Username & 
-
-* Password
-
+| Option Name | Description   |
+|-------------|----------|
+| Full Name   | Enter the name of the user|
+| Affiliation(Optional)| You can enter the name of the university/institute that you're currently affiliated to| 
+| Email Address| Enter the Email Address, through which you want to get registered. If in future you forget your login credentials, then this shall be used for sending a recovery password for your account| 
+| Username | You have to enter a username of your own choice. This shall be displayed on the record page of every record that you submit|
+|Password | Enter a password (preferably a strong one) for keeping your user account safe|
+---------------------------------------------------------------------------------------------------
 4. When you need to login into your SynBioHub account, click on the "login or Register" option. Then you need to enter your email address and your password to access your account.
 
 ### 3.2 Updating an Account

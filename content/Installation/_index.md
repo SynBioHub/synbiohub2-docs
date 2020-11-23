@@ -55,16 +55,21 @@ To run the base configuration:
 6. In your browser search for localhost:7777 and it'll take you to a setup page when you'll run it for the very first time.
 
    [In case of Linux OS, if you face any permission errors, then simple insert **sudo** before every statement]
+
+7. The following command stops a local instance of SynBioHub:
+
+      ```docker-compose -f ./synbiohub-docker/docker-compose.yml down```
   	
 
 ### With SBOLExplorer
 You can also run SynBioHub, by using SBOlExplorer.
-To add [SBOLExplorer](https://github.com/michael13162/SBOLExplorer), add the `docker-compose.explorer.yml` to the main docker-compose, i.e. for step 3 run the following command:
+To add [SBOLExplorer](https://github.com/michael13162/SBOLExplorer), add the `docker-compose.explorer.yml` to the main docker-compose, i.e. for step 3 run the following command: 
 
 ``` sysctl -w vm.max_map_count=262144 ```
 
 ``` docker-compose -f ./synbiohub-docker/docker-compose.yml -f ./synbiohub-docker/docker-compose.explorer.yml up```
 
+**Presently, the command ```sysctl -w vm.max_map_count=262144``` runs only on linux, due to OS upgrades on Mac OS***
 ### With Plugins
 To add plugins to the configuration, change the command mentioned in step 3 to: 
 
@@ -74,7 +79,7 @@ Note that all plugins are added before the `up` and each is preceeded by `-f `. 
 
 ```docker-compose -f ./synbiohub-docker/docker-compose.yml -f ./synbiohub-docker/docker-compose.explorer.yml -f ./synbiohub-docker/docker-compose.pluginVisualIgem.yml -f ./synbiohub-docker/docker-compose.pluginVisualSeqviz.yml up```
 
-A sortable table containing plugins has been implemented **[here](https://synbiohub.github.io/synbiohub-docker/#plugins)**.
+A table of currently available plugins can be found **[here](https://synbiohub.github.io/synbiohub-docker/#plugins)**.
 
 
 
