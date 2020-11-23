@@ -37,15 +37,14 @@ Then, you need to fill out some details for configuring your local instance, whi
 
 You need to create a user account that will have the first privileged access to your SynBioHub local instance. For that you need to enter certain details, which are as follows:
 
-* **Username**
-
-* **Full Name**
-
-* **Affiliation** (Optional)
-
-* **Email Address**
-
-* **Password**
+| Option Name | Description   |
+|-------------|----------|
+| Full Name   | Enter the name of the user|
+| Affiliation(Optional)| You can enter the name of the university/institute that you're currently affiliated to| 
+| Email Address| Enter the Email Address, through which you want to get registered. If in future you forget your login credentials, then this shall be used for sending a recovery password for your account| 
+| Username | You have to enter a username of your own choice. This shall be displayed on the record page of every record that you submit|
+|Password | Enter a password (preferably a strong one) for keeping your user account safe|
+---------------------------------------------------------------------------------------------------
 
 ## 4. Setting up External Authorisation Provider
 
