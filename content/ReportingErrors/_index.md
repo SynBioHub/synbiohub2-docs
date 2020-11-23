@@ -2,7 +2,7 @@
 title: "Reporting Errors"
 date: 2020-11-19T21:47:42+05:30
 draft: true
-weight: 99
+weight: 95
 ---
 
 To report any errors/inconsistencies related to the API/UI of [SynBioHub](https://synbiohub.org/), visit the **[synbiohub issue tracker](https://github.com/SynBioHub/synbiohub/issues)** on GitHub.
