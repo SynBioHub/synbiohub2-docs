@@ -4,9 +4,10 @@ title = "SynBioHub-Documentation"
 theme = "ace-documentation"
 Copyright = "© SynBioHub 2020"
 canonifyurls = true
+
 [params]
 
-
+disableSearch = true 
 hideHUGOSupport = false
 [[menu.main]]  # here are the buttons on the menu
 name = "Main Page" # Button will display as "Home"
@@ -74,5 +75,6 @@ url = "/Setup"
 ChangeFreq = ""
 Filename = "sitemap.xml"
 Priority = "-1"
+
 
 
