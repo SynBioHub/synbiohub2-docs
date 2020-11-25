@@ -178,7 +178,7 @@ Once you've successfully navigated to the record's home page, you'll be able to 
 
    * **Back**: This option navigates back to the main page of the collection, which that particular record is a part of.
 
-   * **[Add to a collection]()** 
+   * **[Add to a collection](https://synbiohub.github.io/userdocumentation/#6-add-to-an-existing-collection)** 
 
  
 
