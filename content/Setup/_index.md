@@ -5,7 +5,7 @@ draft: true
 weight: 15
 ---
 
-When you'll first install your SynBioHub locally and navigate to ```http://localhost:7777/```, you shall be directed to the setup page.
+When you'll first install SynBioHub locally and navigate to ```http://localhost:7777/```, you shall be directed to the setup page.
 
 Over there you'll see a welcome message saying, **Congratulations, SynBioHub is successfully installed!**
 
@@ -50,8 +50,18 @@ You need to create a user account that will have the first privileged access to 
 
 External authentication basically, is the use of third-party authentication sources to decide whether a user should be allowed access to a system, and often what level of access an authenticated user enjoys on a system.
 
-For a SynBioHub local instance, you've got 2 options i.e, **none** or **google**. If you'll select none as your preferred authorisation provider nothing shall happen. If you select google as your authorisation provider, the following 
+For a SynBioHub local instance, you've got 2 options i.e, **none** or **google**. If you'll select none as your preferred authorisation provider then, you simply have to click **continue**. 
 
+To be able to use Google for authentication, you first need to register with them. This is done at their developer **[console](https://console.developers.google.com/)**. To learn more about using google as your service provider, click **[here](https://docs.identityserver.io/en/release/quickstarts/4_external_authentication.html#adding-google-support)**. Now, if you select google as your preferred authorisation provider, then the you have to provide certain values for the following options:
+
+| Option Name         | Description        | 
+|---------------------|--------------------|
+| Client ID | This is an identification string that is provided to every user by google. This number is unique for each user. For an example: **XXXXXXXXXXXXXXXXXXXX.apps.googleusercontent.com**, this is how a client ID provided by google looks.|
+| Client Secret | Client secret values are created for the app by the external authentication provider when the app is registered with the provider and it is a unique identification string. |
+| Redirect URL | This is the path in your application that users are redirected to after they have authenticated with Google. The path will be appended with the authorisation code for access. It must have a protocol and cannot contain URL fragments or relative paths. Also, make sure it is not a public IP address.|
+-------------------------------------------------------------------------------
+
+Once, you've filled all the details, click **continue**. This will redirect you to the home page of your SynBioHub local instance.   
 
 
 
