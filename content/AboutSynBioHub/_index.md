@@ -24,8 +24,8 @@ Also, SynBioHub can be used to publish a library of synthetic parts and designs 
 * [James Scholz](https://www.async.ece.utah.edu/~scholz/) (University of Utah)
 * [Prubhtej Singh](https://www.linkedin.com/in/prubhtej-singh/) (Guru Gobind Singh Indraprastha University)
 * [Jeanet Mante](https://myersresearchgroup.github.io/author/jet-mante/) (University of Colorado Boulder)
-* [Eric Yu](https://www.linkedin.com/in/ericjyu) (University of Utah)
-* [Michael Zhang](https://www.linkedin.com/in/michael13162/) (Google)
+* [Eric Yu](https://myersresearchgroup.github.io/author/eric-yu/) (University of Utah)
+* [Michael Zhang](https://myersresearchgroup.github.io/author/michael-zhang/) (Google)
 * [Benjamin Hatch](https://www.linkedin.com/in/benjamin-hatch-296208195/) (University of Utah)
 
 
