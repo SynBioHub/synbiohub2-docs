@@ -24,6 +24,16 @@ toc = false
 
 in the <code>config.toml</code> or the <code>frontmatter</code> (a page's markdown file) for a page-wide or page-specific disabling of the ToC respectively.
 
+
+## Logo
+
+An optional site logo can be specified:
+
+{{< code >}}
+site_logo = /logo.svg
+{{< /code >}}
+
+
 ## Google Analytics
 
 Enable Google Analytics by adding your GA tracking ID to the <code>config.toml</code> file, at:
@@ -35,9 +45,24 @@ Where <code>XX-XXXXXXXXX-X</code> is your tracking ID.
 
 ## Read more navigation
 
-In <code>config.toml</code> or a page's <code>frontmatter</code>, set <code>disableReadmoreNav = true</code> to disable the prev/next buttons at the buttom of every page.
+In <code>config.toml</code> or a page's <code>frontmatter</code>, set <code>disableReadmoreNav = true</code> to disable the prev/next buttons at the bottom of every page.
 
 
 ## Search
 
-Disable search by setting <code>disableSearch = true</code> in <code>config.toml</code>. 
+Disable search by setting <code>disableSearch = true</code> in <code>config.toml</code>.
+
+The local search feature is based on the content of `index.json`, which is generated based on a configurable template.
+Search results are presented as a drop-down list attached to the search input field while typing.
+
+
+## Custom CSS
+
+You can override the built-in css by using your own. Just put your own css files in the `static` directory of your website (the one in the theme directory also works but is not recommended) and modify the `custom_css` parameter in your config file. The path referenced in the parameter should be relative to the `static` folder. These css files will be added through the `header` partial after the built-in css file.
+
+For example, if your css files are `static/css/custom.css` and `static/css/custom2.css` then add the following to the config file:
+
+```
+    [params]
+      custom_css = ["css/custom.css","css/custom2.css"]
+```
