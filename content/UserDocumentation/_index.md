@@ -145,7 +145,7 @@ If the record being viewed is a component, then you'll also have the option to s
 
 #### 1.5.3 Search for Similar Components
 
-If the record being viewed is a component and SBOLExplorer is being run on that particular SynBioHub instance, then you'll also have the option to search for **similar** components. A component is similar, when the sequences are close enough, that SBOlExplorer has clustered those 2 components together into the same cluster.
+If the record being viewed is a component and SBOLExplorer is being run on that particular SynBioHub instance, then you'll also have the option to search for **similar** components. A component is similar, when the sequences are close enough, that SBOLExplorer has clustered those 2 components together into the same cluster.
 
 ## 2. Viewing & Downloading the Information
 
@@ -219,9 +219,6 @@ Once you've successfully navigated to the record's home page, you'll be able to 
 
 
 * Then, we have a section, titled **Member of these collection**, which displays the collection, of which that particular record is a part of.   
-
-* Then is the section that contains, **Sequence Visualisation** of that particular resource. Finally, we have the **component sankey** and the **component bar**. The iGEM parts are plugins, hence they are not part of every instance and the Sequence Visualization, Sankey, and Component bar are additional plugins, hence they've been explained in detail [here](https://github.com/SynBioHub/Plugin-Visual-Seqviz).
-
 
 
 #### 2.1.2 Viewing a collection
@@ -545,13 +542,13 @@ This section basically displays the graph URI and its corresponding triples. You
 
 This section displays the log file for your SynBioHub local instance. You can view 4 types of logs, which are as follows:
 
-1. **Error**
-
-2. **Warn**
-
-3. **Info**
-
-4. **Debug**
+| Name of the Log       |   Description  |
+|------------------------|--------------------------|
+|  **[Error](https://www.techopedia.com/definition/26306/error-log#:~:text=Definition%20%2D%20What%20does%20Error%20Log,table%20corruption%20and%20configuration%20corruption.)**|Error log is a record of critical errors that are encountered by SynBioHub, while in operation. Some of the common entries in an error log include table corruption and configuration corruption. Error logs in many cases serve as extremely useful tools for troubleshooting and managing systems, servers and even networks.|
+|**[Warn](https://library.netapp.com/ecmdocs/ECMP1650312/html/GUID-C0F52B5A-8391-40E9-95CC-82BC465B3CB8.html)** | Used just to draw your attention, but it is considered to be a normal activity usually and does not require any action|
+|**[Info](https://library.netapp.com/ecmdocs/ECMP1650312/html/GUID-C0F52B5A-8391-40E9-95CC-82BC465B3CB8.html)** | For standard, normally occurring operations.|
+|**[Debug](https://library.netapp.com/ecmdocs/ECMP1650312/html/GUID-C0F52B5A-8391-40E9-95CC-82BC465B3CB8.html)** | These types of logs just give out the debug information.|
+-----------------------------------------------------------------------
 
 You may use the pointer to view differs types of logs.
 
@@ -637,7 +634,7 @@ SynBioHub demonstrates the application of this harmonized data exchange through 
 
 1. **Retrieve from web of registries**: This option shall retrieve the web of registries that are already existing globally, locally onto you instance, if in case you delete them. 
 
-2. **Add registry**: This shall enable you to add a registry onto your instance. For adding, click on this option. Then, a popup shall appear. Subsequently, enter the registry URI prefix and the Registry URL. Finally, click on **submit**.
+2. **Add registry**: This shall enable you to add a registry onto your instance. For adding, click on this option. Then, a popup shall appear. Subsequently, enter the registry URI prefix and the Registry URL. Finally, click on **submit**. This will add an already existing registry of SynBioHub, to the list of registries on you SynBioHub local instance.
  
 
 * Several local web-of-registries are also given on this page alongside their Synbiohub URL. Here, you have an option to **save** as well as **delete** the already existing registries.  
