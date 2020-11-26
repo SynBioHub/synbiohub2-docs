@@ -2,6 +2,9 @@
     <div class="container">
         <div>
             <a class="navbar-brand" href="{{ .Site.BaseURL | relLangURL }}">
+                {{ with .Site.Params.site_logo }}
+                    <img src="{{ . }}" />
+                {{ end }}
                 {{ .Site.Title }}
             </a>
         </div>
@@ -26,4 +29,9 @@
             </div>
         {{- end}}
     </div>
+    {{ with .OutputFormats.Get "rss" -}}
+        <div class="feed-icons">
+            <a href=".Permalink"><img src="/img/feed-icon.svg" alt="RSS feed" /></a>
+        </div>
+    {{ end -}}
 </nav>
