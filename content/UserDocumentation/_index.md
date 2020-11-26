@@ -376,15 +376,9 @@ Now, there are 2 ways you make your submissions i.e, creating a new collection a
 | **[zip](https://en.wikipedia.org/wiki/Zip_(file_format))** | ZIP is an archive file format that supports lossless data compression. A ZIP file may contain one or more files or directories that may have been compressed. |
 ----------------------------------------------------------------------------------------------------------------
 
-* **Handler**: You also need to select a handler. Following options are available:
-    
-    * Default          
+* **Handler**: You also need to select a handler. Out of the four options provided, default is the only one that's not a plugin, the rest are plugins and can be found in the plugins section.          
 
-    * Excel Library
-    
-    * Excel Composition
-
-    * Snapgene        
+   
 
 * Finally, you have an option to overwrite the existing objects in that collection i.e, removing all the existing objects in the collection and adding new ones or keeping the old resources and adding the new ones.
 
@@ -401,7 +395,7 @@ Now, there are 2 ways you make your submissions i.e, creating a new collection a
 
  |  Type             | Description  |
     |-------------------|--------------|
-        |  SBOL             | The Synthetic Biology Open Language (SBOL) has been developed as a standard to support the         specification and exchange of biological design information in synthetic biology. To know more about SBOl, visit [this page](https://sbolstandard.org/datamodel-about/)           |
+        |  SBOL             | The Synthetic Biology Open Language (SBOL) has been developed as a standard to support the         specification and exchange of biological design information in synthetic biology. To know more about SBOL, visit [this page](https://sbolstandard.org/datamodel-about/)           |
         | Annotated zip | ZIP is an archive file format that supports lossless data compression. A ZIP file may contain one or more files or directories that may have been compressed. To know more about zip, visit [this page](https://en.wikipedia.org/wiki/Zip_(file_format))|
     | GFF3       | The GFF (General Feature Format) format consists of one line per feature, each containing 9 columns of data, plus optional track definition lines. To know more about GFF3, click [here](http://asia.ensembl.org/info/website/upload/gff3.html).|
     | FASTA       | In bioinformatics and biochemistry, the FASTA format is a text-based format for representing either nucleotide sequences or amino acid (protein) sequences, in which nucleotides or amino acids are represented using single-letter codes. The format also allows for sequence names and comments to precede the sequences. The format originates from the FASTA software package, but has now become a near universal standard in the field of bioinformatics. To know more about FATSA file format, click [here](https://en.wikipedia.org/wiki/FASTA_format)|
