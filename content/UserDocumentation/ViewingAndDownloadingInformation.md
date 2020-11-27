@@ -150,7 +150,7 @@ Following are the types of formats that you may be able to download a record:
   | Image     | An image is an artifact that depicts visual perception, such as a photograph or other two-dimensional picture, that resembles a subject—usually a physical object—and thus provides a depiction of it. In the context of signal processing, an image is a distributed amplitude of color(s). A pictorial script is a writing system that employs images as symbols for various semantic entities, rather than the abstract signs used by alphabets|
 ----------------------------------------------------------------------------------------
 
-Additional download options can be through the use of **[download plugins](https://synbiohub.github.io/plugins/#34-download)**.
+Additional download options may be available via the use of **[download plugins](https://synbiohub.github.io/plugins/#34-download)**.
 
 
 
