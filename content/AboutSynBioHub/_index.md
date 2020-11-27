@@ -6,7 +6,7 @@ weight: 1
 ---
 SynBioHub basically includes two projects:
 
-1. An open source software project providing a web interface for the storing and publishing of synthetic biology designs.
+1. An open source software project providing a web interface for the storing, publishing and sharing of synthetic biology designs.
 
 2. A public instance of the aforementioned software project at synbiohub.org, allowing users to upload and share designs.
 
