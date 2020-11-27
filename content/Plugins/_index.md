@@ -546,21 +546,7 @@ Try the **pipreqs** package (used from anaconda prompt if using anaconda)
 16. update the readme and wait for the new image to push to docker hub (you will see a green check next to commit when this has happened)
 17. check the uploaded image works by downloading and running it ( docker run --publish 8080:5000 --detach --name <short name> synbiohub/<descriptive name>:snapshot ) and repeating steps 9-12.
 
-### 8.4 Useful commands for docker debug
-* docker system prune -a --volumes
-* docker system prune -a
-* docker images purge
-* docker network inspect synbiohub-docker_default
-* copy docker files to local location to debug: docker cp <name of container>:<path in container> <path on host>
-* Enter into a docker file to edit it: docker exec -it synbiohub-docker_pluginVisualSeqviz_1 /bin/bash 
-
-    * exit by simply typing: exit
-
-    * for synbiohub testing look at plugin.js or view.js in home directory
-
-* docker volume ls
-* docker volume prune
 
 ## 9. Plugins-Table
 
-The sortable table has already been implemented and can be found [here](https://synbiohub.github.io/synbiohub-docker/#plugins).
+A table of currently available plugins can be found **[here](https://synbiohub.github.io/synbiohub-docker/#plugins)**.

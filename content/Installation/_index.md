@@ -63,7 +63,7 @@ To run the base configuration:
 
 ### With SBOLExplorer
 You can also run SynBioHub, by using SBOlExplorer.
-To add [SBOLExplorer](https://github.com/michael13162/SBOLExplorer), add the `docker-compose.explorer.yml` to the main docker-compose, i.e. for step 3 run the following command: 
+To add [SBOLExplorer](https://github.com/michael13162/SBOLExplorer), add the `docker-compose.explorer.yml` to the main docker-compose, i.e. for step 5 run the following command: 
 
 ``` sysctl -w vm.max_map_count=262144 ```
 
@@ -71,7 +71,7 @@ To add [SBOLExplorer](https://github.com/michael13162/SBOLExplorer), add the `do
 
 **Presently, the command ```sysctl -w vm.max_map_count=262144``` runs only on linux, due to OS upgrades on Mac OS***
 ### With Plugins
-To add plugins to the configuration, change the command mentioned in step 3 to: 
+To add plugins to the configuration, change the command mentioned in step 5 to: 
 
 ``` docker-compose -f ./synbiohub-docker/docker-compose.yml -f ./synbiohub-docker/docker-compose.explorer.yml -f ./synbiohub-docker/docker-compose.<Plugin 1 File Name>.yml -f ./synbiohub-docker/docker-compose.<Plugin 2 File Name>.yml up ```
 
