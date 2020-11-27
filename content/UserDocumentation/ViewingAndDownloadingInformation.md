@@ -62,13 +62,6 @@ Once you've successfully navigated to the record's home page, you'll be able to 
 
 * Then, we have the **attachments** page. In this section, you can view the various attachments, of a resource.
 
-* Then, we have the **[Interactions](https://dissys.github.io/sbol-owl/sbol-owl.html#Interaction)** section. Interaction basically, provides a more detailed description of how the FunctionalComponent objects of a ModuleDefinition are intended to work together. It has a table consisting of the following attributes:
-
-| Name     |      Description      |
-|-------------|---------------------|
-| **[Interaction](https://dissys.github.io/sbol-owl/sbol-owl.html#Interaction)**/**[Participation](https://dissys.github.io/sbol-owl/sbol-owl.html#Participation)**| 1) **Interaction**: Provides more detailed description of how the FunctionalComponent objects of a ModuleDefinition are intended to work together.   2) **Participation**: Each Participation represents how a particular FunctionalComponent behaves in its parent Interaction. |
-| **[Participant Definition](https://dissys.github.io/sbol-owl/sbol-owl.html#definition)** | The definition property is a REQUIRED URI that refers to the ComponentDefinition of the ComponentInstance. As described in the previous section, this ComponentDefinition effectively provides information about the types and roles of the ComponentInstance.|
-| **[Type](https://dissys.github.io/sbol-owl/sbol-owl.html#type)**/**[Role](https://dissys.github.io/sbol-owl/sbol-owl.html#role)** | 1) **Type**: Specifies the category of biochemical or physical entity. For example DNA, protein, or small molecule that a ComponentDefinition object abstracts for the purpose of engineering design. For DNA or RNA entities, additional types fields are used to describe nucleic acid topology (circular / linear) and strandedness (double- or single-stranded).  2) **Role**: Clarifies the potential function of an entity in a biochemical or physical context. When it is used for ComponentDefinitions, it MUST identify terms from ontologies that are consistent with the types property of the ComponentDefinition. For example, the roles property of a DNA or RNA ComponentDefinition could contain URIs identifying terms from the Sequence Ontology (SO). It may be a product, genetic production, template, etc.|
 
 
 * There may be additional clickable sections after the attachments menu. These have been added via, **[visualisation plugins](https://github.com/SynBioHub/Plugin-Visual-Seqviz)**.
