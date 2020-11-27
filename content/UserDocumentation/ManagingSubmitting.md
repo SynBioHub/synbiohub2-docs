@@ -1,0 +1,105 @@
++++ 
+title = "Submitting, Managing and Updating Submissions" 
+description = "" 
+weight = 4
++++
+
+
+
+
+
+
+
+## 1. Submitting 
+
+For submitting your designs to SynBioHub, following steps need to be followed:
+
+1. Navigate to SynBioHub's home page.
+
+2. Click on the **Submit** option and it'll direct you to the Submit page. 
+
+Now, there are 2 ways you make your submissions i.e, creating a new collection and then submitting your resource or submitting to an existing collection.
+
+### 1.1 Creating a new collection
+
+1. Select the **create a new collection** option.
+
+2. Following are the attributes that need to be filled up :
+
+* **Name**: This is the name string that'll be assigned to the submission.
+
+* **Collection Description**: This is the description string that briefly explains your submission.
+
+* **Collection ID**: This is a user-defined string identifier for the submission and it should contain alphanumeric and underscores characters only.
+
+* **Collection Version**: This is the version string which is associated with the submission.
+
+* **Citations** (optional): This is a list of comma separated pubmed IDs of citations to store with the submission, just for reference. It is an optional attribute.
+
+* **SBOL/GENBANK/GFF3/FASTA/ZIP file** (OPTIONAL): You can optionally submit a file. The file should be of the following types:
+
+
+ |  Type             | Description  |
+    |-------------------|--------------|
+        |  **[SBOL](https://sbolstandard.org/datamodel-about/)**             | The Synthetic Biology Open Language (SBOL) has been developed as a standard to support the         specification and exchange of biological design information in synthetic biology.           |
+    | **[GFF3](http://asia.ensembl.org/info/website/upload/gff3.html)**       | The GFF (General Feature Format) format consists of one line per feature, each containing 9 columns of data, plus optional track definition lines.|
+    | **[FASTA](https://en.wikipedia.org/wiki/FASTA_format)**      | In bioinformatics and biochemistry, the FASTA format is a text-based format for representing either nucleotide sequences or amino acid (protein) sequences, in which nucleotides or amino acids are represented using single-letter codes. The format also allows for sequence names and comments to precede the sequences. The format originates from the FASTA software package, but has now become a near universal standard in the field of bioinformatics. |
+| **[zip](https://en.wikipedia.org/wiki/Zip_(file_format))** | ZIP is an archive file format that supports lossless data compression. A ZIP file may contain one or more files or directories that may have been compressed. |
+----------------------------------------------------------------------------------------------------------------
+
+* **Handler**: You also need to select a handler. Out of the four options provided, default is the only one that's not a plugin, the rest are plugins and can be found in the plugins section.          
+
+   
+
+* Finally, you have an option to overwrite the existing objects in that collection i.e, removing all the existing objects in the collection and adding new ones or keeping the old resources and adding the new ones.
+
+3. At last, click on **submit**.
+
+### 1.2 Submitting to an existing collection
+
+1. Select the **add to existing collection** option.
+
+2. Then, select your desired collection, to which you want to add your submission from the dropdown menu.
+
+3. Subsequently, upload the files which you want to submit. The file should be of the following types:
+
+
+ |  Type             | Description  |
+    |-------------------|--------------|
+        |  SBOL             | The Synthetic Biology Open Language (SBOL) has been developed as a standard to support the         specification and exchange of biological design information in synthetic biology. To know more about SBOL, visit [this page](https://sbolstandard.org/datamodel-about/)           |
+        | Annotated zip | ZIP is an archive file format that supports lossless data compression. A ZIP file may contain one or more files or directories that may have been compressed. To know more about zip, visit [this page](https://en.wikipedia.org/wiki/Zip_(file_format))|
+    | GFF3       | The GFF (General Feature Format) format consists of one line per feature, each containing 9 columns of data, plus optional track definition lines. To know more about GFF3, click [here](http://asia.ensembl.org/info/website/upload/gff3.html).|
+    | FASTA       | In bioinformatics and biochemistry, the FASTA format is a text-based format for representing either nucleotide sequences or amino acid (protein) sequences, in which nucleotides or amino acids are represented using single-letter codes. The format also allows for sequence names and comments to precede the sequences. The format originates from the FASTA software package, but has now become a near universal standard in the field of bioinformatics. To know more about FATSA file format, click [here](https://en.wikipedia.org/wiki/FASTA_format)|
+| Zip | ZIP is an archive file format that supports lossless data compression. A ZIP file may contain one or more files or directories that may have been compressed. To know more about zip, visit [this page](https://en.wikipedia.org/wiki/Zip_(file_format))|
+----------------------------------------------------------------------------------------------------------------
+
+4. Finally, you have an option to overwrite the existing objects in that collection i.e, removing all the existing objects in the collection and adding new ones or keeping the old resources and adding the new ones.
+
+5. At last, click on **submit**.
+
+
+## 2. Managing
+
+1. Navigate to SynBioHub's home page.
+
+2. Click on **submissions**. It'll direct you to a page titled **manage submissions**. On this page you'll be able to see collections to be divided, broadly under 2 categories. The 1st one being, **private collections**, which you've created and only you have access to them and 2nd one being, **public collections**, to which all the users have access to.
+
+3. You can view your collection by clicking on the collection name. 
+
+4. In order to make your collection public, click on **make public**. This shall enable that other users to view your collection and its contents.
+
+5. To delete your collection, click on **Remove**. This will remove the collection as well as the resources contained, in that specific collection, namely promoters, activators, modules, components, engineered region, etc.
+
+
+## 3. Updating
+
+1. On the submit page, click on *Submit to an existing collection* option.
+
+2. Then, select to the collection you want to submit your design to.
+
+3. Select the design that you want to submit.
+
+4. You may choose to *overwrite the existing objects* in a collection.
+
+5. Then, click on submit.
+
