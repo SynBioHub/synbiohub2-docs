@@ -61,6 +61,8 @@ To be able to use Google for authentication, you first need to register with the
 | Redirect URL | This is the path in your application that users are redirected to after they have authenticated with Google. The path will be appended with the authorisation code for access. It must have a protocol and cannot contain URL fragments or relative paths. Also, make sure it is not a public IP address.|
 -------------------------------------------------------------------------------
 
+If you want to obtain your client ID and client secret, you can visit **[Google's documentation](https://developers.google.com/adwords/api/docs/guides/authentication)** for further reference. 
+
 Once, you've filled all the details, click **continue**. This will redirect you to the home page of your SynBioHub local instance.   
 
 
