@@ -98,11 +98,11 @@ The header of the table as explained as follows:
 ### 1.3 Viewing a Module
 
 A **[Module](https://dissys.github.io/sbol-owl/sbol-owl.html#ModuleDefinition)**, basically represents a grouping of structural and functional entities in a biological design.
-Once you've successfully navigated to the Module's home page, other than the parameters described in the general section,you'll be able to view a few other the parameters, as follows:
+Once you've successfully navigated to the Module's home page, other than the parameters described in the general section, you'll be able to view a few other the parameters, as follows:
 
 * Type: The record type, as is obvious will be displayed as **Module**. A **[Module](https://dissys.github.io/sbol-owl/sbol-owl.html#ModuleDefinition)**, basically represents a grouping of structural and functional entities in a biological design.
 
-Just below the clickable options, the VisBol navigates is located, which displays the structure of that particular module. VisBOL Navigator also has zooming capabilities. This, graphically represents the structure of the module. By hovering your pointer over this structure, you can view the following attributes of that particular module i.e, type of resource, identifier, name and role of the module.
+Just below the clickable options, the **[VisBol navigator](https://app.dimensions.ai/details/publication/pub.1055140785)** is located, which displays the structure of that particular module. VisBOL is a Web-based application that allows the rendering of genetic circuit designs, enabling synthetic biologists to visually convey designs in SBOL visual format. VisBOL designs can be exported to formats including PNG and SVG images to be embedded in Web pages, presentations and publications. The VisBOL tool enables the automated generation of visualizations from designs specified using the Synthetic Biology Open Language (SBOL) version 2.0, as well as a range of well-known bioinformatics formats including GenBank and Pigeoncad notation. VisBOL Navigator also has zooming capabilities. This, graphically represents the structure of the module. By hovering your pointer over this structure, you can view the following attributes of that particular module i.e, type of resource, identifier, name and role of the module.
 
 Then, what we have is the section titled, **[functional components](https://dissys.github.io/sbol-owl/sbol-owl.html#FunctionalComponent)**. A FunctionalComponent is an instance of a ComponentDefinition being used as part of a ModuleDefinition. The ModuleDefinition describes how the that describes how the FunctionalComponent interacts with others and summarizes their aggregate function. The parameters included in this section are described in the table below:
 
