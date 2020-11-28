@@ -238,39 +238,9 @@ Once you click on the **SBOLExplorer** option, you can view the following option
 
 ##  8.9 SPARQL 
 
-On the search results page, there is button labeled as **[SPARQL](https://www.w3.org/TR/sparql11-query/)**. Clicking on that button will direct you to the SPARQL page. Since, SPARQL is a query language, hence it'll query Synbiohub's databases for the designs that you're looking for. On the SPARQL page, you can select the graph that is from **private** or **public**. Here, **public** means searching amongst the public submissions, that can be viewed by and **private** means, the ones that are your personal collections. This page can be used by administrators to perform any SPARQL query or update. Administrators can select any graph to query or update and not only can they view data, but also delete or insert data using the SPARQL queries. **PLEASE BE EXTREMELY CAREFUL WHEN YOU USE THE UPDATE FEATURE AS YOU CAN CORRUPT THE DATASET**.
+This page can be used by administrators to perform any SPARQL query or update. Administrators can select any graph to query or update and not only can they view data, but also delete or insert data using the SPARQL queries. **PLEASE BE EXTREMELY CAREFUL WHEN YOU USE THE UPDATE FEATURE AS YOU CAN CORRUPT THE DATASET**.
 
-In the box provided just below graphs dropdown, enter the SPARQL query. Following is an example that selects all sbol components that have an SO role type. It returns the part title, part role, part display id, part uri, and the total number of parts returned by the query. If you want to search for other types of designs, just replace SBOL with your preferred type:
-
-```
-
-# Some common prefix's are also provided below, which you can use in your SPARQL queries.
-PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
-PREFIX dcterms: <http://purl.org/dc/terms/>
-PREFIX dc: <http://purl.org/dc/elements/1.1/>
-PREFIX sbh: <http://wiki.synbiohub.org/wiki/Terms/synbiohub#>
-PREFIX prov: <http://www.w3.org/ns/prov#>
-PREFIX sbol: <http://sbols.org/v2#>
-PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
-PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
-PREFIX purl: <http://purl.obolibrary.org/obo/>
-SELECT  # makes up the headers of the table
-	?def # directs you to the design for which you're looking for 
-	?displayId # This statement displays the Id the design
-	?title # displays the title of the design
-	(count(?def) as ?count) # displays the count parameter for the design
-	?role # displays the role of the design    
-WHERE { 
-	?s sbol:component ?comp # Searching for **sbol** components
-	?comp sbol:definition ?def # provides the link to that component
-	filter (regex(?role, 'http://identifiers.org/so/SO:')) 
-	OPTIONAL {?def sbol:role ?role} # Defines the role
-	OPTIONAL {?def sbol:displayId ?displayId} # gives the ID of that particular record
-	OPTIONAL {?def dcterms:title ?title} 
-  }
-
-```
-
+In the box provided just below graphs dropdown, enter the SPARQL query. 
 After writing your SPARQL query, just click **submit query**. After you click on **submit query**, a list of records matching with SPARQL query shall be displayed.
 
 
