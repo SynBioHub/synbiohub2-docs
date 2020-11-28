@@ -1,5 +1,5 @@
 +++ 
-title = "Add to an existing collection" 
+title = "6. Add to an existing collection" 
 description = "" 
 weight = 6
 +++

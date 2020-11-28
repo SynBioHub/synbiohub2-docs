@@ -1,5 +1,5 @@
 +++ 
-title = "Submitting, Managing and Updating Submissions" 
+title = "4. Submitting, Managing and Updating Submissions" 
 description = "" 
 weight = 4
 +++
@@ -10,7 +10,7 @@ weight = 4
 
 
 
-## 1. Submitting 
+## 4.1 Submitting 
 
 For submitting your designs to SynBioHub, following steps need to be followed:
 
@@ -20,7 +20,7 @@ For submitting your designs to SynBioHub, following steps need to be followed:
 
 Now, there are 2 ways you make your submissions i.e, creating a new collection and then submitting your resource or submitting to an existing collection.
 
-### 1.1 Creating a new collection
+### 4.1.1 Creating a new collection
 
 1. Select the **create a new collection** option.
 
@@ -55,7 +55,7 @@ Now, there are 2 ways you make your submissions i.e, creating a new collection a
 
 3. At last, click on **submit**.
 
-### 1.2 Submitting to an existing collection
+### 4.1.2 Submitting to an existing collection
 
 1. Select the **add to existing collection** option.
 
@@ -78,7 +78,7 @@ Now, there are 2 ways you make your submissions i.e, creating a new collection a
 5. At last, click on **submit**.
 
 
-## 2. Managing
+## 4.2 Managing
 
 1. Navigate to SynBioHub's home page.
 
@@ -91,7 +91,7 @@ Now, there are 2 ways you make your submissions i.e, creating a new collection a
 5. To delete your collection, click on **Remove**. This will remove the collection as well as the resources contained, in that specific collection, namely promoters, activators, modules, components, engineered region, etc.
 
 
-## 3. Updating
+## 4.3 Updating
 
 1. On the submit page, click on *Submit to an existing collection* option.
 

@@ -1,5 +1,5 @@
 +++ 
-title = "Registering and Updating an Account" 
+title = "3. Registering and Updating an Account" 
 description = "" 
 weight = 3
 +++
@@ -9,7 +9,7 @@ weight = 3
 
 
 
-## 1. Registering an Account
+## 3.1 Registering an Account
 
 Following Steps need to be followed for registering onto SynBioHub:
 
@@ -29,7 +29,7 @@ Following Steps need to be followed for registering onto SynBioHub:
 ---------------------------------------------------------------------------------------------------
 4. When you need to login into your SynBioHub account, click on the "login or Register" option. Then you need to enter your email address and your password to access your account.
 
-### 2 Updating an Account
+### 3.2 Updating an Account
 
 If you ever need to update your account, the following steps need to be followed:
 

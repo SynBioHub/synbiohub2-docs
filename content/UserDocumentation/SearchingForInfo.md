@@ -1,5 +1,5 @@
 +++ 
-title = "Searching for Information" 
+title = "1. Searching for Information" 
 description = "" 
 weight = 1 
 +++

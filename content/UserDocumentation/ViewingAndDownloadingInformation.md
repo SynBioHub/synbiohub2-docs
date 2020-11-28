@@ -1,5 +1,5 @@
 +++ 
-title = "Viewing and Downloading the Information" 
+title = "2. Viewing and Downloading the Information" 
 description = "" 
 weight = 2
 +++
@@ -7,11 +7,11 @@ weight = 2
 
 
 
-## 1. Viewing the Information
+## 2.1 Viewing the Information
 
 There are various types of records on SynBioHub. They've been divided into the following sub-categories:
 
-### 1.1 Viewing a Record
+### 2.1.1 Viewing a Record
 
 This section consists of a general description of all record pages i.e, this is what a general record page looks like. Additional sections (if any), are further explained in the further sections, under the respective record types. 
 Once you've successfully navigated to the record's home page, you'll be able to view the parameters in this order:
@@ -70,7 +70,7 @@ Once you've successfully navigated to the record's home page, you'll be able to 
 * Then, we have a section, titled **Member of these collection**, which displays the collection, of which that particular record is a part of.   
 
 
-### 1.2 Viewing a collection
+### 2.1.2 Viewing a collection
 
 **[Collection](https://dissys.github.io/sbol-owl/sbol-owl.html#Collection)**, basically groups together a set of TopLevel objects that have something in common. 
 
@@ -95,7 +95,7 @@ The header of the table as explained as follows:
 | Type | This represents the type of the record, i.e. whether it is a module, sequence, activity, etc.|
 |Description | This is a brief description, that is provided by the user, who'd submitted that particular records. This description, in brief describes, what that particular record does. |
 --------------------------------------------------------------------
-### 1.3 Viewing a Module
+### 2.1.3 Viewing a Module
 
 A **[Module](https://dissys.github.io/sbol-owl/sbol-owl.html#ModuleDefinition)**, basically represents a grouping of structural and functional entities in a biological design.
 Once you've successfully navigated to the Module's home page, other than the parameters described in the general section, you'll be able to view a few other the parameters, as follows:
@@ -127,7 +127,7 @@ Subsequently, just below the functional components we have the **[Interactions](
 
 
 
-### 2. Downloading the Information
+### 2.2 Downloading the Information
 Once you would've navigated successfully to the records's home page, there would be a download option on the left, in a dropdown format.
  
 Following are the types of formats that you may be able to download a record:
