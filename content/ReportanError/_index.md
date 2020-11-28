@@ -5,7 +5,4 @@ draft: true
 weight: 50
 ---
 
-
-
-
-
+{{< childpages >}}
