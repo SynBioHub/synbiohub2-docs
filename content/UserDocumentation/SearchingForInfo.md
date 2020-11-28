@@ -102,18 +102,18 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX purl: <http://purl.obolibrary.org/obo/>
 SELECT  # makes up the headers of the table
-?def # directs you to the design for which you're looking for 
-?displayId # This statement displays the Id the design
-?title # displays the title of the design
-(count(?def) as ?count) # displays the count parameter for the design
-?role # displays the role of the design    
+	?def # directs you to the design for which you're looking for 
+	?displayId # This statement displays the Id the design
+	?title # displays the title of the design
+	(count(?def) as ?count) # displays the count parameter for the design
+	?role # displays the role of the design    
 WHERE { 
-?s sbol:component ?comp # Searching for **sbol** components
-?comp sbol:definition ?def # provides the link to that component
-filter (regex(?role, 'http://identifiers.org/so/SO:')) 
-OPTIONAL {?def sbol:role ?role} # Defines the role
-OPTIONAL {?def sbol:displayId ?displayId} # gives the ID of that particular record
-OPTIONAL {?def dcterms:title ?title} 
+	?s sbol:component ?comp # Searching for **sbol** components
+	?comp sbol:definition ?def # provides the link to that component
+	filter (regex(?role, 'http://identifiers.org/so/SO:')) 
+	OPTIONAL {?def sbol:role ?role} # Defines the role
+	OPTIONAL {?def sbol:displayId ?displayId} # gives the ID of that particular record
+	OPTIONAL {?def dcterms:title ?title} 
   }
 
 ```
