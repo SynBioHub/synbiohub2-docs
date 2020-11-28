@@ -1,5 +1,5 @@
 +++ 
-title = "Data Sharing Mechanism" 
+title = "7. Data Sharing Mechanism" 
 description = "" 
 weight = 7
 +++
@@ -7,7 +7,7 @@ weight = 7
 
 
 
-## 7. Data Sharing Mechanisms
+
 
 There are a couple of ways to share data in SynBioHub. They're mentioned as follows:
 

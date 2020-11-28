@@ -1,5 +1,5 @@
 +++ 
-title = "Editing a Submission" 
+title = "5. Editing a Submission" 
 description = "" 
 weight = 5
 +++
