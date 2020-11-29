@@ -241,8 +241,7 @@ Once you click on the **SBOLExplorer** option, you can view the following option
 This page can be used by administrators to perform any SPARQL query or update. Administrators can select any graph to query or update and not only can they view data, but also delete or insert data using the SPARQL queries. **PLEASE BE EXTREMELY CAREFUL WHEN YOU USE THE UPDATE FEATURE AS YOU CAN CORRUPT THE DATASET**.
 
 In the box provided just below graphs dropdown, enter the SPARQL query. 
-After writing your SPARQL query, just click **submit query**. After you click on **submit query**, a list of records matching with SPARQL query shall be displayed.
-
+After writing your SPARQL query, just click **submit query**. After you click on **submit query**, the results of your query shall be displayed below the query box.
 
 
 

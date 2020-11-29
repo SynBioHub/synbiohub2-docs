@@ -1,7 +1,7 @@
 +++ 
-title = "Report an Error" 
+title = "Report an Issue" 
 description = "" 
-weight = 1 
+weight = 2
 +++
 
 If you want to report an error please see the respective pages. 
