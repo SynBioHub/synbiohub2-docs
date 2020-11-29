@@ -118,7 +118,7 @@ WHERE {
 
 ```
 
-After writing your SPARQL query, just click **submit query**. After you click on **submit query**, a list of records matching with SPARQL query shall be displayed.
+After writing your SPARQL query, just click **submit query**. After you click on **submit query**, the results of your query shall be displayed below the query box.
 
 
 

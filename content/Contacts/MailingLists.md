@@ -1,7 +1,7 @@
 +++ 
-title = "Questions and Contact" 
+title = "Mailing Lists" 
 description = "" 
-weight = 2
+weight = 1
 +++
 
 If you are a SynBioHub developer with a question about SynBioHub or plugin development, please join the **[synbiohub-dev](https://groups.google.com/u/1/g/synbiohub-dev)** mailing list and post your question there.
