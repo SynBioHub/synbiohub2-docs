@@ -121,13 +121,50 @@ Subsequently, just below the functional components we have the **[Interactions](
 | **[Participant Definition](https://dissys.github.io/sbol-owl/sbol-owl.html#definition)** | The definition property is a REQUIRED URI that refers to the ComponentDefinition of the ComponentInstance. As described in the previous section, this ComponentDefinition effectively provides information about the types and roles of the ComponentInstance.|
 | **[Type](https://dissys.github.io/sbol-owl/sbol-owl.html#type)**/**[Role](https://dissys.github.io/sbol-owl/sbol-owl.html#role)** | 1) **Type**: Specifies the category of biochemical or physical entity. For example DNA, protein, or small molecule that a ComponentDefinition object abstracts for the purpose of engineering design. For DNA or RNA entities, additional types fields are used to describe nucleic acid topology (circular / linear) and strandedness (double- or single-stranded).  2) **Role**: Clarifies the potential function of an entity in a biochemical or physical context. When it is used for ComponentDefinitions, it MUST identify terms from ontologies that are consistent with the types property of the ComponentDefinition. For example, the roles property of a DNA or RNA ComponentDefinition could contain URIs identifying terms from the Sequence Ontology (SO). It may be a product, genetic production, template, etc.|
 
+### 2.1.4 Viewing a Component (Definition)
+
+**[Component (Definition)](https://dissys.github.io/sbol-owl/sbol-owl.html#ComponentDefinition)** is used to represent biological design components such as DNA, RNA and small molecules. Once you’ve successfully navigated to the component’s home page, other than the parameters described in the general section, you’ll be able to view a few other parameters, which are described below.
+
+Just below the **details** table, you'll be able to view a table titled, **components**, which has the following parameters: 
+
+|      Name        | Description          |
+|-------------------|------------------------------|
+| **[Access](https://dissys.github.io/sbol-owl/sbol-owl.html#access)** | The access property is a REQUIRED URI that indicates whether the ComponentInstance can be referred to remotely by a MapsTo on another ComponentInstance or Module contained by a different parent ComponentDefinition or ModuleDefinition (one that does not contain this ComponentInstance)|
+| **[Instance](http://sbols.org/v2#ComponentInstance)** | The ComponentInstance abstract class is inherited by SBOL classes that represent the usage or occurrence of a ComponentDefinition within a larger design (that is, another ComponentDefinition or ModuleDefinition). |
+| **[Definition](https://dissys.github.io/sbol-owl/sbol-owl.html#definition)** | The definition property is a REQUIRED URI that refers to the ComponentDefinition of the ComponentInstance. As described in the previous section, this ComponentDefinition effectively provides information about the types and roles of the ComponentInstance. |
+-----------------------------------------------------------------------------------------------------
+Below the components table is another table titled, **sequence annotations**, having the following attributes:
+
+| Name        | Description          |
+|----------------|------------------------|
+| **[Sequence Annotations](https://dissys.github.io/sbol-owl/sbol-owl.html#SequenceAnnotation)** |The SequenceAnnotation class describes one or more regions of interest on the Sequence objects referred to by its parent ComponentDefinition. In addition, SequenceAnnotation objects can describe the substructure of their parent ComponentDefinition through association with the Component objects contained by this ComponentDefinition.|
+| **[Location](https://dissys.github.io/sbol-owl/sbol-owl.html#Location)** |  Extended by the Range, Cut, and GenericLocation classes. |
+| **[Components](https://dissys.github.io/sbol-owl/sbol-owl.html#component)/[Role](https://dissys.github.io/sbol-owl/sbol-owl.html#role)** | 1) **Components**: The components property is OPTIONAL and MAY specify a set of Component objects that are contained by the ComponentDefinition. The set of relations between Component and ComponentDefinition objects is strictly acyclic.   2) **Role**: Clarifies the potential function of an entity in a biochemical or physical context. When it is used for ComponentDefinitions, it MUST identify terms from ontologies that are consistent with the types property of the ComponentDefinition. For example, the roles property of a DNA or RNA ComponentDefinition could contain URIs identifying terms from the Sequence Ontology (SO).|
+---------------------------------------------------------------------
+
+### 2.1.5 Viewing a Sequence
+
+The purpose of the **[Sequence](https://dissys.github.io/sbol-owl/sbol-owl.html#Sequence)** class is to represent the primary structure of a ComponentDefinition object and the manner in which it is encoded. This representation is accomplished by means of the elements property and encoding property. Once you’ve successfully navigated to the sequence’s home page, other than the parameters described in the general section, you’ll be able to view a few other parameters, which are described below.
+
+Under the details section the sequence is displayed,
+
+
+Another option titled, **blast** is also there. 
+
+
+### 2.1.6 Viewing an Activity
+
+An **[activity](https://www.w3.org/ns/prov#Activity)** is something that occurs over a period of time and acts upon or with entities; it may include consuming, processing, transforming, modifying, relocating, using, or generating entities. Once you’ve successfully navigated to the activity's home page, other than the parameters described in the general section, you’ll be able to view a few other parameters, which are described below.
+
+Under the details section you can view the parameter titled, **[time ended*](https://www.w3.org/TR/2013/REC-prov-o-20130430/#endedAtTime)*. Time ended, is when an activity is deemed to have been ended by an entity, known as trigger. The activity no longer exists after its end. Any usage, generation, or invalidation involving an activity precedes the activity's end. An end may refer to a trigger entity that terminated the activity, or to an activity, known as ender that generated the trigger. 
+
+### 2.1.7 Viewing an Agent
+
+An **[agent](https://www.w3.org/ns/prov#Agent)** is something that bears some form of responsibility for an activity taking place, for the existence of an entity, or for another agent's activity. Once you’ve successfully navigated to the activity’s home page, you view the information is mentioned in the general section.
 
 
 
-
-
-
-### 2.2 Downloading the Information
+## 2.2 Downloading the Information
 Once you would've navigated successfully to the records's home page, there would be a download option on the left, in a dropdown format.
  
 Following are the types of formats that you may be able to download a record:
