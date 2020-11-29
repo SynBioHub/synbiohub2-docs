@@ -1,8 +1,8 @@
 # SynBioHub Documentation 
 
- Welcome to the SynBioHub documentation.
+ {{< lead >}} Welcome to SynBioHub's documentation.
  The documentation has been divided into various categories for your convenience.
- Click on the contents bar on the left hand side to view the categories.
+ You can view the categories, in which the documentation has been divided, on the menu located on the left.
 
-
+{{< /lead >}}
 
