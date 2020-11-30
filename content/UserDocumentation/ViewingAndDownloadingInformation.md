@@ -95,7 +95,8 @@ The header of the table as explained as follows:
 | Type | This represents the type of the record, i.e. whether it is a module, sequence, activity, etc.|
 |Description | This is a brief description, that is provided by the user, who'd submitted that particular records. This description, in brief describes, what that particular record does. |
 --------------------------------------------------------------------
-### 2.1.3 Viewing a Module
+
+### 2.1.3 Viewing a Module (Definition)
 
 A **[Module](https://dissys.github.io/sbol-owl/sbol-owl.html#ModuleDefinition)**, basically represents a grouping of structural and functional entities in a biological design.
 Once you've successfully navigated to the Module's home page, other than the parameters described in the general section, you'll be able to view a few other the parameters, as follows:
@@ -146,17 +147,14 @@ Below the components table is another table titled, **sequence annotations**, ha
 
 The purpose of the **[Sequence](https://dissys.github.io/sbol-owl/sbol-owl.html#Sequence)** class is to represent the primary structure of a ComponentDefinition object and the manner in which it is encoded. This representation is accomplished by means of the elements property and encoding property. Once you’ve successfully navigated to the sequence’s home page, other than the parameters described in the general section, you’ll be able to view a few other parameters, which are described below.
 
-Under the details section the sequence is displayed,
-
-
-Another option titled, **blast** is also there. 
+Under the details section the sequence is displayed. Another option titled, **[blast](https://blast.ncbi.nlm.nih.gov/Blast.cgi)** is also there. The Basic Local Alignment Search Tool (BLAST) finds regions of local similarity between sequences. The program compares nucleotide or protein sequences to sequence databases and calculates the statistical significance of matches. BLAST can be used to infer functional and evolutionary relationships between sequences as well as help identify members of gene families.
 
 
 ### 2.1.6 Viewing an Activity
 
 An **[activity](https://www.w3.org/ns/prov#Activity)** is something that occurs over a period of time and acts upon or with entities; it may include consuming, processing, transforming, modifying, relocating, using, or generating entities. Once you’ve successfully navigated to the activity's home page, other than the parameters described in the general section, you’ll be able to view a few other parameters, which are described below.
 
-Under the details section you can view the parameter titled, **[time ended*](https://www.w3.org/TR/2013/REC-prov-o-20130430/#endedAtTime)*. Time ended, is when an activity is deemed to have been ended by an entity, known as trigger. The activity no longer exists after its end. Any usage, generation, or invalidation involving an activity precedes the activity's end. An end may refer to a trigger entity that terminated the activity, or to an activity, known as ender that generated the trigger. 
+Under the details section you can view the parameter titled, **[time ended](https://www.w3.org/TR/2013/REC-prov-o-20130430/#endedAtTime)**. Time ended, is when an activity is deemed to have been ended by an entity, known as trigger. The activity no longer exists after its end. Any usage, generation, or invalidation involving an activity precedes the activity's end. An end may refer to a trigger entity that terminated the activity, or to an activity, known as ender that generated the trigger. 
 
 ### 2.1.7 Viewing an Agent
 

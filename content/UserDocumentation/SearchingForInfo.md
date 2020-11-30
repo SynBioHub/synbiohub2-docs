@@ -53,7 +53,7 @@ On the search results page, there is button labeled as **advanced search**. Clic
 |---------------|---------------|
 |  Object Type |  The type of the record you want to search for i.e, a collection, design, activity, etc... |
 |  Creator | The username of the record's creator  |
-|  Created After and Created Before  | the timeframe in which the record was created. Make sure to enter the dates in the **YYYY-MM-DD** format  |
+|  Created After and Created Before  | The timeframe in which the record was created. Make sure to enter the dates in the **YYYY-MM-DD** format  |
 | Modified After Modified Before  | The timeframe in which the record was last modified. Make sure to enter the dates in the **YYYY-MM-DD** format|
 | ID/Name/Description | Enter the ID or the name or the description of the record, which you want to search for|
 | Type | Select the *type* of the record, from the following available options in the dropdown menu, for an example: No filter, biopax:Complex, biopax:DnaRegion, biopax:Protein, so:circular, etc...|
