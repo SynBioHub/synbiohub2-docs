@@ -64,8 +64,7 @@ Once you've successfully navigated to the record's home page, you'll be able to 
 
 
 
-* There may be additional clickable sections after the attachments menu. These have been added via, **[visualisation plugins](https://github.com/SynBioHub/Plugin-Visual-Seqviz)**.
-
+* Additional information be me rendered for a record via **[visualization plugins](https://github.com/SynBioHub/Plugin-Visual-Seqviz)**.
 
 * Then, we have a section, titled **Member of these collection**, which displays the collection, of which that particular record is a part of.   
 
@@ -175,7 +174,7 @@ Following are the types of formats that you may be able to download a record:
     |  **[Combine Archive](http://co.mbine.org/documents/archive)**  | A COMBINE archive is a single file containing the various documents (and in the future, references to documents), necessary for the description of a model and all associated data and procedures. This includes for instance, but not limited to, simulation experiment descriptions, all models needed to run the simulations and associated data files. The archive is encoded using the Open Modeling EXchange format (OMEX).            |
 | **[GFF3](http://asia.ensembl.org/info/website/upload/gff3.html)**       | The GFF (General Feature Format) format consists of one line per feature, each containing 9 columns of data, plus optional track definition lines. |
  | **[FASTA](https://en.wikipedia.org/wiki/FASTA_format)**       | In bioinformatics and biochemistry, the FASTA format is a text-based format for representing either nucleotide sequences or amino acid (protein) sequences, in which nucleotides or amino acids are represented using single-letter codes. The format also allows for sequence names and comments to precede the sequences. The format originates from the FASTA software package, but has now become a near universal standard in the field of bioinformatics.|
-  | Image     | An image is an artifact that depicts visual perception, such as a photograph or other two-dimensional picture, that resembles a subject—usually a physical object—and thus provides a depiction of it. In the context of signal processing, an image is a distributed amplitude of color(s). A pictorial script is a writing system that employs images as symbols for various semantic entities, rather than the abstract signs used by alphabets|
+  | Image     | Image is a capture of the Visbol display at the top of the page.|
 ----------------------------------------------------------------------------------------
 
 Additional download options may be available via the use of **[download plugins](https://synbiohub.github.io/plugins/#34-download)**.
