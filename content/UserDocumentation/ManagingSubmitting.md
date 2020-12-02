@@ -47,7 +47,7 @@ Now, there are 2 ways you make your submissions i.e, creating a new collection a
 | **[zip](https://en.wikipedia.org/wiki/Zip_(file_format))** | ZIP is an archive file format that supports lossless data compression. A ZIP file may contain one or more files or directories that may have been compressed. |
 ----------------------------------------------------------------------------------------------------------------
 
-* **Handler**: You also need to select a handler. Out of the four options provided, default is the only one that's not a plugin, the rest are plugins and can be found in the plugins section.          
+* **Handler**: You also need to select a handler. By default only one option is provided but more handlers can be added via [submit plugins](https://github.com/SynBioHub/Plugin-Submit-Excel-Library).     
 
    
 

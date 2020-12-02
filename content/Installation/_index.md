@@ -6,7 +6,7 @@ weight: 10
 ---
 
 ### General
-The docker-compose files in this repository represent various configurations for deploying SynBioHub.
+The docker-compose files in [this](https://github.com/SynBioHub/synbiohub-docker) repository represent various configurations for deploying SynBioHub.
 The files can be layered with Docker Compose's [multiple file](https://docs.docker.com/compose/reference/overview/#specifying-multiple-compose-file) capabilities. 
 
 The base configuration, described with `docker-compose.yml`, is simply SynBioHub, its graph database Virtuoso, and an autohealer.
@@ -29,11 +29,12 @@ To run the base configuration:
        For MacOS, click [here](https://docs.docker.com/docker-for-mac/install/).
     
        For Windows OS, click [here](https://docs.docker.com/docker-for-windows/install/).
+       After installation make sure to run docker desktop as an administrator before    moving to step two.
     
        For Linux OS, click [here](https://docs.docker.com/engine/install/).
        
 
-2. Open the terminal/cmd.
+2. Open the terminal/cmd in MacOS/Linux. For Windows OS make sure you open the command terminal as an administrator.
 
 3. Navigate to the directory where you want to install SynBioHub.
 

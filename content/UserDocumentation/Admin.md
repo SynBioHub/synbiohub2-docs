@@ -26,10 +26,10 @@ Several parameters essential for the smooth functioning of SynBioHub, are mentio
 | 3. **Instance Name**:  name_of_your_choice | This represents the name of your SynBioHub instance. This can be changed based on your convenience.|
 |4. **Listen Port: 7777** | When Oracle HTTP Server is started, by default, it listens for requests on port 7777 (non-SSL). If port 7777 is occupied, Oracle HTTP Server listens on the next available port number between a range of 7777-7877. Thus, if port 7777 is busy, it would listen on port 7778, and so on. To get more information on this, click [here](https://docs.oracle.com/cd/B12037_01/server.101/b12255/netconf.htm#:~:text=When%20Oracle%20HTTP%20Server%20is,port%207778%2C%20and%20so%20on.).|
 | 5. **SPARQL Endpoint**: http://virtuoso:8890/sparql | A SPARQL Endpoint is a Point of Presence on an HTTP network that's capable of receiving and processing SPARQL Protocol requests. It is identified by a URL commonly referred to as a SPARQL Endpoint URL. To know more about SPARQl endpoints, click [here](https://www.w3.org/wiki/SparqlEndpointDescription). |
-| 6. **Graph Store Endpoint**: http://virtuoso:8890/sparql-graph-crud-auth/ |           |
-| 7. **Default Graph**: http://localhost:7777/public |             |
-| 8. **Graph Prefix**: http://localhost:7777/ |                   |
-| 9. **Thread Pool Size**:    |                    |
+| 6. **Graph Store Endpoint**: http://virtuoso:8890/sparql-graph-crud-auth/ | This is the endpoint for the triplestore database where the data is stored. In this case, it is the endpoint for virtuoso.           |
+| 7. **Default Graph**: http://localhost:7777/public |  It is the URI prefix for the public graph in the database.     |
+| 8. **Graph Prefix**: http://localhost:7777/ |  It is the URI prefix for all graphs in the database.                 |
+| 9. **Thread Pool Size**:    |    It  is the number of threads that virtuoso is allowed to use.                |
 | 10. **Upload Limit**: X mb| Shows the maximum limit of files that you can upload at once to your instance|
 
 ## 8.2 Graphs
@@ -107,7 +107,7 @@ As mentioned above, the plugins are divided into 3 categories all having the sam
 
 * Name: This is the name which you want to give to your plugin.
 
-* URL: In this column, you need to enter the URL for your plugin.
+* URL: In this column, you need to enter the URL for your plugin. For more information about plugin urls see Adding plugins to the admin panel under the [installation](https://synbiohub.github.io/plugins/#22-installation) section
 
 After filling both of the columns click on **save**, in order to save your plugin.
 
@@ -132,7 +132,7 @@ SynBioHub demonstrates the application of this harmonized data exchange through 
 
 1. **Retrieve from web of registries**: This option shall retrieve the web of registries that are already existing globally, locally onto you instance, if in case you delete them. 
 
-2. **Add registry**: This shall enable you to add a registry onto your instance. For adding, click on this option. Then, a popup shall appear. Subsequently, enter the registry URI prefix and the Registry URL. Finally, click on **submit**. This will add an already existing registry of SynBioHub, to the list of registries on you SynBioHub local instance.
+2. **Add registry**: This shall enable you to add a registry onto your instance. For adding, click on this option. Then, a popup shall appear. Subsequently, enter the registry URI prefix and the Registry URL. Finally, click on **submit**. This will add an already existing registry of SynBioHub, to the list of registries on your SynBioHub local instance.
  
 
 * Several local web-of-registries are also given on this page alongside their Synbiohub URL. Here, you have an option to **save** as well as **delete** the already existing registries.  
