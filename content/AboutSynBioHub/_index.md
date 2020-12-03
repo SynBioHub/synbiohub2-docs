@@ -14,6 +14,16 @@ The [SynBioHub repository](https://synbiohub.org) is an open-source software pro
 
 Also, SynBioHub can be used to publish a library of synthetic parts and designs as a service, to share designs with collaborators, and to store designs of biological systems locally. Data in SynBioHub can be accessed via the HTTP API, Java API, or Python API where it can then be integrated into CAD tools for building genetic designs. SynBioHub contains an interface for users to upload new biological data to the database, to visualize DNA parts, to perform queries to access desired parts, and to download SBOL, GenBank, FASTA, etc.
 
+### Citation
+
+If you use SynBioHub, please cite the following paper:
+
+<ADD SBH CITE HERE>
+
+Additional references for SynBioHub are available **[here](https://synbiohub.github.io/references/)**. 
+
+
+
 ### Contributors
 
 * [Dr. James Alastair McLaughlin](https://www.ebi.ac.uk/about/people/james-mclaughlin) (European Bioinformatics Institute)

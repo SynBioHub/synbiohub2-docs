@@ -107,7 +107,7 @@ As mentioned above, the plugins are divided into 3 categories all having the sam
 
 * Name: This is the name which you want to give to your plugin.
 
-* URL: In this column, you need to enter the URL for your plugin. For more information about plugin urls see Adding plugins to the admin panel under the [installation](https://synbiohub.github.io/plugins/#22-installation) section
+* URL: In this column, you need to enter the URL for your plugin. In this column, you need to enter the URL for your plugin. For more information about plugin urls see Adding plugins to the admin panel under the Plugins: **[2.2.1.2 Adding plugins to the admin panel](In this column, you need to enter the URL for your plugin. For more information about plugin urls see Adding plugins to the admin panel under the Plugins: 2.2.1.2 Adding plugins to the admin panel)**. 
 
 After filling both of the columns click on **save**, in order to save your plugin.
 
@@ -138,6 +138,8 @@ SynBioHub demonstrates the application of this harmonized data exchange through 
 * Several local web-of-registries are also given on this page alongside their Synbiohub URL. Here, you have an option to **save** as well as **delete** the already existing registries.  
 
 ## 8.7 Remotes
+
+SynBioHub is capable of connecting to remote repositories to allow data to be transferred to and from these remote repositories.
 
 There are 2 types of remotes you can configure for SynBioHub i.e, **Benchling** and **ICE**. They're discussed in detail as follows:
 
@@ -183,14 +185,14 @@ Once you are through with all the attributes, click on submit.
 
 | Attribute  | Description  |
 |------------|--------------|
-| 1. ID          | Enter ID of the benchling remote.             |
+| 1. ID          | Enter ID of the ICE remote.             |
 | 2. Type   |  This shall display the type of remote that you would've chosen, initially. |
-| 3. URL  |  Enter the URL for the benchling remote. |
-| 4. Sequence Suffix  | This represents the suffix to use for the sequences found on benchling.   |
-| 5. Default Folder ID |  Enter the default folder on benchling to access. |
+| 3. URL  |  Enter the URL for the ICE remote. |
+| 4. Sequence Suffix  | This represents the suffix to use for the sequences found on ICE.   |
+| 5. Default Folder ID |  Enter the default folder on ICE to access. |
 | 6. Public  |  Should be checked, if you want the remote to be visible publicly. If not, then it should not be checked.  |
 | 7. Reject Unauthorized | Should be checked, if you want to the SSL certificates to be checked. If not, then it should not be checked.  |
-| 8. Folder Prefix |  Represents the prefix to use for folders on benchling. |
+| 8. Folder Prefix |  Represents the prefix to use for folders on ICE. |
 | 9. Root Collection Display ID  | Represents the display id for the root collection on the remote.   |
 | 10. Root Collection Name  |  This represents the name for the root collection on the remote. |
 | 11. Root Collection Description |  A brief description about the root collection on the remote. |

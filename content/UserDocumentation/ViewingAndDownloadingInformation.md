@@ -64,7 +64,7 @@ Once you've successfully navigated to the record's home page, you'll be able to 
 
 
 
-* Additional information be me rendered for a record via **[visualization plugins](https://github.com/SynBioHub/Plugin-Visual-Seqviz)**.
+* Additional information may be rendered for a record via **[visualization plugins](https://github.com/SynBioHub/Plugin-Visual-Seqviz)**.
 
 * Then, we have a section, titled **Member of these collection**, which displays the collection, of which that particular record is a part of.   
 

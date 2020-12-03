@@ -85,7 +85,7 @@ After you've filled in all the available options, click on **create collection**
 
 ### 1.4 SPARQL Search
 
-On the search results page, there is button labeled as **[SPARQL](https://www.w3.org/TR/sparql11-query/)**. Clicking on that button will direct you to the SPARQL page. Since, SPARQL is a query language, hence it'll query Synbiohub's databases for the designs that you're looking for. On the SPARQL page, you can select the graph that is from **private** or **public**. Here, **public** means searching amongst the public submissions, that can be viewed by and **private** means, the ones that are your personal collections.
+On the search results page, there is button labeled as SPARQL. Clicking on that button will direct you to the SPARQL page. Since, **[SPARQL](https://www.w3.org/TR/sparql11-query/)** is a query language, hence it'll query Synbiohub's databases for the designs that you're looking for. On the SPARQL page, you can select the graph that is from **private** or **public**. Here, **public** means searching amongst the public submissions, that can be viewed by and **private** means, the ones that are your personal collections.
 
 In the box provided just below graphs dropdown, enter the SPARQL query. Following is an example that selects all sbol components that have an SO role type. It returns the part title, part role, part display id, part uri, and the total number of parts returned by the query. If you want to search for other types of designs, just replace SBOL with your preferred type:
 
