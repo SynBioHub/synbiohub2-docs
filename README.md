@@ -1,4 +1,13 @@
-# Modifying the GUI documentation
+# SynBioHub's Documentation
+
+For publishing the documentation for SynBioHub online, we've put to use 2 repositories, which're as follows:
+
+1. **[synbiohub-docs](https://github.com/SynBioHub/synbiohub-docs)**: This repository contains the whole source code for the documentation, including the markdown files as well as the fully rendered version for the website.
+
+2. **[synbiohub.github.io](https://github.com/SynBioHub/synbiohub.github.io)**: This repository contains the fully rendered code for the documentation.
+
+
+## Modifying the GUI documentation
 
 This section contains instructions about how you can modify the newly developed **[GUI documentation](https://synbiohub.github.io/)** for SynBioHub.
 
