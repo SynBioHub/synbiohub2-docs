@@ -18,7 +18,7 @@ Also, SynBioHub can be used to publish a library of synthetic parts and designs 
 
 If you use SynBioHub, please cite the following paper:
 
-<ADD SBH CITE HERE>
+<<ADD SBH CITE HERE>>
 
 Additional references for SynBioHub are available **[here](https://synbiohub.github.io/references/)**. 
 
