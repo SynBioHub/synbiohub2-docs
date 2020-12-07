@@ -20,7 +20,7 @@ For submitting your designs to SynBioHub, following steps need to be followed:
 
 Now, there are 2 ways you make your submissions i.e, creating a new collection and then submitting your resource or submitting to an existing collection.
 
-### 4.1.1 Creating a new collection
+### 4.1.1 Creating a New Collection
 
 1. Select the **create a new collection** option.
 
@@ -55,7 +55,7 @@ Now, there are 2 ways you make your submissions i.e, creating a new collection a
 
 3. At last, click on **submit**.
 
-### 4.1.2 Submitting to an existing collection
+### 4.1.2 Submitting to an Existing Collection
 
 1. Select the **add to existing collection** option.
 
