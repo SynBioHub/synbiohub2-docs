@@ -18,7 +18,7 @@ Currently there are three types of plugins available:
 
 ![Overview of Plugins](/Image.png)
 
-## 2. How do they work?
+## 2. How do they Work?
 
 ### 2.1 Overview
 * All plugins in actual sense are servers (i.e, a piece of software in a network that is used to provide services such as access to files or the routing of an e-mail to other pieces of software or hardware (clients) in the network). 
@@ -35,7 +35,7 @@ As the plugins are standalone servers & they don't have to be used in conjunctio
 A detailed explaination on how to install SynBioHub on various operating systems is written [here](https://synbiohub.github.io/installation/)
 A full list of plugin file names and their descriptions can be found [here](https://synbiohub.github.io/synbiohub-docker/#plugins).
 
-##### 2.2.1.1 Common problems
+##### 2.2.1.1 Common Problems
 
 The most common problems that you may face while executing the commands mentioned above are as follows:-
 
@@ -46,7 +46,7 @@ The most common problems that you may face while executing the commands mentione
 2. If you've locally installed SynBioHub using the above commands it might cause issues in some plugins, that will receive urls that look like: ``http://localhost:7777/xxxxxxx``. Localhost in docker containers refers to the container itself. The problem is explained further [here](https://medium.com/it-dead-inside/docker-containers-and-localhost-cannot-assign-requested-address-6ac7bc0d042b). On Linux this problem is solvable and the solution cab be found on [stack overflow](https://stackoverflow.com/questions/31324981/how-to-access-host-port-from-docker-container) and on [docker](https://docs.docker.com/network/host/).
 
 
-##### 2.2.1.2 Adding plugins to the admin panel
+##### 2.2.1.2 Adding Plugins to the Admin Panel
 
 After getting the plugins up and running you still have to add them to the admin panel in SynBioHub. Navigate to the plugin section of the admin panel. Choose the appropriate section i.e, rendering, submit, or download and give the plugin a descriptive name. Then in the url section there are several different options depending on exactly how the plugin was brought up:
 
@@ -75,7 +75,7 @@ The most common problems that you may face while executing the commands mentione
 
 1. Localhost:-  If the plugin is being run as a docker container that localhost may cause problems as localhost is considered within the container and won’t point to the localhost on your computer. The problem is explained further [here](https://medium.com/it-dead-inside/docker-containers-and-localhost-cannot-assign-requested-address-6ac7bc0d042b). On Linux this problem is solvable and solution can be found on [stack-overflow](https://stackoverflow.com/questions/31324981/how-to-access-host-port-from-docker-container and https://docs.docker.com/network/host/).
 
-#### 2.2.3 Using Standalone methods
+#### 2.2.3 Using Standalone Methods
 
 Plugins can also be run without using docker. How this is done depends on the programming language and packages used to create the server. We've provided the documentation for two of the most common server choices, i.e python using flask and javascript using express.
 
@@ -132,7 +132,7 @@ The server should then be accessible at http://localhost:5000/status. Hence open
 
 The following section explains everything you need to know about the syntax of writing plugins.
 
-### 3.1 Naming convention
+### 3.1 Naming Convention
 For github repositories, the naming convention for plugin repositories is: 
 
 Plugin-<<Type>>-<<Description>>-<<Test>>-<<language>>
@@ -165,7 +165,7 @@ Docker Compose File: docker-compose.pluginVisualComponentUse.yml
 
 Docker Image Name: synbiohub/plugin-visual-component-use:snapshot (Note that there are no capitals in the docker image name).
 
-### 3.2 Basic structure
+### 3.2 Basic Structure
 In this section *what the server receives* and the *format of its response* is defined. Below is a section about writing a server/plugin by simply copying and editing the example type.
 
 #### 3.2.1 Visual
@@ -173,7 +173,7 @@ In this section *what the server receives* and the *format of its response* is d
 ##### 3.2.1.1 Status
 
 
-###### Recieves
+###### Receives
 Nothing is received (It is just a simple get request).
 
 ###### Returns
@@ -182,7 +182,7 @@ If it is up and running, then it should return a 200 status to a get request.
 
 ##### 3.2.1.2 Evaluate
 
-###### Recieves
+###### Receives
  type: The RDF type of the top-level object
 Common RDF types are:
 
@@ -197,7 +197,7 @@ Return a status of 200 if the type is acceptable and a 4xx status if it isn’t.
 
 ##### 3.2.1.3 Run
 
-###### Recieves
+###### Receives
 1. complete_sbol: The single-use URL for the complete object to operate on
 2. shallow_sbol: The single-use URL for a summarized or truncated view of the object
 3. genbank: The single-use URL for the Genbank of the object (**Note**: This will be a blank website for all types other than Component)
@@ -248,7 +248,7 @@ A full example of a visual plugin can be found at: `https://github.com/SynBioHub
 
 #### 3.3.1 Status
 
-##### Recieves
+##### Receives
 
 Nothing is received (It is just a simple get request)
 
@@ -257,9 +257,10 @@ Nothing is received (It is just a simple get request)
 If it is up and running it should return a 200 status to a get request
 #### 3.3.2 Evaluate
 
-##### Recieves
+##### Receives
 
 A dictionary with entries:
+ 
 {‘manifest’
     
     {‘files’
@@ -271,6 +272,7 @@ A dictionary with entries:
        ‘filename’ the encrypted file name (with correct extension)
     
        ‘type’ the mime of the file (see https://developer.mozilla.org/en-US/docs/Web/HTTP/Basics_of_HTTP/MIME_types/Common_types)
+
 
 * Example 1:
 {"manifest": {"files":[
@@ -405,6 +407,7 @@ A zip file which contains the generated SBOL files and a file called manifest.js
  'sources': [' as9d8j0asd9j23fc.dna’]}]}
 
 **NOTE**: list of sources could contain more than one file (if any of the files in the evaluate endpoint were flagged as 1 they might be added to the sources for one of the other file conversions)
+
 #### 3.3.4 Examples
 
 We've created a plugin, which accepts a spreadsheet as input and converts it into SBOL which can be processed by SynBioHub. This could simplify the process of data curation for publication by bridging the gap between those that perform the experiments and those that write about them from the very beginning. The instructions to install these plugins can be found **[here](https://github.com/SynBioHub/Plugin-Submit-Excel-Library)**.
@@ -477,7 +480,7 @@ A full example of a download plugin can be found [here](https://github.com/SynBi
 ##### Javascript
 A full example of a download plugin can be found [here](https://github.com/SynBioHub/Plugin-Download-Test-js).
 
-### 3.5 Writing an app by copying the examples
+### 3.5 Writing an App by Copying the Examples
 1. Copy the relevant repository (make sure it includes the docker actions to automatically build)
 2. Change the docker image name in release.yml in line 17 and 24
 3. Ensure that the repository has the docker username and docker password as secrets in the repository (will happen automatically if you are creating a repository in the synbiohub project)
@@ -508,23 +511,23 @@ Try the **pipreqs** package (used from anaconda prompt if using anaconda)
 3. Make code modular and comment well
 4. Adhere to standards and best practices of the language you write in
 
-## 7. Advanced possibilities
+## 7. Advanced Possibilities
 1. It is possible to use the url to pass parameters to the plugin see (https://github.com/SynBioHub/Plugin-Visual-Component-Use)
 2. It is possible to have files served from the plugin (https://github.com/SynBioHub/Plugin-Visual-Serve-Test and https://github.com/SynBioHub/Plugin-Visual-Serve-Test-js)
 
 ## 8. Dockerising
 
-### 8.1 Simple overview of docker
+### 8.1 Simple Overview of Docker
 * Source code is used in docker file which is used to build an image which can be pushed to docker hub (LIKE GITHUB). Image (can have been pulled from dockerhub) can be run on its own or with others like autoheal in a docker compose file.
 * When an image/docker compose file is run it creates a container.
 * Caddy (or other webserver like engineX, httpd, apache) listens to https port (443) and converts https to http and routes it to port on which the container is listening which it container thinks is port 80 (http port - generally the default over https, you could map out from a different port depending on what the webserver inside the container thinks it is listening too e.g. synbiohub thinks it listens to port 7777). Container maps its port to host and caddy forwards from 443 to the host port that the container is listening on.
 
-### 8.2  Idea of architecture:
+### 8.2  Idea of Architecture:
 * caddy is a webserver which reroutes requests to containers containers may or may not contain images which are also webservers (dockercompse files describe a set of containers which also may or may not contain webservers)
 * High ports are over 1024 and 'non-reserved' ports. ssh is to 22 (generally).
 * Key points understand that docker has: images, containers, volumes, and networks (especially important to understand what sticks around and what doesn’t when you try and refresh the containers a very useful command is prune: https://takacsmark.com/docker-prune/
 
-### 8.3 Steps for dockerising a plugin
+### 8.3 Steps for Dockerising a Plugin
 * After having installed docker desktop and making sure it is up and running using an administrator account. Note that the docker website has a tutorial with mor information.
 
 **How to dockerise plugin code** (things in <> signs should be replaced with your specific variable names)

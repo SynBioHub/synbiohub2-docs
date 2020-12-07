@@ -149,7 +149,7 @@ There are 2 types of remotes you can configure for SynBioHub i.e, **Benchling** 
 
 Upon opening this page for the first time you'll see a message stating: *No remotes configured*. To configure a remote for your instance, follow the following steps:
 
-### 8.7.1 Configuring a benchling remote
+### 8.7.1 Configuring a Benchling Remote
 
 1. When you'll click on the type box, a dropdown menu shall appear containing 2 options, ice and benchling. For configuring a benchling remote, select **benchling**. Then click on **add remote**. 
 
@@ -176,7 +176,7 @@ Once you are through with all the attributes, click on submit.
 
 3. Once you've clicked on submit, you'll be able to see a fully configured remote on the left. You can also delete and edit your remote. To delete any of your configured remotes, click on delete. To edit any of the information, click on edit. Once you've edited the information, click on submit.   
 
-### 8.7.2 Configuring an ICE remote
+### 8.7.2 Configuring an ICE Remote
 
 1. When you'll click on the type box, a dropdown menu shall appear containing 2 options, ice and benchling. For configuring an ICE remote, select **ICE** and then click on **add remote**.
 

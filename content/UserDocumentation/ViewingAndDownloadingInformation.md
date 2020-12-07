@@ -69,7 +69,7 @@ Once you've successfully navigated to the record's home page, you'll be able to 
 * Then, we have a section, titled **Member of these collection**, which displays the collection, of which that particular record is a part of.   
 
 
-### 2.1.2 Viewing a collection
+### 2.1.2 Viewing a Collection
 
 **[Collection](https://dissys.github.io/sbol-owl/sbol-owl.html#Collection)**, basically groups together a set of TopLevel objects that have something in common. 
 
