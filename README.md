@@ -129,7 +129,9 @@ Press Ctrl+C to stop
     
     * There is an option of having a **Read More** box, at the end of each page. Currently this box has been disabled. For disabling this box, insert the following statement, into the *config.toml* file, just below the *params* option:
            
-           ```disableReadmoreNav = true```
+           ```
+           disableReadmoreNav = true
+           ```
            
      If in future, the functionality of this **Read More** box, increases then simply remove this statement from the config.toml file, to re-enable this button, which shall appear at the bottom of every page in the documentation.
     
