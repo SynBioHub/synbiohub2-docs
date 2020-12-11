@@ -123,6 +123,16 @@ Press Ctrl+C to stop
 16. Push your changes to the repo, by using the following command:
   
     ```git push origin master```
+  
+    
+    ## Notes
+    
+    * There is an option of having a **Read More** box, at the end of each page. Currently this box has been disabled. For disabling this box, insert the following statement, into the *config.toml* file, just below the *params* option:
+           
+           ```disableReadmoreNav = true```
+           
+     If in future, the functionality of this **Read More** box, increases then simply remove this statement from the config.toml file, to re-enable this button, which shall appear at the bottom of every page in the documentation.
+    
     
     
   
