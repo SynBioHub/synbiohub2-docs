@@ -66,7 +66,7 @@ Press Ctrl+C to stop
 
 ```
 
-  * Then, naviagte to the documentation locally by entering the following in your web-browser:
+  * Then, navigate to the documentation locally by entering the following in your web-browser:
   
     ```http://localhost:1313```
   
