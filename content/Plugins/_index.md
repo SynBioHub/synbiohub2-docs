@@ -5,7 +5,7 @@ draft: true
 weight: 40
 ---
 
-## 1. What are plugins?
+## 1. What are Plugins?
 Plugins are modular stand-alone additions to SynBioHub. They function in a way that is similar to browser extensions. They can be installed separately from the browser/SynBioHub and provide additional ‘custom’ functionality to the browser/SynBioHub experience despite having a completely separate code base from the browser/SynBioHub. Though, they seem integrated to the user.
 
 ### 1.1 Types of Plugins
