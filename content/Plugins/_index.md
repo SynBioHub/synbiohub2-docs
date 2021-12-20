@@ -110,7 +110,8 @@ Now, open the anaconda prompt and carry out the rest of the commands in the anac
 2. Clone the repository using `git clone <Repo-link>` (For Example `git clone https://github.com/SynBioHub/Plugin-Submit-Excel-Library.git`)
 3. Change directory into the repository folder using the command ` cd <repo-name>`(For repo-name enter your local repository name).
 4. Enter the following command: `pip install -r requirements.txt`
-5. In the **Powershell**, enter the follwing command: `$env:FLASK_APP = "hello", Command: set FLASK_APP=hello`
+5. In the **Powershell**, enter the follwing command: `$env:FLASK_APP = "app"` or in the **command window**: `set FLASK_APP=app`
+
 6. Finally to run flask, enter the following commmand: `flask run`
 7. The server should then be accessible at http://localhost:5000/status. Hence open your browser and enter `http://localhost:5000/status`.
 
