@@ -18,7 +18,7 @@ Currently there are three types of plugins available:
 
 ![Overview of Plugins](/Image.png)
 
-## 2. How do they Work?
+## 2. How Do Plugins Work?
 
 ### 2.1 Overview
 * All plugins in actual sense are servers (i.e, a piece of software in a network that is used to provide services such as access to files or the routing of an e-mail to other pieces of software or hardware (clients) in the network). 
