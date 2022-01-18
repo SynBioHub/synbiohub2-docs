@@ -92,18 +92,18 @@ Now, open the anaconda prompt and carry out the rest of the commands in the anac
 5. Then, enter the following command: `set FLASK_APP=app.py`
 6. **OPTIONAL command**:  `set FLASK_ENV=development`
 7. Finally, enter `flask run --port 5000` (the -- port 5000 is optional instead of 5000 there any port numbercan be entered)
-8. The server should then be accessible at http://localhost:5000/status. Hence, open your browser an the enter`http://localhost:5000/status`.
+8. The server should then be accessible at `http://localhost:5000/status`. Hence, open your browser an the enter `http://localhost:5000/status`.
 
 ###### 2.2.3.1.2 For Python
 
 ###### 2.2.3.1.2.1 Mac OS/Linux
 1. Open the terminal.
-2. Clone the repository using the command `git clone <Repo-Link>`(For Example:`git clone https://github.com/SynBioHub/Plugin-Submit-ExcelLibrary.git`)
+2. Clone the repository using the command `git clone <Repo-Link>` (For Example:`git clone https://github.com/SynBioHub/Plugin-Submit-ExcelLibrary.git`)
 3. Change directory into the repository folder using the command ` cd <repo-name>`(For repo-name enter your local repository name).
 4. Enter the following command: `pip install -r requirements.txt`
 5. Then, enter the following command: `export FLASK_APP=app`
 6. Finally to start flask, enter the following command: `flask run`
-7. The server should then be accessible at http://localhost:5000/status. Hence open your browser and enter `http://localhost:5000/status`
+7. The server should then be accessible at `http://localhost:5000/status`. Hence open your browser and enter `http://localhost:5000/status`
 
 ###### 2.2.3.1.2.2 Windows OS
 1. Open the terminal
@@ -113,7 +113,7 @@ Now, open the anaconda prompt and carry out the rest of the commands in the anac
 5. In the **Powershell**, enter the follwing command: `$env:FLASK_APP = "app"` or in the **command window**: `set FLASK_APP=app`
 
 6. Finally to run flask, enter the following commmand: `flask run`
-7. The server should then be accessible at http://localhost:5000/status. Hence open your browser and enter `http://localhost:5000/status`.
+7. The server should then be accessible at `http://localhost:5000/status`. Hence open your browser and enter `http://localhost:5000/status`.
 
 
 For more information see [this](https://flask.palletsprojects.com/en/1.1.x/cli/).
@@ -127,7 +127,7 @@ The following steps should be followed:-
 3. Change directory into the repository folder using the command ` cd <repo-name>`(For repo-name enter your local repository name).
 4. Enter `npm install` (This installs all the requirements that requires npm to be installed onto your system: https://nodejs.org/en/download/).
 5. Enter `node app.js`
-The server should then be accessible at http://localhost:5000/status. Hence open your browser and enter `http://localhost:5000/status`.
+The server should then be accessible at `http://localhost:5000/status`. Hence open your browser and enter `http://localhost:5000/status`.
 
 ## 3. Writing Plugins
 
@@ -136,7 +136,7 @@ The following section explains everything you need to know about the syntax of w
 ### 3.1 Naming Convention
 For github repositories, the naming convention for plugin repositories is: 
 
-Plugin-<<Type>>-<<Description>>-<<Test>>-<<language>>
+`Plugin-<<Type>>-<<Description>>-<<Test>>-<<language>>`
 
 **Note**: The words are separated by a dash (-) and every word but the program language is Proper case (Initial letter is capitalized and the further letters aren't).
 
@@ -218,6 +218,7 @@ Common RDF types are:
  'size': 5,
  'type': 'Component',
  'instanceUrl': 'https://dev.synbiohub.org/'}
+ 
 
 * Example 2:
 {'complete_sbol': 'https://synbiohub.org/public/igem/BBa_E0240_sequence/1/sbol', 
@@ -260,8 +261,7 @@ If it is up and running it should return a 200 status to a get request
 
 ##### Receives
 
-A dictionary with entries:
- 
+
 {‘manifest’
     
     {‘files’
@@ -495,9 +495,9 @@ A full example of a download plugin can be found [here](https://github.com/SynBi
 ### 4.1 For Anaconda
 
 The following steps should be followed:-
-1. pip3 install virtualenv
-2. python3 -m venv <myenvname>
-3. conda list -e > requirements.txt
+1. `pip3 install virtualenv`
+2. `python3 -m venv <myenvname>`
+3. `conda list -e > requirements.txt`
 
 
 ## 5. Without a Virtual Environment
@@ -532,23 +532,25 @@ Try the **pipreqs** package (used from anaconda prompt if using anaconda)
 * After having installed docker desktop and making sure it is up and running using an administrator account. Note that the docker website has a tutorial with mor information.
 
 **How to dockerise plugin code** (things in <> signs should be replaced with your specific variable names)
-1. run command window as admin
-2. git clone the github repository containing everything into a local directory (git clone <github url>)
-3. cd into directory that was just cloned (cd <directory name>)
-4. create a file named ".dockerignore" with the contents "Dockerfile" (echo Dockerfile>.dockerignore )
-5. create a file named "Dockerfile" (echo >Dockerfile)
+1. Run command window as admin.
+2. git clone the github repository containing everything into a local directory:  `git clone <github url>`.
+3. cd into directory that was just cloned: `cd <directory name>`
+4. create a file named `.dockerignore` with the contents "Dockerfile": `echo Dockerfile>.dockerignore`.
+5. create a file named "Dockerfile": `echo >Dockerfile`
 6. Edit the Dockerfile to contain the appropriate text (I use notepad++ for this - note for python plugins a requirements.txt is required and for js plugins a package.json file is required)
-7. Build your docker image (docker build --tag synbiohub/<descriptive name>:snapshot .) Note the full stop at the end of the command!
-8. Run the docker image (docker run --publish <port number>:5000 --detach --name <short name> synbiohub/<descriptive name>:snapshot)
-9. check the run was sucessful (docker ps), if not shown there check (docker ps -all) and then check the logs (docker logs <short name>)
-10. Based on error logs fix the errors, then remove the current container (docker rm <short name>) and repeat steps 7 and 8
+7. Build your docker image: `docker build --tag synbiohub/<descriptive name>:snapshot`. (**Note the full stop at the end of the command!**)
+8. Run the docker image: `docker run --publish <port number>:5000 --detach --name <short name> synbiohub/<descriptive name>:snapshot`
+9. Check the run was sucessful: `docker ps`, 
+if not shown there check: `docker ps -all` 
+and then check the logs: `docker logs <short name>`
+10. Based on error logs fix the errors, then remove the current container: `docker rm <short name>` and repeat steps 7 and 8.
 11. If docker ps shows your plugin running then navigate to localhost:/status. Can also test the run end point using a program like postman to submit a query and look at the response.
-12. If all is well stop the docker container ( docker stop <short name> ) and remove it ( docker rm <short name> )
+12. If all is well stop the docker container:  `docker stop <short name>` and remove it `docker rm <short name>`
 13. Upload the newly added files (Dockerfile and .dockerignore) to the github repo
-14. Add github action to push image to dockerhub (called release.yml in my plugins)
-15. under setting>secrets add secrets containing the username and password
-16. update the readme and wait for the new image to push to docker hub (you will see a green check next to commit when this has happened)
-17. check the uploaded image works by downloading and running it ( docker run --publish 8080:5000 --detach --name <short name> synbiohub/<descriptive name>:snapshot ) and repeating steps 9-12.
+14. Add github action to push image to dockerhub (called `release.yml` in my plugins)
+15. Under `setting>secrets` add secrets containing the `username` and `password`
+16. Update the **readme** and wait for the new image to be pushed to docker hub (you will see a green check next to commit when this has happened)
+17. check the uploaded image works by downloading and running it: `docker run --publish 8080:5000 --detach --name <short name> synbiohub/<descriptive name>:snapshot` and repeating steps 9-12.
 
 
 ## 9. Plugins-Table
