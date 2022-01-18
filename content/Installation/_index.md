@@ -86,7 +86,7 @@ A table of currently available plugins can be found **[here](https://synbiohub.g
 
 
 
-## Installation from source
+## Installation from Source
 
 Follow the instructions on the following [GitHub README](https://github.com/synbiohub/synbiohub) to install SynBioHub locally onto your system. 
 
