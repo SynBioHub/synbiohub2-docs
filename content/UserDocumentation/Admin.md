@@ -15,7 +15,7 @@ To access the admin page, the following steps need to be followed:
 
 2. Click on **admin**, in order to access the administrative settings of your instance. This will direct you to the administrative page. It has been divided into several sub-sections, for your convenience. They're discussed in detail, as follows:
 
-## 8.1 Status
+## 6.1 Status
 
 Several parameters essential for the smooth functioning of SynBioHub, are mentioned in this sub-section. They're as follows:
 
@@ -32,11 +32,11 @@ Several parameters essential for the smooth functioning of SynBioHub, are mentio
 | 9. **Thread Pool Size**:    |    It  is the number of threads that virtuoso is allowed to use.                |
 | 10. **Upload Limit**: X mb| Shows the maximum limit of files that you can upload at once to your instance|
 
-## 8.2 Graphs
+## 6.2 Graphs
 
 This section basically displays the graph URI and its corresponding triples. You can select the number of graphs you want to view on one page as well as search for any specific graphs, with the help of search box. You can also sort the graphs on the basis of number of triples.
 
-## 8.3 Log
+## 6.3 Log
 
 This section displays the log file for your SynBioHub local instance. You can view 4 types of logs, which are as follows:
 
@@ -50,13 +50,13 @@ This section displays the log file for your SynBioHub local instance. You can vi
 
 You may use the pointer to view differs types of logs.
 
-## 8.4 Mail
+## 6.4 Mail
 
 On this page, you have 2 options, that are [sendgrid](https://sendgrid.com/wp-content/uploads/2016/09/SendGrid-Implementation-Review.pdf) API key and sendgrid from email.
 
 In the first column, you need to fill the API key, that you'd need to generate from sendgrid. SendGrid is a cloud-based SMTP provider that allows you to send email without having to maintain email servers. SendGrid manages all of the technical details, from scaling the infrastructure to ISP outreach and reputation monitoring to whitelist services and real time analytics.
 
-### 8.4.1 Setting up Sendgrid 
+### 6.4.1 Setting up Sendgrid 
 
 In order to enable SynBioHub to send account-related emails, you need a sendgrid account and API key. The following steps need to be executed, for setting up sendgrid:-
 
@@ -89,7 +89,7 @@ In order to enable SynBioHub to send account-related emails, you need a sendgrid
 1. **SendGrid API key**: For generating an API key, you need to have a sendgrid account. To sign-up for sendgrid and hence generating an API key, click [here](https://synbiohub.github.io/setup/#setting-up-sendgrid).
 2. **SendGrid From Email**:  Here, you can enter the email, which you can use for sending emails.
 
-## 8.5 Plugins
+## 6.5 Plugins
 
 On this page, you can configure the **[plugins ](https://synbiohub.github.io/plugins/)** which you want to use. Plugins are modular stand-alone additions to SynBioHub. They function in a way that is similar to browser extensions. They can be installed separately from the browser/SynBioHub and provide additional ‘custom’ functionality to the browser/SynBioHub experience despite having a completely separate code base from the browser/SynBioHub. Though, they seem integrated to the user.
 
@@ -111,7 +111,7 @@ As mentioned above, the plugins are divided into 3 categories all having the sam
 
 After filling both of the columns click on **save**, in order to save your plugin.
 
-## 8.6 Registries
+## 6.6 Registries
 
 SynBioHub also supports the Web of Registries concept i.e, the idea of multiple separate repositories linked together by shared common semantics. In the case of SynBioHub, SBOL is used to support the common exchange of data, thus positioning SynBioHub to support the development of synthetic biology workflows by acting as a source and a storage facility for designs.
 
@@ -137,7 +137,7 @@ SynBioHub demonstrates the application of this harmonized data exchange through 
 
 * Several local web-of-registries are also given on this page alongside their Synbiohub URL. Here, you have an option to **save** as well as **delete** the already existing registries.  
 
-## 8.7 Remotes
+## 6.7 Remotes
 
 SynBioHub is capable of connecting to remote repositories to allow data to be transferred to and from these remote repositories.
 
@@ -149,7 +149,7 @@ There are 2 types of remotes you can configure for SynBioHub i.e, **Benchling** 
 
 Upon opening this page for the first time you'll see a message stating: *No remotes configured*. To configure a remote for your instance, follow the following steps:
 
-### 8.7.1 Configuring a Benchling Remote
+### 6.7.1 Configuring a Benchling Remote
 
 1. When you'll click on the type box, a dropdown menu shall appear containing 2 options, ice and benchling. For configuring a benchling remote, select **benchling**. Then click on **add remote**. 
 
@@ -176,7 +176,7 @@ Once you are through with all the attributes, click on submit.
 
 3. Once you've clicked on submit, you'll be able to see a fully configured remote on the left. You can also delete and edit your remote. To delete any of your configured remotes, click on delete. To edit any of the information, click on edit. Once you've edited the information, click on submit.   
 
-### 8.7.2 Configuring an ICE Remote
+### 6.7.2 Configuring an ICE Remote
 
 1. When you'll click on the type box, a dropdown menu shall appear containing 2 options, ice and benchling. For configuring an ICE remote, select **ICE** and then click on **add remote**.
 
@@ -209,7 +209,7 @@ Once you are through with all the attributes, click on submit.
 
 3. Once you've clicked on submit, you'll be able to see a fully configured remote on the left. You can also delete and edit your remote. To delete any of your configured remotes, click on delete. To edit any of the information, click on edit. Once you've edited the information, click on submit.   
 
-## 8.8 SBOLExplorer
+## 6.8 SBOLExplorer
 
 SBOLExplorer is a service that simplifies the process of analysing and searching for parts within genetic design repositories.
 
@@ -238,7 +238,7 @@ Once you click on the **SBOLExplorer** option, you can view the following option
 
 11. Then, click on the **save** button to save all the details for the SBOLExplorer.
 
-##  8.9 SPARQL 
+##  6.9 SPARQL 
 
 This page can be used by administrators to perform any SPARQL query or update. Administrators can select any graph to query or update and not only can they view data, but also delete or insert data using the SPARQL queries. **PLEASE BE EXTREMELY CAREFUL WHEN YOU USE THE UPDATE FEATURE AS YOU CAN CORRUPT THE DATASET**.
 
@@ -247,7 +247,7 @@ After writing your SPARQL query, just click **submit query**. After you click on
 
 
 
-## 8.10 Theme 
+## 6.10 Theme 
 
 On this several options are available to alter the User interface of your local instance. 
 
@@ -262,7 +262,7 @@ Also, you can also enable module interactions as well as remove the public enabl
 
 To save all changes click on **save**.
 
-## 8.11 Users
+## 6.11 Users
 
 This page basically lists all the users currently registered onto your local instance. 
 
