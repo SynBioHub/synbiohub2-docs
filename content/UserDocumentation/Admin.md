@@ -176,6 +176,9 @@ Once you are through with all the attributes, click on submit.
 
 3. Once you've clicked on submit, you'll be able to see a fully configured remote on the left. You can also delete and edit your remote. To delete any of your configured remotes, click on delete. To edit any of the information, click on edit. Once you've edited the information, click on submit.   
 
+#### Examples
+
+
 ### 6.7.2 Configuring an ICE Remote
 
 1. When you'll click on the type box, a dropdown menu shall appear containing 2 options, ice and benchling. For configuring an ICE remote, select **ICE** and then click on **add remote**.
@@ -208,6 +211,25 @@ Once you are through with all the attributes, click on submit.
 
 
 3. Once you've clicked on submit, you'll be able to see a fully configured remote on the left. You can also delete and edit your remote. To delete any of your configured remotes, click on delete. To edit any of the information, click on edit. Once you've edited the information, click on submit.   
+
+#### Examples
+**id - acs
+type - ice
+url - https://acs-registry.jbei.org
+sequence suffix - sequence
+default folder ID - ace_ice_folder
+folder prefix - ice_folder
+root collection display id - acs_collection
+root collection name - ACS Synthetic Biology
+root collection description - ICE repository for ACS Synthetic Biology Journal
+ICE API Token - 
+ICE API Token Client - synbiohub.org
+ICE API Token Owner - 
+ICE Collection - FEATURED
+Group ID - 4
+PI - 
+PI Email - 
+Part Number Prefix - acs**
 
 ## 6.8 SBOLExplorer
 
