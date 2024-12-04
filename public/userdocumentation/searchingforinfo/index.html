@@ -50,7 +50,7 @@
     <li data-nav-id="/aboutsynbiohub/" class="nav-item my-1
         ">
         
-        <a class="nav-link p-0" href="https://synbiohub.github.io/aboutsynbiohub/"><h6>About SynBioHub</h6></a>
+        <a class="nav-link p-0" href="https://synbiohub.github.io/aboutsynbiohub/"><h6>About SynBioHub2</h6></a>
     </li>
     <li data-nav-id="/installation/" class="nav-item my-1
         ">
@@ -327,8 +327,8 @@
 <h3 id="14-sparql-search">1.4 SPARQL Search</h3>
 <p>On the search results page, there is button labeled as SPARQL. Clicking on that button will direct you to the SPARQL page. Since, <strong><a href="https://www.w3.org/TR/sparql11-query/">SPARQL is a query language</a></strong>, hence it&rsquo;ll query Synbiohub&rsquo;s databases for the designs that you&rsquo;re looking for. On the SPARQL page, you can select the graph that is from <strong>private</strong> or <strong>public</strong>. Here, <strong>public</strong> means searching amongst the public submissions, that can be viewed by and <strong>private</strong> means, the ones that are your personal collections.</p>
 <p>In the box provided just below graphs dropdown, enter the SPARQL query. Following is an example that selects all sbol components that have an SO role type. It returns the part title, part role, part display id, part uri, and the total number of parts returned by the query. If you want to search for other types of designs, just replace SBOL with your preferred type:</p>
-<pre><code>
-# Some common prefix's are also provided below, which you can use in your SPARQL queries.
+<pre tabindex="0"><code>
+# Some common prefix&#39;s are also provided below, which you can use in your SPARQL queries.
 PREFIX rdf: &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt;
 PREFIX dcterms: &lt;http://purl.org/dc/terms/&gt;
 PREFIX dc: &lt;http://purl.org/dc/elements/1.1/&gt;
@@ -339,7 +339,7 @@ PREFIX xsd: &lt;http://www.w3.org/2001/XMLSchema#&gt;
 PREFIX rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt;
 PREFIX purl: &lt;http://purl.obolibrary.org/obo/&gt;
 SELECT  # makes up the headers of the table
-	?def # directs you to the design for which you're looking for 
+	?def # directs you to the design for which you&#39;re looking for 
 	?displayId # This statement displays the Id the design
 	?title # displays the title of the design
 	(count(?def) as ?count) # displays the count parameter for the design
@@ -347,12 +347,11 @@ SELECT  # makes up the headers of the table
 WHERE { 
 	?s sbol:component ?comp # Searching for **sbol** components
 	?comp sbol:definition ?def # provides the link to that component
-	filter (regex(?role, 'http://identifiers.org/so/SO:')) 
+	filter (regex(?role, &#39;http://identifiers.org/so/SO:&#39;)) 
 	OPTIONAL {?def sbol:role ?role} # Defines the role
 	OPTIONAL {?def sbol:displayId ?displayId} # gives the ID of that particular record
 	OPTIONAL {?def dcterms:title ?title} 
   }
-
 </code></pre><p>After writing your SPARQL query, just click <strong>submit query</strong>. After you click on <strong>submit query</strong>, the results of your query shall be displayed below the query box.</p>
 <h3 id="15-searching-on-a-record-page">1.5 Searching on a Record Page</h3>
 <p>On a record page, under the search button, you may find the following options:-</p>
