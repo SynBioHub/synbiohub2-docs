@@ -54,7 +54,7 @@
     <li data-nav-id="/aboutsynbiohub/" class="nav-item my-1
         ">
         
-        <a class="nav-link p-0" href="https://synbiohub.github.io/aboutsynbiohub/"><h6>About SynBioHub</h6></a>
+        <a class="nav-link p-0" href="https://synbiohub.github.io/aboutsynbiohub/"><h6>About SynBioHub2</h6></a>
     </li>
     <li data-nav-id="/installation/" class="nav-item my-1
         ">
@@ -114,7 +114,7 @@
         
         <a class="nav-link p-0" href="https://synbiohub.github.io/apidocumentation/"><h6>API Documentation</h6></a>
     </li>
-    <li data-nav-id="/plugins/" class="nav-item my-1 parent active
+    <li data-nav-id="/plugins/" class="nav-item my-1 active
         ">
         
         <a class="nav-link p-0" href="https://synbiohub.github.io/plugins/"><h6>Plugins</h6></a>
@@ -387,7 +387,7 @@ Common RDF types are:</p>
 <p>&lsquo;Activity&rsquo;, &lsquo;Agent&rsquo;, &lsquo;Association&rsquo;, &lsquo;Attachment&rsquo;, &lsquo;Collection&rsquo;, &lsquo;CombinatorialDerivation&rsquo;, &lsquo;Component&rsquo;, &lsquo;ComponentDefinition&rsquo;, &lsquo;Cut&rsquo;, &lsquo;Experiment&rsquo;, &lsquo;ExperimentalData&rsquo;, &lsquo;FunctionalComponent&rsquo;,&lsquo;GenericLocation&rsquo;, &lsquo;Implementation&rsquo;, &lsquo;Interaction&rsquo;, &lsquo;Location&rsquo;, &lsquo;MapsTo&rsquo;, &lsquo;Measure&rsquo;, &lsquo;Model&rsquo;, &lsquo;Module&rsquo;, &lsquo;ModuleDefinition&rsquo;, &lsquo;Participation&rsquo;, &lsquo;Plan&rsquo;, &lsquo;Range&rsquo;, &lsquo;Sequence&rsquo;, &lsquo;SequenceAnnotation&rsquo;, &lsquo;SequenceConstraint&rsquo;, &lsquo;Usage&rsquo;, &lsquo;VariableComponent&rsquo;</p>
 <ul>
 <li>Example 1:
-{&lsquo;type&rsquo;: &lsquo;Component&rsquo;}</li>
+{&rsquo;type&rsquo;: &lsquo;Component&rsquo;}</li>
 </ul>
 <h6 id="returns-1">Returns</h6>
 <p>Return a status of 200 if the type is acceptable and a 4xx status if it isn’t.</p>
@@ -407,22 +407,22 @@ Common RDF types are:</p>
 <ul>
 <li>
 <p>Example 1:
-{&lsquo;complete_sbol&rsquo;: &lsquo;<a href="https://dev.synbiohub.org/public/igem/BBa_E0040/1/sbol',">https://dev.synbiohub.org/public/igem/BBa_E0040/1/sbol',</a>
-&lsquo;shallow_sbol&rsquo;: &lsquo;<a href="https://dev.synbiohub.org/public/igem/BBa_E0040/1/sbolnr',">https://dev.synbiohub.org/public/igem/BBa_E0040/1/sbolnr',</a>
-&lsquo;genbank&rsquo;: &lsquo;<a href="https://dev.synbiohub.org/public/igem/BBa_E0040/1/gb',">https://dev.synbiohub.org/public/igem/BBa_E0040/1/gb',</a>
-&lsquo;top_level&rsquo;: &lsquo;<a href="https://synbiohub.org/public/igem/BBa_E0040/1',">https://synbiohub.org/public/igem/BBa_E0040/1',</a>
+{&lsquo;complete_sbol&rsquo;: &lsquo;<a href="https://dev.synbiohub.org/public/igem/BBa_E0040/1/sbol'">https://dev.synbiohub.org/public/igem/BBa_E0040/1/sbol'</a>,
+&lsquo;shallow_sbol&rsquo;: &lsquo;<a href="https://dev.synbiohub.org/public/igem/BBa_E0040/1/sbolnr'">https://dev.synbiohub.org/public/igem/BBa_E0040/1/sbolnr'</a>,
+&lsquo;genbank&rsquo;: &lsquo;<a href="https://dev.synbiohub.org/public/igem/BBa_E0040/1/gb'">https://dev.synbiohub.org/public/igem/BBa_E0040/1/gb'</a>,
+&rsquo;top_level&rsquo;: &lsquo;<a href="https://synbiohub.org/public/igem/BBa_E0040/1'">https://synbiohub.org/public/igem/BBa_E0040/1'</a>,
 &lsquo;size&rsquo;: 5,
-&lsquo;type&rsquo;: &lsquo;Component&rsquo;,
+&rsquo;type&rsquo;: &lsquo;Component&rsquo;,
 &lsquo;instanceUrl&rsquo;: &lsquo;<a href="https://dev.synbiohub.org/'%7D">https://dev.synbiohub.org/'}</a></p>
 </li>
 <li>
 <p>Example 2:
-{&lsquo;complete_sbol&rsquo;: &lsquo;<a href="https://synbiohub.org/public/igem/BBa_E0240_sequence/1/sbol',">https://synbiohub.org/public/igem/BBa_E0240_sequence/1/sbol',</a>
-&lsquo;shallow_sbol&rsquo;: &lsquo;<a href="https://synbiohub.org/public/igem/BBa_E0240_sequence/1/sbolnr',">https://synbiohub.org/public/igem/BBa_E0240_sequence/1/sbolnr',</a>
-&lsquo;genbank&rsquo;: &lsquo;<a href="https://synbiohub.org/public/igem/BBa_E0240_sequence/1/gb',">https://synbiohub.org/public/igem/BBa_E0240_sequence/1/gb',</a>
-&lsquo;top_level&rsquo;: &lsquo;<a href="https://synbiohub.org/public/igem/BBa_E0240_sequence/1',">https://synbiohub.org/public/igem/BBa_E0240_sequence/1',</a>
+{&lsquo;complete_sbol&rsquo;: &lsquo;<a href="https://synbiohub.org/public/igem/BBa_E0240_sequence/1/sbol'">https://synbiohub.org/public/igem/BBa_E0240_sequence/1/sbol'</a>,
+&lsquo;shallow_sbol&rsquo;: &lsquo;<a href="https://synbiohub.org/public/igem/BBa_E0240_sequence/1/sbolnr'">https://synbiohub.org/public/igem/BBa_E0240_sequence/1/sbolnr'</a>,
+&lsquo;genbank&rsquo;: &lsquo;<a href="https://synbiohub.org/public/igem/BBa_E0240_sequence/1/gb'">https://synbiohub.org/public/igem/BBa_E0240_sequence/1/gb'</a>,
+&rsquo;top_level&rsquo;: &lsquo;<a href="https://synbiohub.org/public/igem/BBa_E0240_sequence/1'">https://synbiohub.org/public/igem/BBa_E0240_sequence/1'</a>,
 &lsquo;size&rsquo;: 2,
-&lsquo;type&rsquo;: &lsquo;Sequence&rsquo;,
+&rsquo;type&rsquo;: &lsquo;Sequence&rsquo;,
 &lsquo;instanceUrl&rsquo;: &lsquo;<a href="https://synbiohub.org/'%7D">https://synbiohub.org/'}</a></p>
 </li>
 </ul>
@@ -457,11 +457,11 @@ Common RDF types are:</p>
 <li>
 <p>Example 1:
 {&ldquo;manifest&rdquo;: {&ldquo;files&rdquo;:[</p>
-<p>{&ldquo;url&rdquo;: &ldquo;<a href="http://synbiohub.org/expose/b41e63d6-10f4-4cac-b1c8-285f71156b56%22,">http://synbiohub.org/expose/b41e63d6-10f4-4cac-b1c8-285f71156b56&quot;,</a> &ldquo;filename&rdquo;: &ldquo;asdfasdf.xls&rdquo;, &ldquo;type&rdquo;: &ldquo;application/vnd.ms-excel&rdquo;},</p>
-<p>{&ldquo;url&rdquo;: &ldquo;<a href="http://synbiohub.org/expose/jkl9d8s7ufjqhoer8u709s%22,">http://synbiohub.org/expose/jkl9d8s7ufjqhoer8u709s&quot;,</a> &ldquo;filename&rdquo;: &ldquo;file_name1.dna&rdquo;, &ldquo;type&rdquo;: &ldquo;application/xml&rdquo;},</p>
-<p>{&ldquo;url&rdquo;: &ldquo;<a href="http://synbiohub.org/expose/basdf-11230948f4-12344cac%22,">http://synbiohub.org/expose/basdf-11230948f4-12344cac&quot;,</a> &ldquo;filename&rdquo;: &ldquo;file_name2.xml&rdquo;, &ldquo;type&rdquo;: &ldquo;application/xml&rdquo;},</p>
-<p>{&ldquo;url&rdquo;: &ldquo;<a href="http://synbiohub.org/expose/09uj2k3j0%22,">http://synbiohub.org/expose/09uj2k3j0&quot;,</a> &ldquo;filename&rdquo;: &ldquo;file_name3.xml&rdquo;, &ldquo;type&rdquo;: &ldquo;application/xml&rdquo;},</p>
-<p>{&ldquo;url&rdquo;: &ldquo;<a href="http://synbiohub.org/expose/asdfasdf56%22,">http://synbiohub.org/expose/asdfasdf56&quot;,</a> &ldquo;filename&rdquo;: &ldquo;file_name4.xml&rdquo;, &ldquo;type&rdquo;: &ldquo;application/xml&rdquo;}]}}</p>
+<p>{&ldquo;url&rdquo;: &ldquo;<a href="http://synbiohub.org/expose/b41e63d6-10f4-4cac-b1c8-285f71156b56%22">http://synbiohub.org/expose/b41e63d6-10f4-4cac-b1c8-285f71156b56&quot;</a>, &ldquo;filename&rdquo;: &ldquo;asdfasdf.xls&rdquo;, &ldquo;type&rdquo;: &ldquo;application/vnd.ms-excel&rdquo;},</p>
+<p>{&ldquo;url&rdquo;: &ldquo;<a href="http://synbiohub.org/expose/jkl9d8s7ufjqhoer8u709s%22">http://synbiohub.org/expose/jkl9d8s7ufjqhoer8u709s&quot;</a>, &ldquo;filename&rdquo;: &ldquo;file_name1.dna&rdquo;, &ldquo;type&rdquo;: &ldquo;application/xml&rdquo;},</p>
+<p>{&ldquo;url&rdquo;: &ldquo;<a href="http://synbiohub.org/expose/basdf-11230948f4-12344cac%22">http://synbiohub.org/expose/basdf-11230948f4-12344cac&quot;</a>, &ldquo;filename&rdquo;: &ldquo;file_name2.xml&rdquo;, &ldquo;type&rdquo;: &ldquo;application/xml&rdquo;},</p>
+<p>{&ldquo;url&rdquo;: &ldquo;<a href="http://synbiohub.org/expose/09uj2k3j0%22">http://synbiohub.org/expose/09uj2k3j0&quot;</a>, &ldquo;filename&rdquo;: &ldquo;file_name3.xml&rdquo;, &ldquo;type&rdquo;: &ldquo;application/xml&rdquo;},</p>
+<p>{&ldquo;url&rdquo;: &ldquo;<a href="http://synbiohub.org/expose/asdfasdf56%22">http://synbiohub.org/expose/asdfasdf56&quot;</a>, &ldquo;filename&rdquo;: &ldquo;file_name4.xml&rdquo;, &ldquo;type&rdquo;: &ldquo;application/xml&rdquo;}]}}</p>
 </li>
 <li>
 <p>Example 2:
@@ -469,7 +469,7 @@ Common RDF types are:</p>
 </li>
 </ul>
 <p>{&ldquo;files&rdquo;:[</p>
-<p>{&ldquo;url&rdquo;: &ldquo;<a href="http://synbiohub.org/expose/93c25d15-9fe2-4862-b602-ddbdac2c4333%22,">http://synbiohub.org/expose/93c25d15-9fe2-4862-b602-ddbdac2c4333&quot;,</a> &ldquo;filename&rdquo;: &ldquo;mbr5wW6CIseoq-0Y4MkM8DTM.xml&rdquo;, &ldquo;type&rdquo;: &ldquo;application/xml&rdquo;}]}}</p>
+<p>{&ldquo;url&rdquo;: &ldquo;<a href="http://synbiohub.org/expose/93c25d15-9fe2-4862-b602-ddbdac2c4333%22">http://synbiohub.org/expose/93c25d15-9fe2-4862-b602-ddbdac2c4333&quot;</a>, &ldquo;filename&rdquo;: &ldquo;mbr5wW6CIseoq-0Y4MkM8DTM.xml&rdquo;, &ldquo;type&rdquo;: &ldquo;application/xml&rdquo;}]}}</p>
 <h5 id="returns-4">Returns</h5>
 <p>{‘manifest’:[
 Dictionaries each of which contains
@@ -537,7 +537,7 @@ Dictionaries each of which contains
 <p>[{&lsquo;filename&rsquo;: &lsquo;0WaHXIKZD10gRGdC8U7weHWC.html&rsquo;,</p>
 <pre><code> 'type': 'text/html', 
 </code></pre>
-<p>&lsquo;url&rsquo;: &lsquo;<a href="https://dev.synbiohub.org/expose/e9665a54-dbdd-485e-a20b-574e46412fc4'%7D%5D%7D,">https://dev.synbiohub.org/expose/e9665a54-dbdd-485e-a20b-574e46412fc4'}]},</a></p>
+<p>&lsquo;url&rsquo;: &lsquo;<a href="https://dev.synbiohub.org/expose/e9665a54-dbdd-485e-a20b-574e46412fc4'%7D%5D%7D">https://dev.synbiohub.org/expose/e9665a54-dbdd-485e-a20b-574e46412fc4'}]}</a>,</p>
 <p>&lsquo;instanceUrl&rsquo;: &lsquo;<a href="https://dev.synbiohub.org/'%7D">https://dev.synbiohub.org/'}</a></p>
 </li>
 <li>
@@ -548,11 +548,11 @@ Dictionaries each of which contains
           &quot;type&quot;: &quot;application/vnd.openxmlformats-officedocument.spreadsheetml.sheet&quot;},
 
        {&quot;url&quot;: &quot;https://synbiohub.org/98ja0s98dufjml.dna&quot;, 
-         
+
           &quot;filename&quot;: &quot;as9d8j0asd9j23fc.dna&quot;, 
-         
+
           &quot;type&quot;: &quot; application/xml &quot;}]},
-         
+
           &quot;instanceUrl&quot;: &quot;http://localhost:7777/&quot;}
 </code></pre>
 </li>
@@ -575,7 +575,7 @@ Dictionaries each of which contains
 </ul>
 <p>[{&lsquo;filename&rsquo;: oijwpjrpokk98um098m.xlsx.converted&rsquo;,</p>
 <p>&lsquo;sources&rsquo;: [‘oijwpjrpokk98um098m.xlsx&rsquo;]},</p>
-<p>{&lsquo;filename&rsquo;: ' as9d8j0asd9j23fc.dna.converted&rsquo;,</p>
+<p>{&lsquo;filename&rsquo;: &rsquo; as9d8j0asd9j23fc.dna.converted&rsquo;,</p>
 <p>&lsquo;sources&rsquo;: [&rsquo; as9d8j0asd9j23fc.dna’]}]}</p>
 <p><strong>NOTE</strong>: list of sources could contain more than one file (if any of the files in the evaluate endpoint were flagged as 1 they might be added to the sources for one of the other file conversions)</p>
 <h4 id="334-examples">3.3.4 Examples</h4>
@@ -597,7 +597,7 @@ Dictionaries each of which contains
 &lsquo;Activity&rsquo;, &lsquo;Agent&rsquo;, &lsquo;Association&rsquo;, &lsquo;Attachment&rsquo;, &lsquo;Collection&rsquo;, &lsquo;CombinatorialDerivation&rsquo;, &lsquo;Component&rsquo;, &lsquo;ComponentDefinition&rsquo;, &lsquo;Cut&rsquo;, &lsquo;Experiment&rsquo;, &lsquo;ExperimentalData&rsquo;, &lsquo;FunctionalComponent&rsquo;,&lsquo;GenericLocation&rsquo;, &lsquo;Implementation&rsquo;, &lsquo;Interaction&rsquo;, &lsquo;Location&rsquo;, &lsquo;MapsTo&rsquo;, &lsquo;Measure&rsquo;, &lsquo;Model&rsquo;, &lsquo;Module&rsquo;, &lsquo;ModuleDefinition&rsquo;, &lsquo;Participation&rsquo;, &lsquo;Plan&rsquo;, &lsquo;Range&rsquo;, &lsquo;Sequence&rsquo;, &lsquo;SequenceAnnotation&rsquo;, &lsquo;SequenceConstraint&rsquo;, &lsquo;Usage&rsquo;, &lsquo;VariableComponent&rsquo;</p>
 <ul>
 <li>Example 1:
-{&lsquo;type&rsquo;: &lsquo;Component&rsquo;}</li>
+{&rsquo;type&rsquo;: &lsquo;Component&rsquo;}</li>
 </ul>
 <h5 id="returns-7">Returns</h5>
 <p>Return a status of 200 if the type is acceptable and a 4xx status if it isn’t</p>
@@ -615,11 +615,11 @@ Dictionaries each of which contains
 <ul>
 <li>
 <p>Example 1:
-{&lsquo;complete_sbol&rsquo;: &lsquo;<a href="https://dev.synbiohub.org/public/igem/BBa_E0240/1/sbol',">https://dev.synbiohub.org/public/igem/BBa_E0240/1/sbol',</a> &lsquo;shallow_sbol&rsquo;: &lsquo;<a href="https://dev.synbiohub.org/public/igem/BBa_E0240/1/sbolnr',">https://dev.synbiohub.org/public/igem/BBa_E0240/1/sbolnr',</a> &lsquo;genbank&rsquo;: &lsquo;<a href="https://dev.synbiohub.org/public/igem/BBa_E0240/1/gb',">https://dev.synbiohub.org/public/igem/BBa_E0240/1/gb',</a> &lsquo;top_level&rsquo;: &lsquo;<a href="https://synbiohub.org/public/igem/BBa_E0240/1',">https://synbiohub.org/public/igem/BBa_E0240/1',</a> &lsquo;size&rsquo;: 39, &lsquo;type&rsquo;: &lsquo;Component&rsquo;, &lsquo;instanceUrl&rsquo;: &lsquo;<a href="https://dev.synbiohub.org/'%7D">https://dev.synbiohub.org/'}</a></p>
+{&lsquo;complete_sbol&rsquo;: &lsquo;<a href="https://dev.synbiohub.org/public/igem/BBa_E0240/1/sbol'">https://dev.synbiohub.org/public/igem/BBa_E0240/1/sbol'</a>, &lsquo;shallow_sbol&rsquo;: &lsquo;<a href="https://dev.synbiohub.org/public/igem/BBa_E0240/1/sbolnr'">https://dev.synbiohub.org/public/igem/BBa_E0240/1/sbolnr'</a>, &lsquo;genbank&rsquo;: &lsquo;<a href="https://dev.synbiohub.org/public/igem/BBa_E0240/1/gb'">https://dev.synbiohub.org/public/igem/BBa_E0240/1/gb'</a>, &rsquo;top_level&rsquo;: &lsquo;<a href="https://synbiohub.org/public/igem/BBa_E0240/1'">https://synbiohub.org/public/igem/BBa_E0240/1'</a>, &lsquo;size&rsquo;: 39, &rsquo;type&rsquo;: &lsquo;Component&rsquo;, &lsquo;instanceUrl&rsquo;: &lsquo;<a href="https://dev.synbiohub.org/'%7D">https://dev.synbiohub.org/'}</a></p>
 </li>
 <li>
 <p>Example 2:
-{&lsquo;complete_sbol&rsquo;: &lsquo;https:// synbiohub.org/public/igem/BBa_E0240/1/sbol&rsquo;, &lsquo;shallow_sbol&rsquo;: &lsquo;https:// synbiohub.org/public/igem/BBa_E0240/1/sbolnr&rsquo;, &lsquo;genbank&rsquo;: &lsquo;https:// synbiohub.org/public/igem/BBa_E0240/1/gb&rsquo;, &lsquo;top_level&rsquo;: &lsquo;<a href="https://synbiohub.org/public/igem/BBa_E0240/1',">https://synbiohub.org/public/igem/BBa_E0240/1',</a> &lsquo;size&rsquo;: 39, &lsquo;type&rsquo;: &lsquo;Component&rsquo;, &lsquo;instanceUrl&rsquo;: &lsquo;https:// synbiohub.org/&rsquo; }</p>
+{&lsquo;complete_sbol&rsquo;: &lsquo;https:// synbiohub.org/public/igem/BBa_E0240/1/sbol&rsquo;, &lsquo;shallow_sbol&rsquo;: &lsquo;https:// synbiohub.org/public/igem/BBa_E0240/1/sbolnr&rsquo;, &lsquo;genbank&rsquo;: &lsquo;https:// synbiohub.org/public/igem/BBa_E0240/1/gb&rsquo;, &rsquo;top_level&rsquo;: &lsquo;<a href="https://synbiohub.org/public/igem/BBa_E0240/1'">https://synbiohub.org/public/igem/BBa_E0240/1'</a>, &lsquo;size&rsquo;: 39, &rsquo;type&rsquo;: &lsquo;Component&rsquo;, &lsquo;instanceUrl&rsquo;: &lsquo;https:// synbiohub.org/&rsquo; }</p>
 </li>
 </ul>
 <h5 id="returns-8">Returns</h5>
@@ -674,7 +674,7 @@ Dictionaries each of which contains
 <h3 id="82--idea-of-architecture">8.2  Idea of Architecture:</h3>
 <ul>
 <li>caddy is a webserver which reroutes requests to containers containers may or may not contain images which are also webservers (dockercompse files describe a set of containers which also may or may not contain webservers)</li>
-<li>High ports are over 1024 and &lsquo;non-reserved&rsquo; ports. ssh is to 22 (generally).</li>
+<li>High ports are over 1024 and &rsquo;non-reserved&rsquo; ports. ssh is to 22 (generally).</li>
 <li>Key points understand that docker has: images, containers, volumes, and networks (especially important to understand what sticks around and what doesn’t when you try and refresh the containers a very useful command is prune: <a href="https://takacsmark.com/docker-prune/">https://takacsmark.com/docker-prune/</a></li>
 </ul>
 <h3 id="83-steps-for-dockerising-a-plugin">8.3 Steps for Dockerising a Plugin</h3>

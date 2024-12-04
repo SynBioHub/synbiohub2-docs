@@ -1,4 +1,4 @@
-# SynBioHub2 Documentation 
+# SynBioHub Documentation 
 
  {{< lead >}} Welcome to SynBioHub2's documentation.
  The documentation has been divided into various categories for your convenience.
