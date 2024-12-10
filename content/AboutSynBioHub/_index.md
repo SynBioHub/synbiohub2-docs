@@ -76,3 +76,5 @@ An earlier version of SynBioHub known as SBOL Stack was developed by the followi
 * [Dr. Keith Flanagan](http://intbio.ncl.ac.uk/?people=dr-keith-flanagan) (Newcastle University) 
 * [Dr. Jennifer Hallinan](https://research.science.mq.edu.au/synthetic-biology/people/) (Macquarie University)
 * [Prof. Anil Wipat](https://www.ncl.ac.uk/computing/people/profile/anilwipat.html#background) (Newcastle University) 
+* [Ima Mervin] (CU Boulder) 
+
