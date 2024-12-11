@@ -15,7 +15,11 @@ To search amongst various records, follow these steps:
 
 2. In the search box, enter the keywords for the record you want to search for and click on the search button.
 
-3. Subsequently, you shall be directed to a list of records matching the keywords that you've entered. For each record, the first thing that is displayed is the name. Just below the name, the ID, version and type of the record shall be displayed. Just below, you'll be able to see a brief description about the record provided by the owner of that particular record. On the right hand side, there is an indicator displaying whether it is a **public**, **private** or a **remote** record. Being private means that the record is available on a private repository i.e, to a specific user only and if it is labeled as public means it is available to all the users of SynBioHub. If the record is available to all the users but on another instance of SynBioHub, then it shall be labeled as remote
+3. Subsequently, you shall be directed to a list of records matching the keywords that you've entered. For each record, the first thing that is displayed is the name. Next to the name, the display ID, description and type of the record and privacy shall be displayed. The description column contains a brief description provided by the owner of that particulat record. On the right hand side, there is an indicator displaying whether it is a **public**, **private** or a **remote** record. The privacy labels indicate:
+- Private: The record is available only to specific users through a private repository.
+- Public: The record is accessible to all SynBioHub users.
+- Remote: The record is publicly available but hosted on another instance of SynBioHub.
+
 
 4. If you see the record you want, you can select it else, you can select next or any of the other page numbers to navigate to the other pages to look for the record you desire amongst other records.
 
