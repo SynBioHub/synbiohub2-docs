@@ -33,20 +33,19 @@ On the search results page, there is button labeled as **sequence search**. Clic
 | Option Name         |              Description     |
 |---------------------|------------------------------|
 | Enter Sequence      | Enter the sequence or upload a **[FASTA](https://en.wikipedia.org/wiki/FASTA)/[FASTQ](https://en.wikipedia.org/wiki/FASTQ_format)** file, by clicking the choose file option just below the box. This shall search only for exact matches of the sequence. Your entry must be the first key/value pair   |
-| Search Method       | You can choose the perspective of your search. You can perform a **global** search or an **exact** search by clicking on the drop down menu provided. Global search displays records which have even the smallest similarities to your entered sequence. Exact search shows only records that perfectly match your entered sequence.|
+| Search Method       | You can choose the perspective of your search. You can perform a **global** search or an **exact** search by clicking on the drop down menu provided. *Global* search displays records which have even the smallest similarities to your entered sequence. *Exact* search shows only records that perfectly match your entered sequence.|
 |  Number of Results | You may customise the number of results, the value for which must not exceed 10,000. This translates into the maximum number of hits to accept before stopping the search. Kindly note that, higher the value, the longer the runtime will be.  |
 | Minimum Sequence Length | You may enter the minimum sequence length. This value  specifies the minimum length of the sequence, which you want to search for. Values for this parameter should not exceed 100,000. |
 | Maximum Sequence Length| You may enter the maximum sequence length for your search. This value sets the upper limit for the length of sequences to be considered. Values for this parameter should not exceed 100,000. |
 | # of Failed Hits before Stopping| You may enter the maximum number of non-matching target sequences to examine before ending the search. This parameter works in tandem with the previous flag and influences the search process. The search algorithm ranks target sequences based on their similarity to the query sequence, using shared k-mers as a measure. After performing pairwise alignments, if none of the first x examined target sequences meet the acceptance criteria, the search for that query stops without finding a hit. Increasing this value allows more target sequences to be considered, potentially improving search results at the cost of increased processing time. If both this flag and the previous flag are set to 0, the entire database will be searched exhaustively. By adjusting this parameter, you can balance between search thoroughness and computational efficiency |
-| Percent Match | Then, we have the **percentage match**, which is a value between 0 and 1. This represents the minimum pairwise identity that a sequence must have to be considered a match. If a sequence's pairwise identity falls below this threshold, it is rejected. This parameter allows you to control the stringency of the matching process, with higher values requiring greater similarity between the query and target sequences. |
+| Percent Match | Then, we have the *percent match*, which is a value between 0 and 1. This represents the minimum pairwise identity that a sequence must have to be considered a match. If a sequence's pairwise identity falls below this threshold, it is rejected. This parameter allows you to control the stringency of the matching process, with higher values requiring greater similarity between the query and target sequences. |
 | Pairwise Identity Definition | You may select the value for this attribute from the following options: 1) **Default**: Edits distance excluding the terminal gaps,   2) **CD-HIT definition**: Considers the following ratio: (matching columns) / (shortest sequence length),   3) **Marine Biological Lab definition**: counts each gap opening (internal or terminal) as a single mismatch, whether or not the gap was extended: 1.0 - [(mismatches + gap openings)/(longest sequence length)],   4) **BLAST Definition**: equivalent to edit distance for global pairwise alignments    |
 -------------------------------------------------------------------------------
 After filling up the desired options, press the **search** button to get the search results.
 
 
 
-                                                                                               
-
+                                                                                        
 
 ### 1.3 Advanced Search
 
@@ -55,21 +54,21 @@ On the search results page, there is button labeled as **advanced search**. Clic
 
 | Option Name   | Description   |
 |---------------|---------------|
-|  Object Type |  The type of the record you want to search for i.e, a collection, design, activity, etc... |
-|  Creator | The username of the record's creator  |
-|  Created After and Created Before  | The timeframe in which the record was created. Make sure to enter the dates in the **YYYY-MM-DD** format  |
-| Modified After Modified Before  | The timeframe in which the record was last modified. Make sure to enter the dates in the **YYYY-MM-DD** format|
-| ID/Name/Description | Enter the ID or the name or the description of the record, which you want to search for|
-| Type | Select the *type* of the record, from the following available options in the dropdown menu, for an example: No filter, biopax:Complex, biopax:DnaRegion, biopax:Protein, so:circular, etc...|
-| Role | select the **role** of the record from this dropdown menu. It contains various sub-categories of **[igem](https://igem.org/Main_Page)** or **[SO](http://www.sequenceontology.org/miso/current_release/term/SO:0000316)**.|
+|  Creator | The username of the record's creator.  |
+|  Part Type |  The type of the record you want to search for i.e, a collection, design, activity, etc... |
+|  Created After and Created Before  | The timeframe in which the record was created. Make sure to enter the dates in the **YYYY-MM-DD** format.  |
+| Modified After Modified Before  | The timeframe in which the record was last modified. Make sure to enter the dates in the **YYYY-MM-DD** format.|
+| ID/Name/Description | Enter the ID or the name or the description of the record, which you want to search for. |
+| Object Type | Select the *type* of the record, from the following available options in the dropdown menu, for an example: No filter, biopax:Complex, biopax:DnaRegion, biopax:Protein, so:circular, etc...|
+| Part Role | select the **role** of the record from this dropdown menu. It contains various sub-categories of **[igem](https://igem.org/Main_Page)** or **[SO](http://www.sequenceontology.org/miso/current_release/term/SO:0000316)**.|
 | Collections| You may select any number of collections, based on your convenience. To select a collection, click on the value attribute of collection and select it from the drop down menu|
-| Customisable Filters | You may apply customised filters for the design you want to search for. For that purpose, a few blank filtering columns have been provided. As soon as you'll click on an empty filter on the left hand side, a drop down menu shall appear having various parameters for filtering. These parameters are basically, the properties for filtering the records. Select the property that you want your record to be filtered by, and then click on filter. This shall reload the page and then select the value of the filter, from the drop down on the right hand side. You may provide as many as 5 customised filters which'er optional|
+| Customisable Filters | To refine your design search, you can utilize custom filters through a straightforward process. Begin by locating the blank filtering columns on the left-hand side of the interface. When you click on an empty filter, a drop-down menu will appear, presenting various parameters for filtering. These parameters correspond to the properties by which you can filter records. Select the desired property and click the "Filter" button to apply your choice. The page will then reload, and a new drop-down menu will appear on the right-hand side. From this menu, choose the specific value for your selected filter. You can repeat this process to add up to five custom filters, each further refining your search results. It's important to note that all custom filters are optional, allowing you to tailor your search as needed to find the exact designs you're looking for.|
 -----------------------------------------------------------------------------
 
 
 After selecting the desired options for performing a search using advanced parameters, click **search**. This will return the records after comprehending all the details that you've entered.
 
-* Just below, there is an option to create a **new collection** as well. If you wish to create a collection from your search results, you need to fill in the following items:
+* Just below, there is an option to create a **new collection** as well. If you wish to create a collection from your search results, you would need to fill in the following details as described below :
 
 |Option Name |   Description |
 |------------|---------------|
@@ -80,7 +79,6 @@ After selecting the desired options for performing a search using advanced param
 --------------------------------------------------------------------------------------------
 
 After you've filled in all the available options, click on **create collection**. This will return the search results to you, in the form a private collection.
-
 
 
 
