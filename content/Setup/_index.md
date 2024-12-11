@@ -46,7 +46,7 @@ You need to create a user account that will have the first privileged access to 
 |Password | Enter a password (preferably a strong one) for keeping your user account safe|
 ---------------------------------------------------------------------------------------------------
 
-## 4. Setting up External Authorisation Provider
+## 4. Setting up External Authorization Provider
 
 External authentication basically, is the use of third-party authentication sources to decide whether a user should be allowed access to a system, and often what level of access an authenticated user enjoys on a system.
 
