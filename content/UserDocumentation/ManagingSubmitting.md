@@ -82,13 +82,13 @@ Now, there are 2 ways you make your submissions i.e, creating a new collection a
 
 1. Navigate to SynBioHub's home page.
 
-2. Click on **submissions**. It'll direct you to a page titled **manage submissions**. On this page you'll be able to see collections to be divided, broadly under 2 categories. The 1st one being, **private collections**, which you've created and only you have access to them and 2nd one being, **public collections**, to which all the users have access to.
+2. Click on **submissions**. It'll direct you to a page titled **manage submissions**. On this page you'll be able to see collections to be divided, broadly under 2 categories. The 1st one being, **public collections**, which you've created and only you have access to them and 2nd one being, **private collections**, to which all the users have access to.
 
 3. You can view your collection by clicking on the collection name. 
 
-4. In order to make your collection public, click on **make public**. This shall enable that other users to view your collection and its contents.
+4. In order to make your collection public, click on the collections you want (using the checkboxs on the left hand side) then click on **Publish**. This will enable other users to view your collection and its contents.
 
-5. To delete your collection, click on **Remove**. This will remove the collection as well as the resources contained, in that specific collection, namely promoters, activators, modules, components, engineered region, etc.
+6. To delete your collection, click on **Remove**. This will remove the collection as well as the resources contained, in that specific collection, namely promoters, activators, modules, components, engineered region, etc.
 
 
 ## 4.3 Updating
