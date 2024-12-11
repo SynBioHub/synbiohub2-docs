@@ -26,9 +26,11 @@ The steps to do so are as follows:
 
 1. Select the collection/design that you want to share.
 
-2. Click on the **add an owner** option.
+2. Click the **share** icon on the left hand side.
+   
+4. Click on the **Select a user to add** option.
 
-3. Select the Username of the person, with whom you want to share your resources.
+5. Select the Username of the person, with whom you want to share your resources.
 
-4. Click on **grant ownership**.
+6. Click on **Grant Ownership**.
 
