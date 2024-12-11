@@ -43,7 +43,6 @@ Additional references for SynBioHub are available **[here](https://synbiohub.git
 * [Chunxiao Liao](https://myersresearchgroup.github.io/author/chunxiao-liao/) (University of Colorado Boulder)
 * [Eric Yu](https://myersresearchgroup.github.io/author/eric-yu/) (University of Utah)
 * [Bianca Gautam](https://myersresearchgroup.github.io/author/bianca-gautam/) (University of Colorado Boulder)
-* [Ima Mervin] (CU Boulder) 
 * [Alex Elbel](https://myersresearchgroup.github.io/author/alex-elbel/) (University of Utah)
 * [Anjala Katuri](https://myersresearchgroup.github.io/author/anjala-katuri/) (University of Colorado Boulder)
 * [Ima Mervin](https://myersresearchgroup.github.io/author/ima-mervin/) (University of Colorado Boulder)
