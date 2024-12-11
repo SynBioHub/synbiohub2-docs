@@ -54,7 +54,7 @@ On the search results page, there is button labeled as **advanced search**. Clic
 
 | Option Name   | Description   |
 |---------------|---------------|
-|  Creator | The username of the record's creator.  |
+| Creator | The username of the record's creator.  |
 |  Part Type |  The type of the record you want to search for i.e, a collection, design, activity, etc... |
 |  Created After and Created Before  | The timeframe in which the record was created. Make sure to enter the dates in the **YYYY-MM-DD** format.  |
 | Modified After Modified Before  | The timeframe in which the record was last modified. Make sure to enter the dates in the **YYYY-MM-DD** format.|
