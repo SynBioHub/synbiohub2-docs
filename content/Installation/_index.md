@@ -59,7 +59,7 @@ To run the base configuration:
 
    [In case of Linux OS, if you face any permission errors, then simple insert **sudo** before every statement]
 
-7. The following command stops a local instance of SynBioHub:
+8. The following command stops a local instance of SynBioHub:
 
       ```docker-compose -f ./synbiohub-docker/docker-compose.yml down```
   	
@@ -82,7 +82,7 @@ Note that all plugins are added before the `up` and each is preceeded by `-f `. 
 
 ```docker-compose -f ./synbiohub-docker/docker-compose.yml -f ./synbiohub-docker/docker-compose.explorer.yml -f ./synbiohub-docker/docker-compose.pluginVisualIgem.yml -f ./synbiohub-docker/docker-compose.pluginVisualSeqviz.yml up```
 
-A table of currently available plugins can be found **[here](https://synbiohub.github.io/synbiohub-docker/#plugins)**.
+A table of currently available plugins can be found **[here](https://synbiohub2.github.io/synbiohub-docker/#plugins)**.
 
 
 

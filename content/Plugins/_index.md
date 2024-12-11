@@ -10,7 +10,7 @@ Plugins are modular stand-alone additions to SynBioHub. They function in a way t
 
 ### 1.1 Types of Plugins
 Currently there are three types of plugins available: 
-1. Submit: Submit plugins are available to use from the [submit endpoint](https://synbiohub.github.io/api-docs/?python#submission-endpoints). They work by taking in the file that is uploaded in the submit and processing it to return SBOL to the SynBioHub endpoint.
+1. Submit: Submit plugins are available to use from the [submit endpoint](https://synbiohub2.github.io/api-docs/?python#submission-endpoints). They work by taking in the file that is uploaded in the submit and processing it to return SBOL to the SynBioHub endpoint.
 
 2. Visual: Visual plugins are available on all ‘endpoint’ pages, for example pages for components, sequences, activities, etc. Visual plugins return html to be displayed on the page.
 
@@ -32,8 +32,8 @@ As the plugins are standalone servers & they don't have to be used in conjunctio
 
 #### 2.2.1 Using SynBioHub
  
-A detailed explaination on how to install SynBioHub on various operating systems is written [here](https://synbiohub.github.io/installation/)
-A full list of plugin file names and their descriptions can be found [here](https://synbiohub.github.io/synbiohub-docker/#plugins).
+A detailed explaination on how to install SynBioHub on various operating systems is written [here](https://synbiohub2.github.io/installation/)
+A full list of plugin file names and their descriptions can be found [here](https://synbiohub2.github.io/synbiohub-docker/#plugins).
 
 ##### 2.2.1.1 Common Problems
 
@@ -67,7 +67,7 @@ If you just want to bring up the plugin as a stand-alone Docker container you ca
 * Then in the terminal run the following command `docker run --publish <publish port>:5000 --detach --name <nickname of your choice> synbiohub/<docker image name>`.
 
 e.g: `docker run --publish 8093:5000 --detach --name submit-plug synbiohub/plugin-submit-excel-library:snapshot` for the excel library submit plugin.
-It is suggested that the same publish ports are used when using docker compose. The list of those ports can be found [here](https://synbiohub.github.io/synbiohub-docker/#plugins).
+It is suggested that the same publish ports are used when using docker compose. The list of those ports can be found [here](https://synbiohub2.github.io/synbiohub-docker/#plugins).
 
 
 ##### 2.2.2.1 Common Problems
@@ -555,4 +555,4 @@ and then check the logs: `docker logs <short name>`
 
 ## 9. Plugins-Table
 
-A table of currently available plugins can be found **[here](https://synbiohub.github.io/synbiohub-docker/#plugins)**.
+A table of currently available plugins can be found **[here](https://synbiohub2.github.io/synbiohub-docker/#plugins)**.

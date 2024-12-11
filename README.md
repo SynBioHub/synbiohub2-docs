@@ -4,12 +4,12 @@ For publishing the documentation for SynBioHub online, we've put to use 2 reposi
 
 1. **[synbiohub-docs](https://github.com/SynBioHub/synbiohub-docs)**: This repository contains the whole source code for the documentation, including the markdown files as well as the fully rendered version for the website.
 
-2. **[synbiohub.github.io](https://github.com/SynBioHub/synbiohub.github.io)**: This repository contains the fully rendered code for the documentation.
+2. **[synbiohub2.github.io](https://github.com/SynBioHub/synbiohub2.github.io)**: This repository contains the fully rendered code for the documentation.
 
 
 ## Modifying the GUI documentation
 
-This section contains instructions about how you can modify the newly developed **[GUI documentation](https://synbiohub.github.io/)** for SynBioHub.
+This section contains instructions about how you can modify the newly developed **[GUI documentation](https://synbiohub2.github.io/)** for SynBioHub.
 
 *Note: Before beginning to modify the documentation, make sure that you have **[git](https://git-scm.com/)** & **[Hugo static site generator](https://gohugo.io/getting-started/quick-start/)** installed on your machine. For this documentation, we've put to use the **[ACE-documentation](https://themes.gohugo.io/ace-documentation/)** theme. The instructions, about how to install this theme on your system, are given **[here](https://github.com/vantagedesign/ace-documentation)**. Once you clone the repositories, make sure that under any circumstance you don't modify the **config.toml** file.*
 
@@ -17,7 +17,7 @@ This section contains instructions about how you can modify the newly developed 
 
 1. Open your terminal/cmd.
 
-2. Clone the **[synbiohub-docs](https://github.com/SynBioHub/synbiohub-docs.git)** and **[synbiohub.github.io](https://github.com/SynBioHub/synbiohub.github.io.git)** repositories using the following command:
+2. Clone the **[synbiohub-docs](https://github.com/SynBioHub/synbiohub-docs.git)** and **[synbiohub2.github.io](https://github.com/SynBioHub/synbiohub2.github.io.git)** repositories using the following command:
 
     ```git clone <repo link>```
 
@@ -102,9 +102,9 @@ Press Ctrl+C to stop
     
 10. In your local **synbiohub-docs** folder, there is a folder, titled **public**, which conatins the fully rendered version of the website. Open this folder and copy all the content.
 
-11. Then, navigate to your local **synbiohub.github.io** folder, and paste this content over to this folder.
+11. Then, navigate to your local **synbiohub2.github.io** folder, and paste this content over to this folder.
 
-12. In your terminal/cmd, naviagte to the **synbiohub.github.io** folder by using the following command:
+12. In your terminal/cmd, naviagte to the **synbiohub2.github.io** folder by using the following command:
 
     ```cd synbiohub.gihub.io```
     

@@ -33,7 +33,7 @@ SynBioHub2:
 
 <<Add SynBioHub2 Citation Here>>
 
-Additional references for SynBioHub are available **[here](https://synbiohub.github.io/references/)**. 
+Additional references for SynBioHub are available **[here](https://synbiohub2.github.io/references/)**. 
 
 ### SynBioHub2 Contributors
 

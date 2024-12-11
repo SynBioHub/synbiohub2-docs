@@ -86,12 +86,12 @@ In order to enable SynBioHub to send account-related emails, you need a sendgrid
 
 
 
-1. **SendGrid API key**: For generating an API key, you need to have a sendgrid account. To sign-up for sendgrid and hence generating an API key, click [here](https://synbiohub.github.io/setup/#setting-up-sendgrid).
+1. **SendGrid API key**: For generating an API key, you need to have a sendgrid account. To sign-up for sendgrid and hence generating an API key, click [here](https://synbiohub2.github.io/setup/#setting-up-sendgrid).
 2. **SendGrid From Email**:  Here, you can enter the email, which you can use for sending emails.
 
 ## 6.5 Plugins
 
-On this page, you can configure the **[plugins ](https://synbiohub.github.io/plugins/)** which you want to use. Plugins are modular stand-alone additions to SynBioHub. They function in a way that is similar to browser extensions. They can be installed separately from the browser/SynBioHub and provide additional ‘custom’ functionality to the browser/SynBioHub experience despite having a completely separate code base from the browser/SynBioHub. Though, they seem integrated to the user.
+On this page, you can configure the **[plugins ](https://synbiohub2.github.io/plugins/)** which you want to use. Plugins are modular stand-alone additions to SynBioHub. They function in a way that is similar to browser extensions. They can be installed separately from the browser/SynBioHub and provide additional ‘custom’ functionality to the browser/SynBioHub experience despite having a completely separate code base from the browser/SynBioHub. Though, they seem integrated to the user.
 
 They're broadly classified into 3 types, which are as follows:
 

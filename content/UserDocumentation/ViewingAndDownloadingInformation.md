@@ -26,15 +26,15 @@ Once you've successfully navigated to the record's home page, you'll be able to 
 
 * Then, we've got five clickable options, that are:
 
-   * **[Download](https://synbiohub.github.io/userdocumentation/#32-downloading-the-information)**
+   * **[Download](https://synbiohub2.github.io/userdocumentation/#32-downloading-the-information)**
  
-   * **[Search](https://synbiohub.github.io/userdocumentation/#1-searching-for-information)**
+   * **[Search](https://synbiohub2.github.io/userdocumentation/#1-searching-for-information)**
 
-   * **[Share](https://synbiohub.github.io/userdocumentation/#6-data-sharing-mechanisms)**
+   * **[Share](https://synbiohub2.github.io/userdocumentation/#6-data-sharing-mechanisms)**
 
    * **Back**: This option navigates back to the main page of the collection, which that particular record is a part of.
 
-   * **[Add to a collection](https://synbiohub.github.io/userdocumentation/#6-add-to-an-existing-collection)** 
+   * **[Add to a collection](https://synbiohub2.github.io/userdocumentation/#6-add-to-an-existing-collection)** 
 
  
 
@@ -177,7 +177,7 @@ Following are the types of formats that you may be able to download a record:
   | Image     | Image is a capture of the Visbol display at the top of the page.|
 ----------------------------------------------------------------------------------------
 
-Additional download options may be available via the use of **[download plugins](https://synbiohub.github.io/plugins/#34-download)**.
+Additional download options may be available via the use of **[download plugins](https://synbiohub2.github.io/plugins/#34-download)**.
 
 
 
