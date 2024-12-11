@@ -22,7 +22,7 @@ Now, there are 2 ways you make your submissions i.e, creating a new collection a
 
 ### 4.1.1 Creating a New Collection
 
-1. Select the **create a new collection** option.
+1. Select the **New collection** option.
 
 2. Following are the attributes that need to be filled up :
 
@@ -36,7 +36,7 @@ Now, there are 2 ways you make your submissions i.e, creating a new collection a
 
 * **Citations** (optional): This is a list of comma separated pubmed IDs of citations to store with the submission, just for reference. It is an optional attribute.
 
-* **SBOL/GENBANK/GFF3/FASTA/ZIP file** (OPTIONAL): You can optionally submit a file. The file should be of the following types:
+* **SBOL/GENBANK/GFF3/FASTA/ZIP file** (OPTIONAL): The file should be of the following types:
 
 
  |  Type             | Description  |
@@ -46,14 +46,13 @@ Now, there are 2 ways you make your submissions i.e, creating a new collection a
     | **[FASTA](https://en.wikipedia.org/wiki/FASTA_format)**      | In bioinformatics and biochemistry, the FASTA format is a text-based format for representing either nucleotide sequences or amino acid (protein) sequences, in which nucleotides or amino acids are represented using single-letter codes. The format also allows for sequence names and comments to precede the sequences. The format originates from the FASTA software package, but has now become a near universal standard in the field of bioinformatics. |
 | **[zip](https://en.wikipedia.org/wiki/Zip_(file_format))** | ZIP is an archive file format that supports lossless data compression. A ZIP file may contain one or more files or directories that may have been compressed. |
 ----------------------------------------------------------------------------------------------------------------
-
+		Inorder to submit a file you must have already submitted the collection. Once you do you can click **Submit** and it will submit to the collection just created.
+  
 * **Handler**: You also need to select a handler. By default only one option is provided but more handlers can be added via [submit plugins](https://github.com/SynBioHub/Plugin-Submit-Excel-Library).     
-
-   
 
 * Finally, you have an option to overwrite the existing objects in that collection i.e, removing all the existing objects in the collection and adding new ones or keeping the old resources and adding the new ones.
 
-3. At last, click on **submit**.
+3. At last, click on **Submit**.
 
 ### 4.1.2 Submitting to an Existing Collection
 
@@ -93,15 +92,13 @@ Now, there are 2 ways you make your submissions i.e, creating a new collection a
 
 ## 4.3 Updating
 
-1. On the submit page, click on *Submit to an existing collection* option.
-
-2. Then, select to the collection you want to submit your design to.
+1. On the submit page select the collection you want to submit your design to.
 
 3. Select the design that you want to submit.
 
 4. You may choose to *overwrite the existing objects* in a collection.
 
-5. Then, click on submit.
+5. Then, click on **Submit**.
 
 ## 4.4 Editing a Submission
 
@@ -130,7 +127,7 @@ To edit your submissions, following steps need to be followed:
 
 * **Citations**: You just need to add pubmedID's separated by commas, using which you can cite several research papers.
 
-7. Then, we have the section titled, **other properties**. Under this section, you can add/edit various properties, other than Synbiohub#owner and Synbiohub#Toplevel. 
+7. Then, we have the section titled, **other properties**. Under this section, you can add/edit various properties, other than Synbiohub#ownedBy and Synbiohub#topLevel. 
 
 8. Finally, we have the attachments sections. Herein, you can upload as well as lookup for an attachment.The process for both the options, is described in detail, as follows:
 
