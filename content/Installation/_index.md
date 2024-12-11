@@ -6,14 +6,14 @@ weight: 10
 ---
 
 ### General
-The docker-compose files in [this](https://github.com/SynBioHub/synbiohub-docker) repository represent various configurations for deploying SynBioHub.
+The docker-compose files in [this repository](https://github.com/SynBioHub/synbiohub2-docker) represent various configurations for deploying SynBioHub.
 The files can be layered with Docker Compose's [multiple file](https://docs.docker.com/compose/reference/overview/#specifying-multiple-compose-file) capabilities. 
 
-The base configuration, described with `docker-compose.yml`, is simply SynBioHub, its graph database Virtuoso, and an autohealer.
+The base configuration, described with `docker-compose.yml`, is simply SynBioHub2, its graph database Virtuoso, and an autohealer.
 
 To run the base configuration:
 
-1. Before trying to run SynBioHub locally on your PC, Make sure that you've Git and Docker installed.
+1. Before trying to run SynBioHub locally on your PC, Make sure that you have Git and Docker installed.
 
   * Git:-
     
@@ -45,15 +45,17 @@ To run the base configuration:
 
 4. Subsequently, enter the following command into your terminal:
 
-	```git clone https://github.com/synbiohub/synbiohub-docker```
+	```git clone -b snapshot https://github.com/synbiohub/synbiohub2-docker```
 
-5. Then, enter the following command to start the local instance of SynBioHub:
+5. Make sure you're on the snapshot branch. This will take the most recent version of SynBioHub2, as SynBioHub2 has not been fully released yet. (Delete when release is done)
+
+6. Then, enter the following command to start the local instance of SynBioHub:
       
         
 	```docker-compose -f ./synbiohub-docker/docker-compose.yml up```
 
    
-6. In your browser search for localhost:7777 and it'll take you to a setup page when you'll run it for the very first time.
+7. In your browser search for localhost:7777 and it'll take you to a setup page when you'll run it for the very first time.
 
    [In case of Linux OS, if you face any permission errors, then simple insert **sudo** before every statement]
 
