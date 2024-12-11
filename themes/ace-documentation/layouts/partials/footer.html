@@ -9,10 +9,10 @@
 <script type="text/javascript" src="{{"plugins/auto-complete.js" | relURL}}"></script>
 <link href="{{"plugins/auto-complete.css" | relURL}}" rel="stylesheet">
 <script type="text/javascript">
-  {{ if .Site.IsMultiLingual }}
-      var baseurl = "{{.Site.BaseURL}}{{.Site.LanguagePrefix}}";
+  {{ if hugo.IsMultilingual }}
+      var baseurl = "{{ .Site.BaseURL }}{{ .Site.LanguagePrefix }}";
   {{ else }}
-      var baseurl = "{{.Site.BaseURL}}";
+      var baseurl = "{{ .Site.BaseURL }}";
   {{ end }}
 </script>
 <script type="text/javascript" src="{{"plugins/search.js" | relURL}}"></script>

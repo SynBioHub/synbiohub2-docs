@@ -2,56 +2,56 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://synbiohub.github.io/aboutsynbiohub/</loc>
+    <loc>http://localhost:55977/aboutsynbiohub/</loc>
     <lastmod>2020-09-04T20:30:59+05:30</lastmod>
   </url><url>
-    <loc>https://synbiohub.github.io/userdocumentation/searchingforinfo/</loc>
+    <loc>http://localhost:55977/userdocumentation/searchingforinfo/</loc>
   </url><url>
-    <loc>https://synbiohub.github.io/questions-and-issues/mailinglists/</loc>
+    <loc>http://localhost:55977/questions-and-issues/mailinglists/</loc>
   </url><url>
-    <loc>https://synbiohub.github.io/userdocumentation/viewinganddownloadinginformation/</loc>
+    <loc>http://localhost:55977/userdocumentation/viewinganddownloadinginformation/</loc>
   </url><url>
-    <loc>https://synbiohub.github.io/questions-and-issues/reportanissue/</loc>
+    <loc>http://localhost:55977/questions-and-issues/reportanissue/</loc>
   </url><url>
-    <loc>https://synbiohub.github.io/userdocumentation/registeringupdatingaccount/</loc>
+    <loc>http://localhost:55977/userdocumentation/registeringupdatingaccount/</loc>
   </url><url>
-    <loc>https://synbiohub.github.io/questions-and-issues/faq/</loc>
+    <loc>http://localhost:55977/questions-and-issues/faq/</loc>
   </url><url>
-    <loc>https://synbiohub.github.io/userdocumentation/managingsubmitting/</loc>
+    <loc>http://localhost:55977/userdocumentation/managingsubmitting/</loc>
   </url><url>
-    <loc>https://synbiohub.github.io/userdocumentation/datasharingmech/</loc>
+    <loc>http://localhost:55977/userdocumentation/datasharingmech/</loc>
   </url><url>
-    <loc>https://synbiohub.github.io/userdocumentation/admin/</loc>
+    <loc>http://localhost:55977/userdocumentation/admin/</loc>
   </url><url>
-    <loc>https://synbiohub.github.io/installation/</loc>
+    <loc>http://localhost:55977/installation/</loc>
     <lastmod>2020-09-04T20:30:59+05:30</lastmod>
   </url><url>
-    <loc>https://synbiohub.github.io/setup/</loc>
+    <loc>http://localhost:55977/setup/</loc>
     <lastmod>2020-09-04T20:30:59+05:30</lastmod>
   </url><url>
-    <loc>https://synbiohub.github.io/userdocumentation/</loc>
+    <loc>http://localhost:55977/userdocumentation/</loc>
     <lastmod>2020-09-04T20:30:59+05:30</lastmod>
   </url><url>
-    <loc>https://synbiohub.github.io/apidocumentation/</loc>
+    <loc>http://localhost:55977/apidocumentation/</loc>
     <lastmod>2020-09-04T20:30:59+05:30</lastmod>
   </url><url>
-    <loc>https://synbiohub.github.io/plugins/</loc>
+    <loc>http://localhost:55977/plugins/</loc>
     <lastmod>2020-09-04T20:30:59+05:30</lastmod>
   </url><url>
-    <loc>https://synbiohub.github.io/questions-and-issues/</loc>
+    <loc>http://localhost:55977/questions-and-issues/</loc>
     <lastmod>2020-09-04T20:30:59+05:30</lastmod>
   </url><url>
-    <loc>https://synbiohub.github.io/glossary/</loc>
+    <loc>http://localhost:55977/glossary/</loc>
     <lastmod>2020-12-02T11:51:20+05:30</lastmod>
   </url><url>
-    <loc>https://synbiohub.github.io/</loc>
+    <loc>http://localhost:55977/</loc>
     <lastmod>2020-12-02T11:51:20+05:30</lastmod>
   </url><url>
-    <loc>https://synbiohub.github.io/references/</loc>
+    <loc>http://localhost:55977/references/</loc>
     <lastmod>2020-09-04T20:30:59+05:30</lastmod>
   </url><url>
-    <loc>https://synbiohub.github.io/categories/</loc>
+    <loc>http://localhost:55977/categories/</loc>
   </url><url>
-    <loc>https://synbiohub.github.io/tags/</loc>
+    <loc>http://localhost:55977/tags/</loc>
   </url>
 </urlset>
