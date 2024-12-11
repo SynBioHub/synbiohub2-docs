@@ -203,7 +203,7 @@
 </li>
 </ol>
 <h3 id="12-sequence-search">1.2 Sequence Search</h3>
-<p>On the search results page, there is button labeled as <strong>sequence search</strong>. Clicking on that button will direct you to a page containing a list of sequence search options. To search using a sequence, you can provide the values for the options, as described in the table below:</p>
+<p>On the search results page, there is button labeled as <strong>sequence search</strong>. Clicking on that button will redirect you to a page containing a list of sequence search options. To search using a sequence, you can provide the values for the options, as described in the table below:</p>
 <table>
   <thead>
       <tr>
@@ -218,27 +218,27 @@
       </tr>
       <tr>
           <td>Search Method</td>
-          <td>You can choose the perspective of your search. You can perform a <strong>global</strong> search or an <strong>exact</strong> search. The exact search shall display, those records which are an exact match to the sequences that you&rsquo;ve entered and the global search search will display those results which have even the smallest of the similarities to the sequence that you&rsquo;ve entered.</td>
+          <td>You can choose the perspective of your search. You can perform a <strong>global</strong> search or an <strong>exact</strong> search by clicking on the drop down menu provided. Global search displays records which have even the smallest similarities to your entered sequence. Exact search shows only records that perfectly match your entered sequence.</td>
       </tr>
       <tr>
           <td>Number of Results</td>
-          <td>You may customise the number of results, the value for which must not exceed 10,000. This translates into the maximum number of hits to accept before stopping the search. Kindly note that, higher the value, the longer the runtime.</td>
+          <td>You may customise the number of results, the value for which must not exceed 10,000. This translates into the maximum number of hits to accept before stopping the search. Kindly note that, higher the value, the longer the runtime will be.</td>
       </tr>
       <tr>
           <td>Minimum Sequence Length</td>
-          <td>You need to enter the minimum sequence length. This value basically specifies the minimum length of the sequence, which you want to search for. Values for this parameter should not exceed 100,000.</td>
+          <td>You may enter the minimum sequence length. This value  specifies the minimum length of the sequence, which you want to search for. Values for this parameter should not exceed 100,000.</td>
       </tr>
       <tr>
           <td>Maximum Sequence Length</td>
-          <td>You need to enter the maximum sequence length. This value basically specifies the maximum length of the sequence, which you want to search for. Values for this parameter should not exceed 100,000.</td>
+          <td>You may enter the maximum sequence length for your search. This value sets the upper limit for the length of sequences to be considered. Values for this parameter should not exceed 100,000.</td>
       </tr>
       <tr>
-          <td># of failed hits before stopping</td>
-          <td>Then, you need to enter the maximum number of non-matching target sequences, that are to be considered before the search is halted. This option works in pair with the flag above. The search process sorts the target sequences by decreasing number of k-mers they have in common with the query sequence, using that information as a proxy for sequence similarity. After pairwise alignments, if none of the first x examined target sequences pass the acceptation criteria, the search process stops for that query (no hit). If this flag is set to a higher value, more target sequences are considered. If the flag above and this flag are both set to 0, the complete database is searched.</td>
+          <td># of Failed Hits before Stopping</td>
+          <td>You may enter the maximum number of non-matching target sequences to examine before ending the search. This parameter works in tandem with the previous flag and influences the search process. The search algorithm ranks target sequences based on their similarity to the query sequence, using shared k-mers as a measure. After performing pairwise alignments, if none of the first x examined target sequences meet the acceptance criteria, the search for that query stops without finding a hit. Increasing this value allows more target sequences to be considered, potentially improving search results at the cost of increased processing time. If both this flag and the previous flag are set to 0, the entire database will be searched exhaustively. By adjusting this parameter, you can balance between search thoroughness and computational efficiency</td>
       </tr>
       <tr>
           <td>Percent Match</td>
-          <td>Then, we have is the <em>percentage match</em>, which has a value between 0 and 1. This is the value of pairwise identity that must match with the sequence, otherwise the sequence is rejected.</td>
+          <td>Then, we have the <strong>percentage match</strong>, which is a value between 0 and 1. This represents the minimum pairwise identity that a sequence must have to be considered a match. If a sequence&rsquo;s pairwise identity falls below this threshold, it is rejected. This parameter allows you to control the stringency of the matching process, with higher values requiring greater similarity between the query and target sequences.</td>
       </tr>
       <tr>
           <td>Pairwise Identity Definition</td>
