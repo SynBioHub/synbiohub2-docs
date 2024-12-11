@@ -15,7 +15,7 @@ Following Steps need to be followed for registering onto SynBioHub:
 
 1. Navigate to SynBioHub's home page.
 
-2. Click on the **Login or Register** option on the top right hand side of your Screen.
+2. Click on the **Sign In** option on the top right hand side of your Screen.
 
 3. Enter the following details to complete your registration process: 
 
