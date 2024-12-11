@@ -49,14 +49,14 @@ After filling up the desired options, press the **search** button to get the sea
 
 ### 1.3 Advanced Search
 
-On the search results page, there is button labeled as **advanced search**. Clicking on that button will direct you to a page containing a list of advanced search options. To search using advanced parameters, you can provide the values for the option as described in the table below. The records that'll be displayed will match all of the criteria, that you'll fill in. Kindly note that you **don't** need to fill in all of the options. The options are as follows:
+On the search results page, you can see the options to do an **advanced search**. Clicking on that button will redirect you to a page containing a list of advanced search options. To search using advanced parameters, you can provide the values for the option as described in the table below. The records that'll be displayed will match all of the criteria, that you'll fill in. Kindly note that you **don't** need to fill in all of the options. The options are as follows:
 
 
 | Option Name   | Description   |
 |---------------|---------------|
 | Creator | The username of the record's creator.  |
-|  Part Type |  The type of the record you want to search for i.e, a collection, design, activity, etc... |
-|  Created After and Created Before  | The timeframe in which the record was created. Make sure to enter the dates in the **YYYY-MM-DD** format.  |
+| Part Type |  The type of the record you want to search for i.e, a collection, design, activity, etc... |
+| Created After and Created Before  | The timeframe in which the record was created. Make sure to enter the dates in the **YYYY-MM-DD** format.  |
 | Modified After Modified Before  | The timeframe in which the record was last modified. Make sure to enter the dates in the **YYYY-MM-DD** format.|
 | ID/Name/Description | Enter the ID or the name or the description of the record, which you want to search for. |
 | Object Type | Select the *type* of the record, from the following available options in the dropdown menu, for an example: No filter, biopax:Complex, biopax:DnaRegion, biopax:Protein, so:circular, etc...|
