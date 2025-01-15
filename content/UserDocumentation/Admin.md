@@ -29,7 +29,7 @@ Several parameters essential for the smooth functioning of SynBioHub, are mentio
 | 6. **Graph Store Endpoint**: http://virtuoso:8890/sparql-graph-crud-auth/ | This is the endpoint for the triplestore database where the data is stored. In this case, it is the endpoint for virtuoso.           |
 | 7. **Default Graph**: http://localhost:7777/public |  It is the URI prefix for the public graph in the database.     |
 | 8. **Graph Prefix**: http://localhost:7777/ |  It is the URI prefix for all graphs in the database.                 |
-| 9. **Thread Pool Size**:    |    It  is the number of threads that virtuoso is allowed to use.                |
+| 9. **Thread Pool Size**:    |    It  is the number of threads that virtuoso is allowed to use. (But it is currently empty)           |
 | 10. **Upload Limit**: X mb| Shows the maximum limit of files that you can upload at once to your instance|
 
 ## 6.2 Graphs
