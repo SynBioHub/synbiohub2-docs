@@ -361,7 +361,7 @@
 <p>On this page, you can configure the registry for your local instance. To configure the registry for your local instance, enter the administrator email in the column just besides the web-of-registries link. After entering the admin email, click on <strong>submit</strong> and this would configure the admin email for the registries.</p>
 </li>
 <li>
-<p>There are 2 options given just below the local web of registries sub-section, which are:</p>
+<p>There are 3 options given just below the local web of registries sub-section, which are:</p>
 </li>
 </ul>
 <ol>
@@ -369,11 +369,14 @@
 <p><strong>Retrieve from web of registries</strong>: This option shall retrieve the web of registries that are already existing globally, locally onto you instance, if in case you delete them.</p>
 </li>
 <li>
-<p><strong>Add registry</strong>: This shall enable you to add a registry onto your instance. For adding, click on this option. Then, a popup shall appear. Subsequently, enter the registry URI prefix and the Registry URL. Finally, click on <strong>submit</strong>. This will add an already existing registry of SynBioHub, to the list of registries on your SynBioHub local instance.</p>
+<p><strong>Federate from web of registries</strong>: This shall enable you to Federate your SynBioHub local instance.</p>
+</li>
+<li>
+<p><strong>Add registry</strong>: This shall enable you to add a registry onto your instance. For adding, click on this option. Then, a popup shall appear. Subsequently, enter the registry URI prefix and the SynBioHub URL. Finally, click on <strong>create</strong>. This will add an already existing registry of SynBioHub, to the list of registries on your SynBioHub local instance.</p>
 </li>
 </ol>
 <ul>
-<li>Several local web-of-registries are also given on this page alongside their Synbiohub URL. Here, you have an option to <strong>save</strong> as well as <strong>delete</strong> the already existing registries.</li>
+<li>Several local web-of-registries are also given on this page alongside their Synbiohub URL. Here, you have an option to <strong>edit</strong> as well as <strong>delete</strong> the already existing registries.</li>
 </ul>
 <h2 id="67-remotes">6.7 Remotes</h2>
 <p>SynBioHub is capable of connecting to remote repositories to allow data to be transferred to and from these remote repositories.</p>
@@ -390,13 +393,13 @@
 <h3 id="671-configuring-a-benchling-remote">6.7.1 Configuring a Benchling Remote</h3>
 <ol>
 <li>
-<p>When you&rsquo;ll click on the type box, a dropdown menu shall appear containing 2 options, ice and benchling. For configuring a benchling remote, select <strong>benchling</strong>. Then click on <strong>add remote</strong>.</p>
+<p>A dropdown menu shall appear containing 2 options, ice and benchling. For configuring a benchling remote, select <strong>benchling</strong>.</p>
 </li>
 <li>
-<p>As soon as you&rsquo;ll click on add remote, a popup shall appear asking you to fill up certain set of attributes. They&rsquo;re as follows:</p>
+<p> Add in your URI Prefex and SynBioHub URL </p>
 </li>
 </ol>
-<table>
+<!-- <table>
   <thead>
       <tr>
           <th>Attribute</th>
@@ -454,14 +457,14 @@
       </tr>
   </tbody>
 </table>
-<hr>
-<p>Once you are through with all the attributes, click on submit.</p>
+<hr> -->
+<p>Click on create.</p>
 <ol start="3">
-<li>Once you&rsquo;ve clicked on submit, you&rsquo;ll be able to see a fully configured remote on the left. You can also delete and edit your remote. To delete any of your configured remotes, click on delete. To edit any of the information, click on edit. Once you&rsquo;ve edited the information, click on submit.</li>
+<li>You&rsquo;ll be able to see a fully configured remote. You can also delete and edit your remote. To delete any of your configured remotes, click on delete. To edit any of the information, click on edit. Once you&rsquo;ve edited the information, click on submit.</li>
 </ol>
 <h4 id="examples">Examples</h4>
-<p>To configure a Benchling remote, the fields should have the values as follows: -</p>
-<p>id - benchling</p>
+<p>To configure a Benchling remote, fill in the URL Prefix and SynBioHub URL</p>
+<!-- <p>id - benchling</p>
 <p>type - benchling</p>
 <p>url - <a href="https://api.benchling.com/v1">https://api.benchling.com/v1</a></p>
 <p>sequence suffix - sequence</p>
@@ -480,14 +483,14 @@
 <p>Part Number Prefix - acs</p>
 <h3 id="672-configuring-an-ice-remote">6.7.2 Configuring an ICE Remote</h3>
 <ol>
-<li>
-<p>When you&rsquo;ll click on the type box, a dropdown menu shall appear containing 2 options, ice and benchling. For configuring an ICE remote, select <strong>ICE</strong> and then click on <strong>add remote</strong>.</p>
+<li> -->
+<p>A dropdown menu shall appear containing 2 options, ice and benchling. For configuring an ICE remote, select <strong>ICE</strong></p>
 </li>
 <li>
-<p>As soon as you&rsquo;ll click on add remote, a popup shall appear asking you to fill up certain set of attributes. They&rsquo;re as follows:</p>
+<p> Add in your URI Prefex and SynBioHub URL</p>
 </li>
 </ol>
-<table>
+<!-- <table>
   <thead>
       <tr>
           <th>Attribute</th>
@@ -573,9 +576,9 @@
       </tr>
   </tbody>
 </table>
-<hr>
+<hr> -->
 <ol start="3">
-<li>Once you&rsquo;ve clicked on submit, you&rsquo;ll be able to see a fully configured remote on the left. You can also delete and edit your remote. To delete any of your configured remotes, click on delete. To edit any of the information, click on edit. Once you&rsquo;ve edited the information, click on submit.</li>
+<li>You&rsquo;ll be able to see a fully configured remote. You can also delete and edit your remote. To delete any of your configured remotes, click on delete. To edit any of the information, click on edit. Once you&rsquo;ve edited the information, click on submit.</li>
 </ol>
 <h4 id="examples-1">Examples</h4>
 <p>To configure an ICE remote, the fields should have the values as follows: -</p>
@@ -600,7 +603,7 @@
 <p>SBOLExplorer is a service that simplifies the process of analysing and searching for parts within genetic design repositories.</p>
 <p>Once you click on the <strong>SBOLExplorer</strong> option, you can view the following options:</p>
 <ol>
-<li>The first option is that of <strong>SBOLExplorer</strong> endpoint. Here, you can enter and save your SBOLExplorer endpoint for your local instance. Also, make sure that any of the endpoints you enter end with <strong>\</strong>.</li>
+<li>The first option is that of <strong>SBOLExplorer</strong> endpoint. Here, you can enter and save your SBOLExplorer endpoint for your local instance. Also, make sure that any of the endpoints you enter end with <strong>/</strong>.</li>
 <li>Then on the right, you shall see the <strong>searching using SBOL explorer</strong>*. You need to Check the this option to enable the SBOLExplorer.</li>
 <li>Then, you&rsquo;ll be able to see the option of selecting between, <strong><a href="https://academic.oup.com/bioinformatics/article/26/19/2460/230188">Usearch</a></strong> and <strong><a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5075697/">Vsearch</a></strong>. They&rsquo;re explained in detail as follows:</li>
 </ol>
@@ -630,6 +633,9 @@
 </li>
 <li>
 <p>Then you can also input a value for the <strong><a href="https://www.elastic.co/guide/en/cloud-enterprise/1.1/ece-administering-endpoints.html">elasticsearch endpoints</a></strong>. For applications without SSL or HTTPS protocol support, you can use a local endpoint with the HTTP protocol, which in turn connects to your Elastic Cloud Enterprise cluster or to Kibana either using the HTTP or the HTTPS protocol.</p>
+</li>
+<li>
+<p>Additionally you can input a value for the <strong><a href="">elasticsearch index name</a></strong>.</p>
 </li>
 <li>
 <p>Finally, you have to input a value for the <strong><a href="https://medium.com/virtuoso-blog/what-is-a-virtuoso-sparql-endpoint-and-why-is-it-important-5244df738a3e">SPARQL/Virtuoso endpoints</a></strong>. A Virtuoso SPARQL Endpoint is a feature of every Virtuoso RDBMS instance that offers an HTTP-based Query Service that operates on Entity Relationship Types (Relations) represented as RDF sentence collections using the SPARQL Query Language. These operations may be read- and/or write-oriented and distributed without compromising security, performance, or scalability.</p>
@@ -663,7 +669,7 @@ Also, you can also enable module interactions as well as remove the public enabl
 <h2 id="611-users">6.11 Users</h2>
 <p>This page basically lists all the users currently registered onto your local instance.</p>
 <ul>
-<li>There is an option to add a user for your local instance. To do so, click on <strong>add user</strong>. This&rsquo;ll direct you to page, wherein you&rsquo;ll be required to fill the following details:</li>
+<li>There is an option to add a user for your local instance. To do so, scroll to the bottom of the page wherein you&rsquo;ll be required to fill the following details:</li>
 </ul>
 <ol>
 <li>
@@ -679,9 +685,6 @@ Also, you can also enable module interactions as well as remove the public enabl
 <p><strong>Username</strong>: Assign a username to the member.</p>
 </li>
 <li>
-<p><strong>Grant Administrative Access</strong>: There is an option to provide the administrator access, to this particular member. This shall enable, him/her to edit each and every setting on your local instance including the admin ones as well. To grant this particular access, check the grant administrative privileges box.</p>
-</li>
-<li>
 <p><strong>Grant Member Privileges</strong>: There is an option to provide the member access.
 To grant this particular access, check the grant member privileges box.</p>
 </li>
@@ -689,8 +692,14 @@ To grant this particular access, check the grant member privileges box.</p>
 <p><strong>Grant Curator Privileges</strong>: There is an option to provide the member access.
 To grant this particular access, check the grant curator privileges box.</p>
 </li>
+<li>
+<p><strong>Grant Administrative Access</strong>: There is an option to provide the administrator access, to this particular member. This shall enable, him/her to edit each and every setting on your local instance including the admin ones as well. To grant this particular access, check the grant administrative privileges box.</p>
+</li>
 </ol>
 <ul>
+<li>
+<p>You can save your changes by clicking on <strong>create</strong>.</p>
+</li>
 <li>
 <p>You can also search for a particular user by entering the username in the search box.</p>
 </li>
@@ -724,7 +733,7 @@ To grant this particular access, check the grant curator privileges box.</p>
 <p><strong>Admin</strong> : A checked or an empty box is displayed. A checked box means, that the user has admin rights and if not, that means the user doesn&rsquo;t have admin access.</p>
 </li>
 <li>
-<p><strong>Save</strong>: Clicking on the save option, will permanently save that profile to your local instance.</p>
+<p><strong>Save</strong>: Clicking on the edit or delete option, will permanently change that profile to your local instance.</p>
 </li>
 </ol>
 <p>Finally, there is a check box at the end corresponding to allowing public account creation. Enabling this option will allow anyone to create an account on your local instance and hence contribute to your design repository.</p>
