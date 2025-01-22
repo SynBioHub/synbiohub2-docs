@@ -2,54 +2,75 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>User Documentation on SynBioHub-Documentation</title>
-    <link>http://localhost:1313/userdocumentation/</link>
+    <link>https://synbiohub2.github.io/userdocumentation/</link>
     <description>Recent content in User Documentation on SynBioHub-Documentation</description>
-    <generator>Hugo</generator>
+    <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>© SynBioHub 2020</copyright>
-    <lastBuildDate>Mon, 01 Jan 0001 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/userdocumentation/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 04 Sep 2020 20:30:59 +0530</lastBuildDate>
+    <atom:link href="https://synbiohub2.github.io/userdocumentation/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>1. Searching for Information</title>
-      <link>http://localhost:1313/userdocumentation/searchingforinfo/</link>
+      <link>https://synbiohub2.github.io/userdocumentation/searchingforinfo/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/userdocumentation/searchingforinfo/</guid>
-      <description>&lt;p&gt;There are a variety of ways to search for information in SynBioHub, such as using keywords, sequences, advanced searches and  SPARQL queries. They&amp;rsquo;re explained in detail as follows:&lt;/p&gt;&#xA;&lt;h3 id=&#34;11-keyword-search&#34;&gt;1.1 Keyword Search&lt;/h3&gt;&#xA;&lt;p&gt;To search amongst various records, follow these steps:&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Navigate to SynBioHub&amp;rsquo;s home page.&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;In the search box, enter the keywords for the record you want to search for and click on the search button.&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Subsequently, you shall be directed to a list of records matching the keywords that you&amp;rsquo;ve entered. For each record, the first thing that is displayed is the name. Next to the name, the display ID, description and type of the record and privacy shall be displayed. The description column contains a brief description provided by the owner of that particulat record. On the right hand side, there is an indicator displaying whether it is a &lt;strong&gt;public&lt;/strong&gt;, &lt;strong&gt;private&lt;/strong&gt; or a &lt;strong&gt;remote&lt;/strong&gt; record. The privacy labels indicate:&lt;/p&gt;</description>
+      <guid>https://synbiohub2.github.io/userdocumentation/searchingforinfo/</guid>
+      <description>There are a variety of ways to search for information in SynBioHub, such as using keywords, sequences, advanced searches and SPARQL queries. They&amp;rsquo;re explained in detail as follows:
+1.1 Keyword Search To search amongst various records, follow these steps:
+Navigate to SynBioHub&amp;rsquo;s home page.
+In the search box, enter the keywords for the record you want to search for and click on the search button.
+Subsequently, you shall be directed to a list of records matching the keywords that you&amp;rsquo;ve entered.</description>
     </item>
     <item>
       <title>2. Viewing and Downloading the Information</title>
-      <link>http://localhost:1313/userdocumentation/viewinganddownloadinginformation/</link>
+      <link>https://synbiohub2.github.io/userdocumentation/viewinganddownloadinginformation/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/userdocumentation/viewinganddownloadinginformation/</guid>
-      <description>&lt;h2 id=&#34;21-viewing-the-information&#34;&gt;2.1 Viewing the Information&lt;/h2&gt;&#xA;&lt;p&gt;There are various types of records on SynBioHub. They&amp;rsquo;ve been divided into the following sub-categories:&lt;/p&gt;&#xA;&lt;h3 id=&#34;211-viewing-a-record&#34;&gt;2.1.1 Viewing a Record&lt;/h3&gt;&#xA;&lt;p&gt;This section consists of a general description of all record pages i.e, this is what a general record page looks like. Additional sections (if any), are further explained in the further sections, under the respective record types.&#xA;Once you&amp;rsquo;ve successfully navigated to the record&amp;rsquo;s home page, you&amp;rsquo;ll be able to view the parameters in this order:&lt;/p&gt;</description>
+      <guid>https://synbiohub2.github.io/userdocumentation/viewinganddownloadinginformation/</guid>
+      <description>2.1 Viewing the Information There are various types of records on SynBioHub. They&amp;rsquo;ve been divided into the following sub-categories:
+2.1.1 Viewing a Record This section consists of a general description of all record pages i.e, this is what a general record page looks like. Additional sections (if any), are further explained in the further sections, under the respective record types. Once you&amp;rsquo;ve successfully navigated to the record&amp;rsquo;s home page, you&amp;rsquo;ll be able to view the parameters in this order:</description>
     </item>
     <item>
       <title>3. Registering and Updating an Account</title>
-      <link>http://localhost:1313/userdocumentation/registeringupdatingaccount/</link>
+      <link>https://synbiohub2.github.io/userdocumentation/registeringupdatingaccount/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/userdocumentation/registeringupdatingaccount/</guid>
-      <description>&lt;h2 id=&#34;31-registering-an-account&#34;&gt;3.1 Registering an Account&lt;/h2&gt;&#xA;&lt;p&gt;Following Steps need to be followed for registering onto SynBioHub:&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Navigate to SynBioHub&amp;rsquo;s home page.&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Click on the &lt;strong&gt;Sign In&lt;/strong&gt; option on the top right hand side of your Screen.&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Enter the following details to complete your registration process:&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;table&gt;&#xA;  &lt;thead&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;th&gt;Option Name&lt;/th&gt;&#xA;          &lt;th&gt;Description&lt;/th&gt;&#xA;      &lt;/tr&gt;&#xA;  &lt;/thead&gt;&#xA;  &lt;tbody&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;Full Name&lt;/td&gt;&#xA;          &lt;td&gt;Enter the name of the user&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;Affiliation(Optional)&lt;/td&gt;&#xA;          &lt;td&gt;You can enter the name of the university/institute that you&amp;rsquo;re currently affiliated to&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;Email Address&lt;/td&gt;&#xA;          &lt;td&gt;Enter the Email Address, through which you want to get registered. If in future you forget your login credentials, then this shall be used for sending a recovery password for your account&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;Username&lt;/td&gt;&#xA;          &lt;td&gt;You have to enter a username of your own choice. This shall be displayed on the record page of every record that you submit&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;Password&lt;/td&gt;&#xA;          &lt;td&gt;Enter a password (preferably a strong one) for keeping your user account safe&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;  &lt;/tbody&gt;&#xA;&lt;/table&gt;&#xA;&lt;hr&gt;&#xA;&lt;ol start=&#34;4&#34;&gt;&#xA;&lt;li&gt;When you need to login into your SynBioHub account, click on the &amp;ldquo;login or Register&amp;rdquo; option. Then you need to enter your email address and your password to access your account.&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;h3 id=&#34;32-updating-an-account&#34;&gt;3.2 Updating an Account&lt;/h3&gt;&#xA;&lt;p&gt;If you ever need to update your account, the following steps need to be followed:&lt;/p&gt;</description>
+      <guid>https://synbiohub2.github.io/userdocumentation/registeringupdatingaccount/</guid>
+      <description>3.1 Registering an Account Following Steps need to be followed for registering onto SynBioHub:
+Navigate to SynBioHub&amp;rsquo;s home page.
+Click on the Sign In option on the top right hand side of your Screen.
+Enter the following details to complete your registration process:
+Option Name Description Full Name Enter the name of the user Affiliation(Optional) You can enter the name of the university/institute that you&amp;rsquo;re currently affiliated to Email Address Enter the Email Address, through which you want to get registered.</description>
     </item>
     <item>
       <title>4. Submitting, Managing and Updating Submissions</title>
-      <link>http://localhost:1313/userdocumentation/managingsubmitting/</link>
+      <link>https://synbiohub2.github.io/userdocumentation/managingsubmitting/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/userdocumentation/managingsubmitting/</guid>
-      <description>&lt;h2 id=&#34;41-submitting&#34;&gt;4.1 Submitting&lt;/h2&gt;&#xA;&lt;p&gt;For submitting your designs to SynBioHub, following steps need to be followed:&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Navigate to SynBioHub&amp;rsquo;s home page.&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Click on the &lt;strong&gt;Submit&lt;/strong&gt; option and it&amp;rsquo;ll direct you to the Submit page.&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;p&gt;Now, there are 2 ways you make your submissions i.e, creating a new collection and then submitting your resource or submitting to an existing collection.&lt;/p&gt;&#xA;&lt;h3 id=&#34;411-creating-a-new-collection&#34;&gt;4.1.1 Creating a New Collection&lt;/h3&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Select the &lt;strong&gt;create a new collection&lt;/strong&gt; option.&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Following are the attributes that need to be filled up :&lt;/p&gt;</description>
+      <guid>https://synbiohub2.github.io/userdocumentation/managingsubmitting/</guid>
+      <description>4.1 Submitting For submitting your designs to SynBioHub, following steps need to be followed:
+Navigate to SynBioHub&amp;rsquo;s home page.
+Click on the Submit option and it&amp;rsquo;ll direct you to the Submit page.
+Now, there are 2 ways you make your submissions i.e, creating a new collection and then submitting your resource or submitting to an existing collection.
+4.1.1 Creating a New Collection Select the New collection option.
+Following are the attributes that need to be filled up :</description>
     </item>
     <item>
       <title>5. Data Sharing Mechanism</title>
-      <link>http://localhost:1313/userdocumentation/datasharingmech/</link>
+      <link>https://synbiohub2.github.io/userdocumentation/datasharingmech/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/userdocumentation/datasharingmech/</guid>
-      <description>&lt;p&gt;There are a couple of ways to share data in SynBioHub. They&amp;rsquo;re mentioned as follows:&lt;/p&gt;&#xA;&lt;h3 id=&#34;51-using-the-share-option&#34;&gt;5.1 Using the Share Option&lt;/h3&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Select the collection/design that you want to share.&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Click the &lt;strong&gt;share&lt;/strong&gt; option. Once you click on the share option, a link shall appear.&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Now, copy that link &amp;amp; you can share the link, thereby sharing the resource.&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;h3 id=&#34;52-adding-an-owner&#34;&gt;5.2 Adding an Owner&lt;/h3&gt;&#xA;&lt;p&gt;You can also share your design by giving any number of persons access by adding them as an owner for your design. This will give them full administrative access to your resources.&#xA;The steps to do so are as follows:&lt;/p&gt;</description>
+      <guid>https://synbiohub2.github.io/userdocumentation/datasharingmech/</guid>
+      <description>There are a couple of ways to share data in SynBioHub. They&amp;rsquo;re mentioned as follows:
+5.1 Using the Share Option Select the collection/design that you want to share.
+Click the share option. Once you click on the share option, a link shall appear.
+Now, copy that link &amp;amp; you can share the link, thereby sharing the resource.
+5.2 Adding an Owner You can also share your design by giving any number of persons access by adding them as an owner for your design.</description>
     </item>
     <item>
       <title>6. Administration</title>
-      <link>http://localhost:1313/userdocumentation/admin/</link>
+      <link>https://synbiohub2.github.io/userdocumentation/admin/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/userdocumentation/admin/</guid>
-      <description>&lt;p&gt;Note: &lt;strong&gt;The administration section will only be available, if you&amp;rsquo;re using a SynBioHub local instance. If you&amp;rsquo;re using a global instance, such as &lt;a href=&#34;https://synbiohub.org/&#34;&gt;this&lt;/a&gt; one, then the administration section won&amp;rsquo;t be available unless you have privileged access to SynBioHub.&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;p&gt;To access the admin page, the following steps need to be followed:&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Navigate to the home page of your SynbioHub local instance.&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Click on &lt;strong&gt;admin&lt;/strong&gt;, in order to access the administrative settings of your instance. This will direct you to the administrative page. It has been divided into several sub-sections, for your convenience. They&amp;rsquo;re discussed in detail, as follows:&lt;/p&gt;</description>
+      <guid>https://synbiohub2.github.io/userdocumentation/admin/</guid>
+      <description>Note: The administration section will only be available, if you&amp;rsquo;re using a SynBioHub local instance. If you&amp;rsquo;re using a global instance, such as this one, then the administration section won&amp;rsquo;t be available unless you have privileged access to SynBioHub.
+To access the admin page, the following steps need to be followed:
+Navigate to the home page of your SynbioHub local instance.
+Click on admin, in order to access the administrative settings of your instance.</description>
     </item>
   </channel>
 </rss>

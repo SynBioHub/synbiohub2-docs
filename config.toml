@@ -1,4 +1,4 @@
-baseURL = "https://synbiohub2.github.io"
+baseURL = "https://wiki2.synbiohub.org"
 languageCode = "en-us"
 title = "SynBioHub-Documentation"
 theme = "ace-documentation"
