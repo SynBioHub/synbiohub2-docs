@@ -50,7 +50,7 @@ After filling up the desired options, press the **search** button to get the sea
 
 ### 1.3 Advanced Search
 
-On the search results page, there is button labeled as **advanced search**. Clicking on that button will direct you to a page containing a list of advanced search options. To search using advanced parameters, you can provide the values for the option as described in the table below. The records that'll be displayed will match all of the criteria, that you'll fill in. Kindly note that you **don't** need to fill in all of the options. The options are as follows:
+On the search results page, there is collumn on the left hand side it contains a list of advanced search options. To search using advanced parameters, you can provide the values for the option as described in the table below. The records that'll be displayed will match all of the criteria, that you'll fill in. Kindly note that you **don't** need to fill in all of the options. The options are as follows:
 
 
 | Option Name   | Description   |
@@ -63,7 +63,7 @@ On the search results page, there is button labeled as **advanced search**. Clic
 | Type | Select the *type* of the record, from the following available options in the dropdown menu, for an example: No filter, biopax:Complex, biopax:DnaRegion, biopax:Protein, so:circular, etc...|
 | Role | select the **role** of the record from this dropdown menu. It contains various sub-categories of **[igem](https://igem.org/Main_Page)** or **[SO](http://www.sequenceontology.org/miso/current_release/term/SO:0000316)**.|
 | Collections| You may select any number of collections, based on your convenience. To select a collection, click on the value attribute of collection and select it from the drop down menu|
-| Customisable Filters | You may apply customised filters for the design you want to search for. For that purpose, a few blank filtering columns have been provided. As soon as you'll click on an empty filter on the left hand side, a drop down menu shall appear having various parameters for filtering. These parameters are basically, the properties for filtering the records. Select the property that you want your record to be filtered by, and then click on filter. This shall reload the page and then select the value of the filter, from the drop down on the right hand side. You may provide as many as 5 customised filters which'er optional|
+| Customisable Filters | You may apply customised filters for the design you want to search for. For that purpose, click **add filter** and a drop down menu will appear having various parameters for filtering. These parameters are basically, the properties for filtering the records. Select the property that you want your record to be filtered by, and then click on filter. This shall reload the page and then select the value of the filter, from the drop down on the right hand side. You may provide as many as 5 customised filters which'er optional|
 -----------------------------------------------------------------------------
 
 
