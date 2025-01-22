@@ -13,7 +13,7 @@ This section contains instructions about how you can modify the newly developed 
 
 *Note: Before beginning to modify the documentation, make sure that you have **[git](https://git-scm.com/)** & **[Hugo static site generator](https://gohugo.io/getting-started/quick-start/)** installed on your machine. For this documentation, we've put to use the **[ACE-documentation](https://themes.gohugo.io/ace-documentation/)** theme. The instructions, about how to install this theme on your system, are given **[here](https://github.com/vantagedesign/ace-documentation)**. Once you clone the repositories, make sure that under any circumstance you don't modify the **config.toml** file.*
 
-
+0. Install hugo in your dev environment (must be localhost). Install hugo version earlier than `0.1.20.4` to ensure it can compile.
 
 1. Open your terminal/cmd.
 
