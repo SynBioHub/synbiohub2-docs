@@ -5,6 +5,7 @@ draft: true
 weight: 1
 ---
 
+This is a TEST!
 SynBioHub2 is made of two intertwined projects:
 
 1. Provides computational access for software and data integration, and a graphical user interface that enables users to search for, store, share, and publish genetic designs in a web application.
