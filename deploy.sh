@@ -10,6 +10,7 @@ hugo -D # if using a theme, replace with `hugo -t <YOURTHEME>`
 
 rm -r synbiohub2.github.io/*
 cp -r public/* synbiohub2.github.io/
+cp CNAME synbiohub2.github.io/
 
 # Go To Public folder
 cd synbiohub2.github.io
