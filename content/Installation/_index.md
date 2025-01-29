@@ -34,7 +34,7 @@ To run the base configuration:
    On windows make sure you are in an admin terminal, if not open a new terminal as admin, and then redo step 3 and come back to step 5.
 
    
-6. In your browser search for localhost:3333 and it'll take you to a setup page when you'll run it for the very first time. From here you should go to the next step if you want to continue. If you want to know how to shut down SynBioHub continue reading.
+6. In your browser search for localhost:3333 and it'll take you to a setup page when you'll run it for the very first time. From here you should go to the **[NEXT STEP](/setup)** if you want to continue. If you want to know how to shut down SynBioHub continue reading.
 
 7. The following command stops a local instance of SynBioHub (but only if you are in the correct directory, see step 3):
 
