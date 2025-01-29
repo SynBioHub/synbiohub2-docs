@@ -2,12 +2,10 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Installation on SynBioHub-Documentation</title>
-    <link>http://localhost:1313/installation/</link>
+    <link>https://wiki2.synbiohub.org/installation/</link>
     <description>Recent content in Installation on SynBioHub-Documentation</description>
-    <generator>Hugo</generator>
+    <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <copyright>© SynBioHub 2020</copyright>
-    <lastBuildDate></lastBuildDate>
-    <atom:link href="http://localhost:1313/installation/index.xml" rel="self" type="application/rss+xml" />
+    <copyright>© SynBioHub 2020</copyright><atom:link href="https://wiki2.synbiohub.org/installation/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>
