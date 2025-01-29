@@ -1,8 +1,8 @@
 baseURL = "https://wiki2.synbiohub.org/"
 languageCode = "en-us"
-title = "SynBioHub-Documentation"
+title = "SynBioHub2 Docs"
 theme = "ace-documentation"
-Copyright = "© SynBioHub 2020"
+Copyright = "© SynBioHub 2024"
 canonifyurls = true
 
 [params]
