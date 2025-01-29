@@ -2,56 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/aboutsynbiohub/</loc>
-    <lastmod>2020-09-04T20:30:59+05:30</lastmod>
+    <loc>https://wiki2.synbiohub.org/installation/</loc>
   </url><url>
-    <loc>http://localhost:1313/userdocumentation/searchingforinfo/</loc>
+    <loc>https://wiki2.synbiohub.org/</loc>
+    <priority>0</priority>
   </url><url>
-    <loc>http://localhost:1313/questions-and-issues/mailinglists/</loc>
+    <loc>https://wiki2.synbiohub.org/categories/</loc>
   </url><url>
-    <loc>http://localhost:1313/userdocumentation/viewinganddownloadinginformation/</loc>
-  </url><url>
-    <loc>http://localhost:1313/questions-and-issues/reportanissue/</loc>
-  </url><url>
-    <loc>http://localhost:1313/userdocumentation/registeringupdatingaccount/</loc>
-  </url><url>
-    <loc>http://localhost:1313/questions-and-issues/faq/</loc>
-  </url><url>
-    <loc>http://localhost:1313/userdocumentation/managingsubmitting/</loc>
-  </url><url>
-    <loc>http://localhost:1313/userdocumentation/datasharingmech/</loc>
-  </url><url>
-    <loc>http://localhost:1313/userdocumentation/admin/</loc>
-  </url><url>
-    <loc>http://localhost:1313/installation/</loc>
-    <lastmod>2020-09-04T20:30:59+05:30</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/setup/</loc>
-    <lastmod>2020-09-04T20:30:59+05:30</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/userdocumentation/</loc>
-    <lastmod>2020-09-04T20:30:59+05:30</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/apidocumentation/</loc>
-    <lastmod>2020-09-04T20:30:59+05:30</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/plugins/</loc>
-    <lastmod>2020-09-04T20:30:59+05:30</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/questions-and-issues/</loc>
-    <lastmod>2020-09-04T20:30:59+05:30</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/glossary/</loc>
-    <lastmod>2020-12-02T11:51:20+05:30</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/</loc>
-    <lastmod>2020-12-02T11:51:20+05:30</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/references/</loc>
-    <lastmod>2020-09-04T20:30:59+05:30</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/categories/</loc>
-  </url><url>
-    <loc>http://localhost:1313/tags/</loc>
+    <loc>https://wiki2.synbiohub.org/tags/</loc>
   </url>
 </urlset>
