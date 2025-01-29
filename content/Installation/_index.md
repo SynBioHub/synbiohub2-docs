@@ -1,7 +1,5 @@
 ---
 title: "Installation"
-date: 2020-09-04T20:30:59+05:30
-draft: true
 weight: 10
 ---
 
@@ -13,53 +11,32 @@ The base configuration, described with `docker-compose.yml`, is simply SynBioHub
 
 To run the base configuration:
 
-1. Before trying to run SynBioHub locally on your PC, Make sure that you have Git and Docker installed.
+1. Before trying to run SynBioHub locally on your PC, Make sure that you have [Git](https://git-scm.com/downloads) and [Docker](https://docs.docker.com/get-started/get-docker/) installed.
 
-  * Git:-
-    
-       For MacOS, click [here](https://git-scm.com/download/mac).
-    
-       For Windows OS, click [here](https://git-scm.com/download/win)
-    
-       For Linux/Unix OS, click [here](https://git-scm.com/download/linux).
-    
-    
-  * Docker:-
-       
-       For MacOS, click [here](https://docs.docker.com/docker-for-mac/install/).
-    
-       For Windows OS, click [here](https://docs.docker.com/docker-for-windows/install/).
-       After installation make sure to run docker desktop as an administrator before    moving to step two.
-    
-       For Linux OS, click [here](https://docs.docker.com/engine/install/).
-       
-
-2. Open the terminal/cmd in MacOS/Linux. For Windows OS make sure you open the command terminal as an administrator.
+2. Open the terminal/cmd. You may need to run some commands as administrator/superuser. If you run into any errors try this first. Tip for windows: you need to start the terminal app as admin and you cant run individual commands as admin like on mac or linux.
 
 3. Navigate to the directory where you want to install SynBioHub.
-
-   For Mac/Linux/Windows OS use the following command to navigate: 
    
-   	```cd directory_name```
-   
+   	```cd directory_name``` \
+   if you need a refresher on terminal feel free to read [this article](https://www.lifewire.com/change-directories-in-command-prompt-5185508)
 
 4. Subsequently, enter the following command into your terminal:
 
-	```git clone -b snapshot https://github.com/synbiohub/synbiohub2-docker```
+	```git clone -b snapshot https://github.com/synbiohub/synbiohub2-docker``` \
+   This downloads a copy of the snapshot branch, which is known to work.
 
-5. Make sure you're on the snapshot branch. This will take the most recent version of SynBioHub2, as SynBioHub2 has not been fully released yet. (Delete when release is done)
-
-6. Then, enter the following command to start the local instance of SynBioHub:
+5. Then, enter the following command to start the local instance of SynBioHub:
       
         
-	```docker-compose -f ./synbiohub-docker/docker-compose.yml up```
+	```docker-compose -f ./synbiohub-docker/docker-compose.yml up```\
+   This is the step where you most likely need to use root. \
+   On macos or linux add sudo to the start of the command before typing the rest. \
+   On windows make sure you are in an admin terminal, if not open a new terminal as admin, and then redo step 3 and come back to step 5.
 
    
-7. In your browser search for localhost:7777 and it'll take you to a setup page when you'll run it for the very first time.
+6. In your browser search for localhost:3333 and it'll take you to a setup page when you'll run it for the very first time. From here you should go to the next step if you want to continue. If you want to know how to shut down SynBioHub continue reading.
 
-   [In case of Linux OS, if you face any permission errors, then simple insert **sudo** before every statement]
-
-7. The following command stops a local instance of SynBioHub:
+7. The following command stops a local instance of SynBioHub (but only if you are in the correct directory, see step 3):
 
       ```docker-compose -f ./synbiohub-docker/docker-compose.yml down```
   	

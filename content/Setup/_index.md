@@ -1,37 +1,23 @@
 ---
 title: "Setup"
-date: 2020-09-04T20:30:59+05:30
 draft: true
 weight: 15
 ---
 
-When you'll first install SynBioHub locally and navigate to ```http://localhost:7777/```, you shall be directed to the setup page.
+When you'll first install SynBioHub locally and navigate to ```http://localhost:3333/```, and the setup page will appear.
 
-Over there you'll see a welcome message saying, **Congratulations, SynBioHub is successfully installed!**
+You will see a welcome message saying, "**Congratulations, SynBioHub is successfully installed!**"
 
 Then, you need to fill out some details for configuring your local instance, which are as follows:
 
 ## 1. Branding Your SynBioHub
 
-| Parameter  | Description  |
-|---|---|
-| Instance Name | You can give a name to your local instance as per your convenience. Try to provide something descriptive to identify the kind of parts your SynBioHub instance will store. This parameter can even be changed later.    |
-| Pick a color  | You can also choose a colour for you SynBioHub instance. This color shall be used to theme your SynBioHub instance. The default colour for SynBioHub is hue. If you want to change it just click on the color bar. A dropdown shall appear, enabling you to choose the color your own choice. |
-| Write a Welcome Message |  You could also provide a welcome message for the users of your instance. This may contain a brief description of what parts does your SynBioHub contain or any other brief message that you want to give to the users about your local instance. This shall be displayed on the home page of your local instance. Html tags can also be used while writing the welcome message.|
-| Upload a logo| Then, is the option of uploading a logo for your instance. For uploading a logo of your choice, just click on **upload file**. A popup menu shall appear and then you can choose the picture from your machine. Kindly make sure that for best results, upload a SVG or high resolution PNG image.|
-| Allow public account creation | Just below the upload a logo option, is situated a check box displaying the message, **allow public account creation**. This shall enable all the users accessing your instance, to create an account on it and hence perform function such as creating collection, submitting various types of records, etc.. To enable public account creation, just check the box, right besides this message.|
----------------------------------------------------
+Pick a good **Instance Name** that describes what the server is. You can pick a logo for the top left of the header, and you can also change the color which will be used to theme most UI elements.
+Finally you can pick if you want the instance to be pu
 
 ## 2. Technical Details
 
-
-| Parameter | Description |
-|-----------|-------------|
-| Instance URL | This displays where this SynBioHub instance is hosted on your machine, so we can assign URLs to your submissions. By default, it has been assumed that your instance is hosted at ```localhost:7777/```. If your instance is not hosted over there, then you can change it.|
-| URI Prefix | There is a need to know need to know how to prefix URIs of objects stored in this SynBioHub. Its default is the same as the URL, and should only be changed if you are shadowing another instance. Hence, you can change it as per your convenience. |
-| [Virtuoso INI](http://olafhartig.de/brTPF-ODBASE2016/virtuoso.ini) | This basically is configuration file for the OpenLink Virtuoso VDBMS Server. There is a need to know where the Virtuoso INI is stored. By default it is guessed to be ```/etc/virtuoso-opensource-7/virtuoso.ini```. If this is not true, you can change it as per your convenience.|
-| Virtuoso Data Directory |  Displays the location of Virtuoso DB directory. By default it is set to ```/virtuoso```. If this is incorrect, you can change it as per your convenience.| 
----------------------------------------------------------------
+You can change these, but they should already be prefilled based on your url, so we don't recommend modifying them. If you are deploying publicly you will need to setup a reverse proxy to host both the frontend and backend at the same url and port.
 
 ## 3. Creating Your First User Account
 
@@ -44,9 +30,8 @@ You need to create a user account that will have the first privileged access to 
 | Email Address| Enter the Email Address, through which you want to get registered. If in future you forget your login credentials, then this shall be used for sending a recovery password for your account| 
 | Username | You have to enter a username of your own choice. This shall be displayed on the record page of every record that you submit|
 |Password | Enter a password (preferably a strong one) for keeping your user account safe|
----------------------------------------------------------------------------------------------------
 
-## 4. Setting up External Authorization Provider
+<!-- ## 4. Setting up External Authorization Provider
 
 External authentication basically, is the use of third-party authentication sources to decide whether a user should be allowed access to a system, and often what level of access an authenticated user enjoys on a system.
 
@@ -61,12 +46,9 @@ To be able to use Google for authentication, you first need to register with the
 | Redirect URL | This is the path in your application that users are redirected to after they have authenticated with Google. The path will be appended with the authorisation code for access. It must have a protocol and cannot contain URL fragments or relative paths. Also, make sure it is not a public IP address.|
 -------------------------------------------------------------------------------
 
-If you want to obtain your client ID and client secret, you can visit **[Google's documentation](https://developers.google.com/adwords/api/docs/guides/authentication)** for further reference. 
+If you want to obtain your client ID and client secret, you can visit **[Google's documentation](https://developers.google.com/adwords/api/docs/guides/authentication)** for further reference.  -->
 
-Once, you've filled all the details, click **continue**. This will redirect you to the home page of your SynBioHub local instance.   
-
-
-
-
-
-
+## All Done
+Once, you've filled all the details, click **continue**. This will redirect you to the home page of your SynBioHub local instance.\
+\
+Next lets get started installing some [Plugins](/plugins)!
