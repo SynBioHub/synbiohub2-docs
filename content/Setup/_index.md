@@ -1,10 +1,9 @@
 ---
 title: "Setup"
-draft: true
 weight: 15
 ---
 
-When you'll first install SynBioHub locally and navigate to ```http://localhost:3333/```, and the setup page will appear.
+When you'll first install SynBioHub locally and navigate to ```http://localhost:3333/```, and the setup page will load.
 
 You will see a welcome message saying, "**Congratulations, SynBioHub is successfully installed!**"
 
