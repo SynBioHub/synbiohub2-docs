@@ -81,7 +81,7 @@ Now, there are 2 ways you make your submissions i.e, creating a new collection a
 
 1. Navigate to SynBioHub's home page.
 
-2. Click on **submissions**. It'll direct you to a page titled **manage submissions**. On this page you'll be able to see collections to be divided, broadly under 2 categories. The 1st one being, **public collections**, which you've created and only you have access to them and 2nd one being, **private collections**, to which all the users have access to.
+2. Click on **manage submissions**. On this page you'll be able to see collections to be divided, broadly under 2 categories. The 1st one being, **public collections**, which you've created and only you have access to them and 2nd one being, **private collections**, to which all the users have access to.
 
 3. You can view your collection by clicking on the collection name. 
 
@@ -148,6 +148,3 @@ On some record pages you might find an option titled, **add to an existing colle
 * Finally, click **add to collection**.
 
 This shall add the the record or the collection which you're currently viewing to the collection, which you've selected.  
-
-
-
