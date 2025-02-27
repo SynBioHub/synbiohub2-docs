@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://synb-pages.peterhindes.com/sitemap.xml
+Sitemap: https://wiki2.synbiohub.org/sitemap.xml

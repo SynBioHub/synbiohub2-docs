@@ -73,7 +73,7 @@ async function getFileMetadata(filePath) {
 }
 
 async function generateSitemap(markdownFiles) {
-    const baseUrl = 'https://synb-pages.peterhindes.com/';
+    const baseUrl = 'https://wiki2.synbiohub.org/';
     // Use current date in YYYY-MM-DD format
     const currentDate = new Date().toLocaleDateString('en-CA'); // Gets date in YYYY-MM-DD format
     

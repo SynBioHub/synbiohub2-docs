@@ -30,7 +30,7 @@ Articles can have frontmatter properties:
 - `hidden`: Set to true to exclude from navigation
 
 ### What The Site Looks Like
-[It is currently live](https://synb-pages.peterhindes.com)
+[It is currently live](https://wiki2.synbiohub.org)
 
 Or you can look at a screenshot below:
 
