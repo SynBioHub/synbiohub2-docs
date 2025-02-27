@@ -1,6 +1,0 @@
-[submodule "ace-documentation"]
-	path = ace-documentation
-	url = https://github.com/vantagedesign/ace-documentation
-[submodule "synbiohub2.github.io"]
-	path = synbiohub2.github.io
-	url = https://github.com/SynBioHub/synbiohub2.github.io.git

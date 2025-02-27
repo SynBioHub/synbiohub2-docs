@@ -1,0 +1,327 @@
+/* Variables */
+:root {
+    --sidebar-width: 250px;
+    --primary-color: #2563eb;
+    --bg-color: #ffffff;
+    --text-color: #1f2937;
+    --sidebar-bg: #f3f4f6;
+    --link-bg: #ffffff;
+    --link-hover-bg: #e0e7ff;
+    --link-text: #1673ff;
+}
+
+/* Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    line-height: 1.6;
+    color: var(--text-color);
+}
+
+/* Layout */
+.container {
+    display: flex;
+    min-height: 100vh;
+    position: relative;
+}
+
+/* Sidebar Styles */
+.sidebar {
+    width: var(--sidebar-width);
+    min-width: 220px;
+    background: var(--sidebar-bg);
+    position: fixed;
+    height: 100vh;
+    overflow-y: auto;
+    z-index: 1;
+    transform: translateX(0);
+    transition: transform 0.3s ease;
+    resize: none;
+    padding-top: 5rem;
+}
+
+.sidebar.collapsed {
+    transform: translateX(-100%);
+}
+
+.sidebar a {
+    display: block;
+    text-decoration: none;
+    background: var(--link-bg);
+    padding: 0.5rem 0.75rem;
+    margin-bottom: 0.25rem;
+    width: 100%;
+    box-sizing: border-box;
+    color: var(--link-text) !important;
+    border-radius: 0;
+}
+
+.sidebar a:hover {
+    background: var(--link-hover-bg);
+}
+
+.sidebar-content {
+    margin-top: 1rem;
+    height: auto;
+}
+
+.sidebar h1 {
+    margin: 0 0 0.5rem;
+    padding: 0 0.75rem;
+    font-size: 1.75rem;
+}
+
+.sidebar h2 {
+    margin: 2rem 0 0.75rem;
+    padding: 0 0.75rem;
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: var(--text-color);
+}
+
+.sidebar h3 {
+    margin: 1.5rem 0 0.75rem;
+    padding: 0 0.75rem;
+}
+
+/* Sidebar Toggle */
+.sidebar-toggle {
+    position: fixed;
+    top: 1rem;
+    left: 1rem;
+    z-index: 1001; /* Ensure it's above the sidebar */
+    background: var(--bg-color);
+    border: 1px solid #e5e7eb;
+    border-radius: 4px;
+    padding: 0.5rem;
+    cursor: pointer;
+    display: block;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+.sidebar-toggle:hover {
+    background: var(--sidebar-bg);
+}
+
+.sidebar:not(.collapsed) ~ .content .sidebar-toggle {
+    left: calc(var(--sidebar-width) + 1rem);
+}
+
+.sidebar-collapsed .sidebar-toggle {
+    left: 1rem;
+    transition: left 0.3s ease;
+}
+
+.sidebar:not(.collapsed) + .resize-handle + .content .sidebar-toggle {
+    left: calc(var(--sidebar-width) + 1rem);
+}
+
+/* Resize Handle */
+.resize-handle {
+    width: 4px;
+    height: 100vh;
+    background: #e5e7eb;
+    cursor: col-resize;
+    position: fixed;
+    left: var(--sidebar-width);
+    z-index: 2;
+    transition: background 0.2s, transform 0.3s ease;
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    transform: translateX(0%);
+}
+
+.sidebar.collapsed + .resize-handle {
+    transform: translateX(calc(-1*var(--sidebar-width)));
+    background-color: #e5e7eb !important;
+    pointer-events: none;
+}
+
+.resize-handle:hover,
+.resize-handle.active {
+    background: var(--primary-color);
+}
+
+/* Content Area */
+.content {
+    padding: 2rem;
+    max-width: 900px;
+    width: 100%;
+    margin-left: var(--sidebar-width);
+    transition: none;
+    overflow-y: auto;
+    height: 100vh;
+    scroll-padding-top: 2rem;
+}
+
+.content-wrapper {
+    padding-top: 1rem;
+    position: relative;
+}
+
+.sidebar-collapsed .content {
+    margin-left: 4rem;
+}
+
+.container:not(.resizing) .content {
+    transition: margin-left 0.3s ease;
+}
+
+/* Article Images */
+.content img {
+    width: 80%;
+    height: auto;
+    display: block;
+    margin: 1.5rem auto;
+}
+
+/* Header and Brand */
+.header-container {
+    margin-bottom: 1.5rem;
+    padding-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.75rem;
+}
+
+.brand-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.brand-logo {
+    width: 220px;
+    height: auto;
+    object-fit: contain;
+    display: block;
+    padding: 1rem;
+}
+
+.home-link {
+    font-weight: bold;
+    font-size: 1.2em;
+    text-decoration: none;
+    border-bottom: none;
+}
+
+/* Markdown Content Styling */
+.content h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.content h2 {
+    font-size: 1.8rem;
+    margin: 2rem 0 1rem;
+}
+
+.content h3 {
+    font-size: 1.4rem;
+    margin: 1.5rem 0 0.8rem;
+}
+
+.content p {
+    margin-bottom: 1rem;
+}
+
+.content code {
+    background: #f1f5f9;
+    padding: 0.2rem 0.4rem;
+    border-radius: 4px;
+    font-size: 0.9em;
+}
+
+.content pre {
+    background: #f1f5f9;
+    padding: 1rem;
+    border-radius: 8px;
+    overflow-x: auto;
+    margin: 1rem 0;
+}
+
+.content pre code {
+    background: none;
+    padding: 0;
+}
+
+.content ul, .content ol {
+    margin: 1rem 0;
+    padding-left: 2rem;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .sidebar-toggle {
+        min-width: 40px; /* Ensure minimum clickable area */
+        min-height: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0.5rem;
+        position: fixed;
+        top: 0.5rem; /* Move slightly closer to top edge */
+    }
+    
+    .sidebar {
+        width: 100vw;
+        max-width: none;
+        min-width: 100%;
+        z-index: 1000;
+        background: var(--sidebar-bg);
+    }
+
+    /* Add overlay behind sidebar */
+    .sidebar:not(.collapsed)::before {
+        content: '';
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: -1;
+    }
+
+    .content {
+        min-width: 280px; /* Ensure minimum readable width */
+        width: 100vw;
+        max-width: none;
+        margin-left: 0;
+        word-wrap: break-word; /* Handle long words */
+        overflow-wrap: break-word;
+        padding: 5.5rem 2rem 2rem 2rem; /* Change to padding shorthand to ensure all sides */
+    }
+
+    .content-wrapper {
+        padding-top: 0;
+    }
+
+    .sidebar-collapsed .content {
+        margin-left: 0;
+    }
+
+    .resize-handle {
+        display: none;
+    }
+}
+
+@media (max-width: 480px) {
+    .content {
+        padding: 5.5rem 1rem 1rem 1rem; /* Keep top padding while reducing sides */
+    }
+}
+
+@media (max-width: 320px) {
+    .content {
+        padding: 5.5rem 0.5rem 0.5rem 0.5rem; /* Even smaller side padding but maintain top */
+    }
+}

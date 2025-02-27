@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SynBioHub2 Documentation</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="/marked.min.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script> -->
+    <meta name="description" content="SynBioHub Documentation - Instructions for using the platform for sharing and publishing synthetic biology designs.">
+    <link rel="sitemap" type="application/xml" title="Sitemap" href="/sitemap.xml">
+</head>
+<body>
+    <div class="container">
+        <button id="sidebar-toggle" class="sidebar-toggle" aria-label="Toggle Sidebar">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path id="toggle-icon" d="M4 6h16M4 12h16M4 18h16"></path>
+            </svg>
+        </button>
+        <div class="sidebar" id="sidebar">
+            <div class="header-container">
+                <h1 class="title">SynBioHub Docs</h1>
+                <img src="brand.svg" alt="SynBioHub Logo" class="brand-logo">
+                <a href="#articles/home" class="home-link" id="home-link">Home</a>
+            </div>
+            <nav class="sidebar-content" aria-label="Documentation navigation">
+                <!-- Sidebar content will be loaded here -->
+            </nav>
+        </div>
+        <div class="resize-handle" id="resize-handle"></div>
+        <div class="content" id="content">
+            <div class="content-wrapper">
+                <!-- Markdown content will be rendered here -->
+            </div>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>

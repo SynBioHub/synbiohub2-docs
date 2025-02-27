@@ -1,0 +1,114 @@
+{
+  "sections": [
+    {
+      "title": "Guides",
+      "items": [
+        {
+          "title": "Tutorial From Workshop",
+          "path": "articles/1_guides/tutorial from workshop.md",
+          "weight": 0
+        },
+        {
+          "title": "Installation",
+          "path": "articles/1_guides/installation.md",
+          "weight": 10
+        },
+        {
+          "title": "Setup",
+          "path": "articles/1_guides/setup.md",
+          "weight": 20
+        }
+      ]
+    },
+    {
+      "title": "Micro Guides",
+      "items": [
+        {
+          "title": "What Are Micro Guides",
+          "path": "articles/2_micro guides/what are micro guides.md",
+          "weight": 0
+        },
+        {
+          "title": "Searching For Info",
+          "path": "articles/2_micro guides/Searching For Info.md",
+          "weight": 10
+        },
+        {
+          "title": "Viewing And Downloading Information",
+          "path": "articles/2_micro guides/Viewing and Downloading Information.md",
+          "weight": 20
+        },
+        {
+          "title": "Registering Or Updating Account",
+          "path": "articles/2_micro guides/Registering or Updating Account.md",
+          "weight": 30
+        },
+        {
+          "title": "Submitting, Managing And Updating Submissions",
+          "path": "articles/2_micro guides/Submitting, Managing and Updating Submissions.md",
+          "weight": 40
+        },
+        {
+          "title": "Administration",
+          "path": "articles/2_micro guides/Administration.md",
+          "weight": 50
+        },
+        {
+          "title": "Data Sharing Mechanism",
+          "path": "articles/2_micro guides/Data Sharing Mechanism.md",
+          "weight": 50
+        }
+      ]
+    },
+    {
+      "title": "Advanced",
+      "items": [
+        {
+          "title": "API Documentation",
+          "path": "articles/3_advanced/API documentation.md",
+          "weight": 1
+        },
+        {
+          "title": "Plugins",
+          "path": "articles/3_advanced/plugins.md",
+          "weight": 40
+        }
+      ]
+    },
+    {
+      "title": "Get Involved",
+      "items": [
+        {
+          "title": "Report An Issue",
+          "path": "articles/4_get involved/report an issue.md",
+          "weight": 5
+        },
+        {
+          "title": "Mailing Lists",
+          "path": "articles/4_get involved/mailing lists.md",
+          "weight": 10
+        }
+      ]
+    },
+    {
+      "title": "Background",
+      "items": [
+        {
+          "title": "About Synbiohub",
+          "path": "articles/5_background/about SynBioHub.md",
+          "weight": 1
+        },
+        {
+          "title": "Refrences",
+          "path": "articles/5_background/refrences.md",
+          "weight": 50
+        },
+        {
+          "title": "Glossary",
+          "path": "articles/5_background/glossary.md",
+          "weight": 99
+        }
+      ]
+    }
+  ]
+}
