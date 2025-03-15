@@ -4,8 +4,7 @@ hidden: false
 ---
 
 ### General
-The docker-compose files in [this repository](https://github.com/SynBioHub/synbiohub2-docker) represent various configurations for deploying SynBioHub.
-The files can be layered with Docker Compose's [multiple file](https://docs.docker.com/compose/reference/overview/#specifying-multiple-compose-file) capabilities. 
+The docker-compose files in [this repository](https://github.com/SynBioHub/synbiohub2-docker) contains various configurations for deploying SynBioHub.
 
 The base configuration, described with `docker-compose.yml`, is simply SynBioHub2, its graph database Virtuoso, and an autohealer.
 

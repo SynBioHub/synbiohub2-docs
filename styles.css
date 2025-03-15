@@ -73,7 +73,7 @@ body {
 .sidebar h1 {
     margin: 0 0 0.5rem;
     padding: 0 0.75rem;
-    font-size: 1.75rem;
+    font-size: 1.65rem;
 }
 
 .sidebar h2 {
@@ -152,7 +152,7 @@ body {
 /* Content Area */
 .content {
     padding: 2rem;
-    max-width: 900px;
+    max-width: 1500px;
     width: 100%;
     margin-left: var(--sidebar-width);
     transition: none;
