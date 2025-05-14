@@ -22,7 +22,10 @@ To run the base configuration:
 
 4. Subsequently, enter the following command into your terminal:
 
-   `git clone -b snapshot https://github.com/SynBioHub2/SynBioHub2-docker ; cd SynBioHub2-docker`
+   ``` bash
+   git clone -b snapshot https://github.com/SynBioHub2/SynBioHub2-docker
+   cd SynBioHub2-docker
+   ```
    
    This downloads a copy of the snapshot branch, which is known to work.
 
@@ -53,6 +56,8 @@ To add [SBOLExplorer](https://github.com/michael13162/SBOLExplorer), add the `do
 **The `sysctl -w vm.max_map_count=262144` command runs only on linux, it is needed for Elastic Search, a component of SBOLExplorer. It is likely unnecessary on MacOS***
 
 ### With Plugins
+If you are unfamiliar with plugins, please read [the docs](/#articles/3_advanced/plugins)
+
 To add plugins to the configuration, change the command mentioned in step 5 to: 
 
 `docker-compose -f ./docker-compose.yml -f ./docker-compose.explorer.yml -f ./docker-compose.<Plugin 1 File Name>.yml -f ./docker-compose.<Plugin 2 File Name>.yml up`
@@ -61,8 +66,10 @@ Note that all plugins are added before the `up` and each is preceeded by `-f `. 
 
 `docker-compose -f ./docker-compose.yml -f ./docker-compose.explorer.yml -f ./docker-compose.pluginVisualIgem.yml -f ./docker-compose.pluginVisualSeqviz.yml up`
 
-A table of currently available plugins can be found **[here](https://SynBioHub2.github.io/SynBioHub2-docker/#plugins)**.
+A table of currently available plugins can be found [here](https://synbiohub.github.io/SynBioHub2-docker/#plugins).
 
-## Installation from Source
+## Installation From Source
 
-Follow the instructions on the following [GitHub README](https://github.com/SynBioHub2/SynBioHub2) to install SynBioHub2 locally onto your system.
+**Installation from source is not recommended for non contributors due to requiring many dependencies of specific versions.**
+
+Follow the instructions on the following [GitHub README](https://github.com/SynBioHub/SynBioHub3) to install SynBioHub2 locally onto your system.
