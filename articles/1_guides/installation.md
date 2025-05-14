@@ -4,7 +4,7 @@ hidden: false
 ---
 
 ### General
-The docker-compose files in [this repository](https://github.com/SynBioHub2/SynBioHub2-docker) contains various configurations for deploying SynBioHub2.
+The docker-compose files in [this repository](https://github.com/SynBioHub/SynBioHub2-docker) contains various configurations for deploying SynBioHub2.
 
 The base configuration, described with `docker-compose.yml`, is simply SynBioHub2, its graph database Virtuoso, and an autohealer.
 
@@ -23,7 +23,7 @@ To run the base configuration:
 4. Subsequently, enter the following command into your terminal:
 
    ``` bash
-   git clone -b snapshot https://github.com/SynBioHub2/SynBioHub2-docker
+   git clone -b snapshot https://github.com/SynBioHub/SynBioHub2-docker
    cd SynBioHub2-docker
    ```
    
